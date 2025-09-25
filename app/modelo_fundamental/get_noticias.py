@@ -2,6 +2,8 @@ import requests
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 import json
+import yfinance as yf
+import pandas as pd
 
 FINNHUB_API_KEY = "d39i039r01qoho9fts30d39i039r01qoho9fts3g" 
 
@@ -20,8 +22,9 @@ class FetchNews:
 
     def fetch_news(self):
         base_url = "https://finnhub.io/api/v1/company-news"
-        to_date = datetime.now().strftime('%Y-%m-%d')
+        to_date = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
         from_date = (datetime.now() - timedelta(days=self.days_back)).strftime('%Y-%m-%d')
+
 
         for ticker in self.tickers:
             params = {
@@ -36,19 +39,36 @@ class FetchNews:
             if response.status_code != 200:
                 print(f"Error fetching news for {ticker}: {response.status_code}")
                 continue
-
+            
             articles = response.json()
+            yfinance_data= yf.download(ticker, start=from_date, end=datetime.now().strftime('%Y-%m-%d'))
+            yfinance_data["rendimiento"]= yfinance_data["Close"].pct_change()
 
             for article in articles:
+                article_date=datetime.fromtimestamp(article.get("datetime")).strftime("%Y-%m-%d")
+                try:
+                    close_price = float(yfinance_data.loc[article_date]["Close"].iloc[0])
+                    rendimiento= round(float(yfinance_data.loc[article_date]["rendimiento"].iloc[0]),4)
+                except KeyError:
+                    # Get closest previous date
+                    target = pd.to_datetime(article_date)
+                    closest_date = yfinance_data.index[yfinance_data.index <= target][-1]
+                    close_price = round(float(yfinance_data.loc[closest_date]["Close"].iloc[0]),2)
+                    rendimiento= round(float(yfinance_data.loc[closest_date]["rendimiento"].iloc[0]),4)
+
                 self.ticker_news[ticker]["data"].append({
                     "headline": article.get("headline"),
                     "summary": article.get("summary"),
                     "url": article.get("url"),
                     "source": article.get("source"),
-                    "date": datetime.fromtimestamp(article.get("datetime")).strftime("%Y-%m-%d"),
+                    "date": article_date,
+                    "close": close_price,
+                    "performance": rendimiento,
+                    "label": "positive" if rendimiento > 0 else "negative" if rendimiento < 0 else "neutral"
                 })
 
         return self.ticker_news
+
 
 
 # --- Ejemplo ---
