@@ -12,15 +12,10 @@ FINNHUB_API_KEY = "d39i039r01qoho9fts30d39i039r01qoho9fts3g"
 class FetchNews:
     tickers: list[str]
     days_back: int = 30
-    ticker_news: dict = None
-
-
-    def get_info(self):
-        self.ticker_news = {ticker: {"data": []} for ticker in self.tickers}
-        self.fetch_news()
-        return self.ticker_news
+    ticker_news: dict|None = None
 
     def fetch_news(self):
+        self.ticker_news = {ticker: {"data": []} for ticker in self.tickers}
         base_url = "https://finnhub.io/api/v1/company-news"
         to_date = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
         from_date = (datetime.now() - timedelta(days=self.days_back)).strftime('%Y-%m-%d')
@@ -42,12 +37,15 @@ class FetchNews:
             
             articles = response.json()
             yfinance_data= yf.download(ticker, start=from_date, end=datetime.now().strftime('%Y-%m-%d'))
+            if yfinance_data is None or yfinance_data.empty:
+                print(f"No stock data found for {ticker}")
+                continue
             yfinance_data["rendimiento"]= yfinance_data["Close"].pct_change()
 
             for article in articles:
                 article_date=datetime.fromtimestamp(article.get("datetime")).strftime("%Y-%m-%d")
                 try:
-                    close_price = float(yfinance_data.loc[article_date]["Close"].iloc[0])
+                    close_price = round(float(yfinance_data.loc[article_date]["Close"].iloc[0]),4)
                     rendimiento= round(float(yfinance_data.loc[article_date]["rendimiento"].iloc[0]),4)
                 except KeyError:
                     # Get closest previous date
@@ -68,15 +66,14 @@ class FetchNews:
                 })
 
         return self.ticker_news
-
-
-
-# --- Ejemplo ---
+    
+    def save_to_json(self, filename="noticias.json"):
+        if self.ticker_news is None:
+            raise ValueError("No data to save. Please run get_info() first.")
+        with open(filename, "w", encoding="utf-8") as f:
+            json.dump(self.ticker_news, f, indent=4)
 
 if __name__ == "__main__":
-    news = FetchNews(tickers=["AAPL", "TSLA", "MSFT"], days_back=180).get_info()
-    print(f"TSLA tiene {len(news['TSLA']['data'])} artículos.")
-    for item in news['TSLA']['data']:
-        print(item["date"], "-", item["headline"])
-    with open ("noticias.json", "w", encoding="utf-8") as f:
-        json.dump(news, f, indent=4)
+    news = FetchNews(tickers=["AAPL", "TSLA", "MSFT"], days_back=180)
+    news.fetch_news()
+    news.save_to_json("noticias.json")
