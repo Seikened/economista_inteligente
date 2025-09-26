@@ -7,6 +7,9 @@ requires-python = ">=3.12"
 dependencies = [
     "numpy>=2.3.3",
     "polars>=1.33.1",
-    "requests>=2.32.5",
-    "yfinance>=0.2.66",
+    "scikit-learn>=1.7.2",
+    "torch>=2.8.0",
+    "torchaudio>=2.8.0",
+    "torchvision>=0.23.0",
+    "transformers>=4.56.2",
 ]
