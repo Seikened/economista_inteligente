@@ -14,7 +14,7 @@ def rendimiento_promedio(precios: np.array) -> float:
     return np.mean(r_simple)
 
 # 4. Rendimiento anualizado
-def rendimiento_anualizado(precios: np.array, periodos_por_anio: int = 12) -> float:
+def rendimiento_anualizado(precios: np.array, periodos_por_anio: int) -> float:
     r_simple = rendimientos_simples(precios)
     r_acum = np.prod(1 + r_simple) - 1
     n_periodos = len(r_simple)
