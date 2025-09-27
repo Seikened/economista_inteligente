@@ -2,6 +2,486 @@
     "AAPL": {
         "data": [
             {
+                "headline": "Prediction: This Artificial Intelligence (AI) Semiconductor Stock Will Join Nvidia, Microsoft, Apple, Alphabet, and Amazon in the $2 Trillion Club by 2028. (Hint: Not Broadcom)",
+                "summary": "When you're the industry leader by a large margin, growth is on your side.",
+                "url": "https://finnhub.io/api/news?id=e04aa76ead8f9ee17cd3da5137fa1db6f5a8becfa2a6b1bc9ec7777a4e0a8323",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Apple (AAPL) Stock: UBS Reiterates Neutral, $220 PT on iPhone 17 Availability Data",
+                "summary": "Apple Inc. (NASDAQ:AAPL) is one of the AI Stocks in the Spotlight This Week. On September 24, UBS analyst David Vogt reiterated a Neutral rating and $220.00 price target on the stock. The rating affirmation follows analysis of iPhone 17 availability data across 30 global markets. Based on UBS Evidence Lab data, wait times appears elevated [\u2026]",
+                "url": "https://finnhub.io/api/news?id=e6be95d731b3492f0196df65f7136bdd017ede9160bf83c0f8266bee3f4566fc",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Apple's 2025 gains, metals, bitcoin pricing: Market Takeaways",
+                "summary": "While US stocks (^DJI, ^IXIC, ^GSPC) closed Friday's session higher, all three of the major market indexes closed the trading week lower as the AI-fueled rally showed signs of cooling. Yahoo Finance markets and data editor Jared Blikre breaks down the biggest market themes from today\u2019s trading day, including Apple's (AAPL) turn into positive territory for 2025, the gains seen in precious metal commodities, and bitcoin's (BTC-USD) price dynamics during President Trump's second term so far. To watch more expert insights and analysis on the latest market action, check out more\u00a0Asking for a Trend.",
+                "url": "https://finnhub.io/api/news?id=d8f233cbb0c2ecfef76bfe082de6e130f9eb5cc029355843c3e2d7940f4372f4",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Kevin O\u2019Leary is furious at Trump \u2018force-feeding\u2019 him Intel \u2014 as the US aims to invest taxpayer money in another company",
+                "summary": "\u201cI don\u2019t like governments picking winners and losers,\u201d Mr. Wonderful says.",
+                "url": "https://finnhub.io/api/news?id=10fbcedfda36b2ba5a718ff1b866563f3f961c5412443e17732058b6dc6a9ea5",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Stocks to Watch Recap: GlobalFoundries, Oracle, Intel, Paccar",
+                "summary": "\u2198\ufe0f Williams-Sonoma (WSM), RH (RH): President Trump announced new tariffs on imported items such as kitchen cabinets and upholstered furniture, to start next week. Shares of furniture and home-goods retailers were mixed, with Williams-Sonoma edging higher and RH falling 4.",
+                "url": "https://finnhub.io/api/news?id=8a483da68b2af50d797cbf7b245bdde807a79227b8f6d1bbf4a9dbe06c9f8c91",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Prediction: This Artificial Intelligence (AI) Stock Will Be Worth More Than $5 Trillion by 2030 (Hint: It's Not Nvidia or Apple)",
+                "summary": "Amazon could pleasantly surprise long-term investors.",
+                "url": "https://finnhub.io/api/news?id=d379b4e26e1d95ca68fcfc7f4f217e7dfccd2095f50b8b581d764617ce514bd0",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Stock Market Today: Indexes Break Losing Streaks. Why The Surge In Electronic Arts Shares?",
+                "summary": "The Dow Jones Industrial Average and other major indexes closed Friday with gains after moving mixed during the session. Investors welcomed the reading from the Federal Reserve's favored inflation gauge, the core PCE price index, on the stock market today.",
+                "url": "https://finnhub.io/api/news?id=a21ef200c01a2f7d9bd850e07d98dc68e364af8c780b6b99d410694158a879a9",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Sector Update: Tech Stocks Mixed Late Afternoon",
+                "summary": "Tech stocks were mixed late Friday afternoon with the Technology Select Sector SPDR Fund (XLK) incre",
+                "url": "https://finnhub.io/api/news?id=b6b3555b14466eebef6bcf6e700a240230d6c0b291a38597548e1a2746ed49f7",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Apple: I Was Wrong In July; That's Why I'm Switching To Buy Today",
+                "summary": "Discover why Apple (AAPL) stock is now a long-term buy. Learn about its growth strategies, premium valuation, and portfolio value in my new analysis.",
+                "url": "https://finnhub.io/api/news?id=7c930b61cae012f889f1a12af1b8ac466fe83a2c64218f19c2350323640fbeef",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Why Is Intel (INTC) Stock Soaring Today",
+                "summary": "Shares of computer processor maker Intel (NASDAQ:INTC) jumped 6% in the afternoon session after the stock continued a multi-day rally amid reports that the U.S. administration was considering new measures to boost domestic chip production, alongside news of the company seeking strategic investments.",
+                "url": "https://finnhub.io/api/news?id=05df7c9c7296812d173b159b5d41daa7e052b1923cc174b13dcd377d37584933",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Apple Builds a ChatGPT-Like App to Help Test the Revamped Siri",
+                "summary": "The company\u2019s AI division is using the app to quickly evaluate new features for Siri, Apple\u2019s voice-powered assistant.  Apple has no current plans to release it to consumers.  The new Siri is now slated to debut as early as March after multiple delays.",
+                "url": "https://finnhub.io/api/news?id=d5b16fe066bbeaa8597ba9389264fd8578974a813ebb42b05583dc3ee047758a",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Carrier Incentives Could Spike Apple iPhone 17 Sales, Says Analyst",
+                "summary": "Richer U.S. carrier trade-in deals and extended 24- to 36-month financing plans are giving Apple Inc. (NASDAQ: AAPL) a boost in this year\u2019s iPhone upgrade cycle. Carriers are offering around $100 more in subsidies for new iPhones this year, which could result in a strong upgrade cycle for the iPhone 17. Bank of America Securities analyst Wamsi Mohan reiterated a Buy rating on Apple, with a price forecast of $270. Also Read: Meta Wins EU Approval For AI Joint Venture With Reliance Mohan says carr",
+                "url": "https://finnhub.io/api/news?id=0787635368fb53cd46932939327441ca165b3df78931df25805b339a00fc437f",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Apple iPhone 17 Sales Off to Strong Start, Evercore Says",
+                "summary": "Analyst survey points to upside for Pro models, higher price target set",
+                "url": "https://finnhub.io/api/news?id=2787ba1f2fd0aba120070b393145a258cf6ff71a7effe11ff663124ea942f8e1",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "ML Engineer Program with Agentic AI Launched - Interview Kickstart Addresses Growing Demand For Machine Learning Engineers in USA",
+                "summary": "Santa Clara, Sept. 26, 2025 (GLOBE NEWSWIRE) -- SANTA CLARA, CA September 26, 2025 - - Interview Kickstart announced the expansion of its Machine Learning Course curriculum to address the growing demand for professionals skilled in AI technologies optimized for custom silicon architectures. The program responds to recent industry developments where major technology companies are investing heavily in proprietary AI chips, creating new skill requirements for machine learning engineers. For more in",
+                "url": "https://finnhub.io/api/news?id=3968e4722c25e5c60aa45076fe9885f27834c4079788e04720219db3e93cec63",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "MP vs. UUUU: Which Rare Earth Stock is the Smarter Buy Now?",
+                "summary": "MP Materials' production gains, Apple and DoD deals, and rising earnings estimates give it an edge over Energy Fuels in the critical minerals race.",
+                "url": "https://finnhub.io/api/news?id=722844655aa7d5e55a3f178176821c8f83dee38b9f21c02e2e099bc521ba75fc",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Nvidia's Strong AI Moat Justifies The Premium",
+                "summary": "Nvidia Corporation\u00e2\u0080\u0099s AI chip leadership, OpenAI & Intel deals, and record financials make NVDA a top buy. Click for my updated look at NVDA stock prospects.",
+                "url": "https://finnhub.io/api/news?id=22322070856ba0fc970d853c4dc3ad88c72720f5253ad2804a3b80059a5e98e0",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Lost in translation with Apple\u2019s new AirPods",
+                "summary": "Apple\u2019s new live translation feature promises to make communication easier. But what could we lose along the way?",
+                "url": "https://finnhub.io/api/news?id=a5fe7061f7a82cdcb6c1b7a5f85476cd6c3373ddc009fbf8cf02fdacb7cc6a51",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "GlobalFoundries Stock Climbs. What\u2019s Behind the Chip Manufacturer\u2019s Momentum.",
+                "summary": "GlobalFoundries could be in line to receive more orders if the Trump administration\u2019s plan to boost U.S. chip manufacturing comes to fruition.",
+                "url": "https://finnhub.io/api/news?id=90f54d73c8fe51bca904d3d3a529caa44373565c8ce9c4d4cfa9b231b931e60a",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Podcast: Trump Weighs Plan to Reduce U.S. Reliance on Foreign Chips",
+                "summary": "The Trump administration is considering a plan to dramatically reduce America's reliance on foreign-made semiconductors and spur domestic manufacturing. The plan could challenge the biggest tech companies, such as Apple and Dell, which import products containing a host of different chips from all over the world.",
+                "url": "https://finnhub.io/api/news?id=1db8c309eaedbe2b16d4f1b807d55285f3ec4123ae4f7dafe50f90c37c6b4497",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Is the Apple Watch SE 3 a good deal?",
+                "summary": "The gap between Apple's standard and budget smart watches has never felt smaller.",
+                "url": "https://finnhub.io/api/news?id=8c7a4e5fbe982a7a9711cc936213918faf36996eb2f5e56ea11eb63ecdf03cb4",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Tigress Financial Raises PT on Apple from $300 to $305, Keeps Buy Rating on the Stock",
+                "summary": "Apple Inc. (NASDAQ:AAPL) is one of the 10 Best AI Stocks to Buy According to Goldman Sachs. On September 17, Tigress Financial raised the price target on Apple Inc. (NASDAQ:AAPL) from $300 to $305, keeping its Buy rating on the stock. Ivan Feinseth from Tigress Financial upgraded the price target following the company\u2019s recent launch [\u2026]",
+                "url": "https://finnhub.io/api/news?id=8ea33a77695748b53dbb8756e1b0f55216d54d01b659fa0d2f1b441c78dbbd81",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Stock Market Today: Dow Pops Nearly 200 Points After Inflation Data; Boeing Spikes (Live Coverage)",
+                "summary": "The Dow Jones index rises Friday after Fed inflation data. Boeing gains, helped by news from the FAA.",
+                "url": "https://finnhub.io/api/news?id=0573be4c18ab5f155ae5436484b0913aee1c501093604799b068828cf8522979",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Tesla Board Prints Billions In Pay As Musk Buys $1B, And I'm Shorting The Signal",
+                "summary": "Tesla's weak sales, eroding margins, and overvaluation signal risk amid tough market conditions. Click here to read why TSLA stock is a Strong Sell.",
+                "url": "https://finnhub.io/api/news?id=0e6c5acaad2fdd86e3b2c775ff1cb2672dbb5fe655ef7043e35e2424ca4912d9",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Wall Street Roundup: Micron, Alibaba, Nvidia, AI Theme Maturing",
+                "summary": "Nvidia's new deal, AI theme maturing and separate from broader market.",
+                "url": "https://finnhub.io/api/news?id=1b9ee037aaf1f133dbb8cf515f55dc1bf9de7c13bbc444fe8edd5e994f4fa336",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Intel Stock Is Soaring. This Chip Giant Could Be the Latest to Invest.",
+                "summary": "Intel shares were up 3.5% in early trading, set to add to a more than 50% gain in the past three months.  The stock already jumped earlier this week, after Bloomberg reported that Intel had approached Apple asking for an investment, citing people familiar with the matter and noting that talks have were at an \u201cearly stage.\u201d  Intel declined to comment on the report and Apple didn\u2019t respond to a request for comment.",
+                "url": "https://finnhub.io/api/news?id=778c9ba9d82b9fa7bd525968b972db64c15b116a53308cf57e3246c54a02dca9",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Will Gatwick's second runway boost the UK economy? How readers voted",
+                "summary": "Plans for a second runway at Gatwick Airport have been given the go-ahead, with ministers claiming the expansion would boost the economy.",
+                "url": "https://finnhub.io/api/news?id=f2e5cae2e5eeb15c9617fc056de8114a593a85cf48a36c811e2ef8c4853cb7ce",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "This Week In Cloud AI - Navigating The AI Investment Shift Toward Sustainable Growth",
+                "summary": "Recent developments in Cloud AI are underscored by a shift in investment trends, highlighting the rapid growth of generative AI and an increased focus on AI infrastructure and data management. The landscape has seen a move beyond traditional venture capital toward areas like national interests, suggesting a broader commitment to sustainable, AI-driven value. This shift is significant as AI becomes the dominant theme in both private and public investment strategies. The surge in AI spending...",
+                "url": "https://finnhub.io/api/news?id=364fd4c27de16fdd67b45bba41f825eaec9cc804dd730be5e1327748640247fa",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "INTC: Intel Stock Jumps as CEO Lip-Bu Tan Secures Billions In Fresh Capital",
+                "summary": "Intel Powers To New Highs With $2B SoftBank Deal And Rising Demand",
+                "url": "https://finnhub.io/api/news?id=40ccdff64ecf8a467ec860514b84f7c5131847d9696705a1a3df7b3ef9c93d39",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Intel Corp. (INTC) Rockets to All-Time High as Firm Lures Apple to Invest",
+                "summary": "We recently published Massive Gains: 10 Stocks Investors Can\u2019t Stop Buying. Intel Corp. (NASDAQ:INTC) is one of the top performers on Thursday. Shares of Intel Corp. soared to a new all-time high on Thursday, as investors cheered the luring of Apple Inc. to invest in the company. During the session, Intel Corp. (NASDAQ:INTC) touched its [\u2026]",
+                "url": "https://finnhub.io/api/news?id=c14cf422f518ecf104384381501df2196ba1e0fe38fd24bcb0ec5ffaabb97296",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Why Apple\u2019s New iPhone Could Be a Smashing Success\u2014and Why Its Stock Could Hit $290",
+                "summary": "Just one week has passed since  Apple  new iPhone lineup became available worldwide, and insights into customer demand already are emerging.  Evercore ISI\u2019s annual survey of nearly 4,000 customers in the U.S. pointed to the start of what the firm called in a note Friday a \u201cbetter-than-expected iPhone refresh cycle.\u201d  The firm reiterated an Outperform rating on Apple stock while hiking its price target to $290 from $260.",
+                "url": "https://finnhub.io/api/news?id=75dba28239046812beb16fb4dc112d966442b85fc0e55b908fcf4e7af64ac0b3",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Instagram and Facebook to offer ad-free subscription option for UK users",
+                "summary": "Investing.com -- Meta Platforms will soon give UK users the option to subscribe to Facebook and Instagram to avoid seeing ads, as part of a response to UK regulatory guidance, the company announced on Friday.",
+                "url": "https://finnhub.io/api/news?id=650970faae85295de8bc22f6e32185398b78762082f20bdac8a9b23c8d7be744",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "I inherited $600,000 in Apple shares from my mother. Am I crazy if I don\u2019t sell them now?",
+                "summary": "\u201cApple now makes up about 50% of my portfolio.\u201d",
+                "url": "https://finnhub.io/api/news?id=c6539c3d9b84ecaa075ef74b129487688df3fd35f315492bf79bd2fe3705bdbd",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Meta to launch ad-free subscription to Facebook and Instagram in UK",
+                "summary": "It comes after Meta agreed to stop targeting a UK campaigner with adverts based on her personal data in a landmark privacy case earlier this year.",
+                "url": "https://finnhub.io/api/news?id=e3400ea9bb55f8a3b18fa4d671caef8fe8fd87859f1e50a1249cd265b025c26a",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Intel's comeback is fueled by the promise of more deals",
+                "summary": "Investors are flocking toward a succession of monumental deals and the potential for more to come.",
+                "url": "https://finnhub.io/api/news?id=e78825ab80fb536f22c046d0c438270db23b203b1454d274dd53d7e95738648f",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Xiaomi makes 'bold attempt' to challenge Apple's iPhone 17 in China",
+                "summary": "Xiaomi is resolute in maintaining its lead over Apple in the world's largest smartphone market, as the Chinese gadget maker goes head to head with the US technology giant with its freshly unveiled flagship handset series, the Xiaomi 17. Speaking after Thursday night's product launch in Beijing, founder and CEO Lei Jun said \"it's time for everyone to get reacquainted with Xiaomi phones\", adding that the Xiaomi 17 series \"has surpassed the iPhone 17 series in many areas\", according to a report fro",
+                "url": "https://finnhub.io/api/news?id=9edb1b1f6820988e93880d0ae24da52be37e0e3e68956fc452c7966ec05ab205",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Why Meta Thinks It Can Challenge Apple in Consumer AI Devices",
+                "summary": "Meta is betting that the future of artificial intelligence takes users way beyond smartphones and personal computers.",
+                "url": "https://finnhub.io/api/news?id=013462ba5fe522eb5e2cc6d6b176a5b8f008b3bf878d78a35d67f12064e54c32",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Meet the Newest Artificial Intelligence (AI) Stock to Join Nvidia, Microsoft, and Apple in the $3 Trillion Club",
+                "summary": "It might not take very much longer for it to reach $4 trillion.",
+                "url": "https://finnhub.io/api/news?id=b492f4cd41d3714500f89e5d8e61c254f8983d9a9b0451e3cc7391d59c881ccc",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Why Would Anyone Bet Against Intel's Red-Hot Stock Right Now?",
+                "summary": "Not that long ago, it was hard to find people who were excited about Intel\u2019s stock. But these days, even skeptics are finding it difficult to look away, with President Donald Trump's recent endorsement, a high-profile investment from Nvidia, and rumors swirling about still more deals.",
+                "url": "https://finnhub.io/api/news?id=5d1cb6a4705b62f46896c6f18c4eead0e4566a5bd34df6aafb0ec03e0bed0feb",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Stocks to Watch Friday: Intel, RH, Wayfair, Costco",
+                "summary": "\u2198\ufe0f Williams-Sonoma (WSM), Wayfair (W), RH (RH): Shares of furniture and home-goods retailers fell in off-hours trading after President Trump announced tariffs on imported items such as kitchen cabinets and upholstered furniture.",
+                "url": "https://finnhub.io/api/news?id=f19a7acb26b965743a7d5292433503bf7cbb9b0233b9680636d170ed4568137a",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "FTSE 100 LIVE: Stocks rise as Starmer set to announce plans for UK digital ID scheme",
+                "summary": "The UK-wide initiative would enable digital checks on people's right to live and work in the country",
+                "url": "https://finnhub.io/api/news?id=047cbef859e2ab3f8d05372493bb70f9e538d9c72cd352b9901c82a45e380168",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Will AI save the metaverse?",
+                "summary": "Firms investing billions are still struggling to make the digital universe profitable. So is the metaverse dead, or could AI breathe new life into it?",
+                "url": "https://finnhub.io/api/news?id=bebc97bd0f271a952a68ac91154a6f35628b2414362745e7a22d5f2b0fd9b899",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Could MP Materials Go Parabolic by 2028?",
+                "summary": "MP Materials has skyrocketed over 350% on the year -- does it still have gas in the tank?",
+                "url": "https://finnhub.io/api/news?id=bb01ebb6be95b300ce0ab7591c5222fd15e3ce1f22afdde8ee5318b8e4ce7bc9",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Taiwan seeks bigger tech presence in India as US demand rises, trade body chief says",
+                "summary": "NEW DELHI (Reuters) -Taiwan is seeking to double its exports of chips and electronics to India over the next five to seven years as smartphone shipments from the country ramp up thanks to demand from the U.S., the head of the island's main trade body said.  India's smartphone exports to the U.S., which are currently exempt from elevated tariffs, jumped nearly 40% from a year earlier to $8.43 billion in the first five months of the fiscal year that started in April, according to industry estimates, driven largely by demand for Apple's iPhones.  \"Electronic industries are driving the growth of trade between our two countries,\" said James C. F. Huang, chairman of the Taiwan External Trade Development Council, in an interview on the sidelines of the Taiwan Expo trade fair on Thursday.",
+                "url": "https://finnhub.io/api/news?id=6d01bf8164b996cd55a1af38e9690377fb20f5311359e225ee9eda888ca68e3b",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "Nvidia\u2019s AI Deals Might Be \u2018Circular.\u2019 They\u2019re Also Smart Business.",
+                "summary": "Artificial-intelligence leader  Nvidia  generated $112 billion in free cash flow in the past six quarters\u2014and more is coming, at an increasing rate.  For  Nvidia  the decision is to backstop the AI investment boom, where it remains the primary winner.  Nvidia, to be sure, has also done buybacks and reinvestments.",
+                "url": "https://finnhub.io/api/news?id=cbb07794e61be7006112e25dc178018fb44e5a49c8feff1fd986e46a0a266016",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 255.46,
+                "performance": -0.0055,
+                "label": "negative"
+            },
+            {
+                "headline": "What the budget could mean for stamp duty and council tax",
+                "summary": "Ahead of Rachel Reeves' November budget, property experts share their predictions on what might happen to stamp duty and council tax.",
+                "url": "https://finnhub.io/api/news?id=93319da7425283b2b6f27fedfaeacd5bf2fae32625b4c0c1e1b700adaa5c7e59",
+                "source": "Yahoo",
+                "date": "2025-09-25",
+                "close": 256.87,
+                "performance": 0.0181,
+                "label": "positive"
+            },
+            {
+                "headline": "Apple (AAPL) Sees High Demand for Affordable iPhone 17",
+                "summary": "Apple Inc. (NASDAQ:AAPL) is one of the 15 Best American Tech Stocks to Buy Right Now. On September 19, Reuters reported that Apple Inc. (NASDAQ:AAPL) has asked at least two suppliers to increase production of the iPhone 17, its entry-level model, by at least 30% following strong pre-orders. This update indicates that more customers are [\u2026]",
+                "url": "https://finnhub.io/api/news?id=ff93d964d97749e055c12745ff0f23ee63b1e29c7793e16f2b1f841d4fcae751",
+                "source": "Yahoo",
+                "date": "2025-09-25",
+                "close": 256.87,
+                "performance": 0.0181,
+                "label": "positive"
+            },
+            {
+                "headline": "Xiaomi Debuts a $630 Answer to iPhone 17",
+                "summary": "Xiaomi Corp.'s billionaire co-founder unveiled a $630 smartphone designed to take on the just-released iPhone 17, underscoring the Chinese company's broader ambitions to take on US rivals from\u00a0Apple Inc.\u00a0to\u00a0Tesla Inc.",
+                "url": "https://finnhub.io/api/news?id=f07f970e11be0f03b5c1e1239f3adf71646a4ee2725eb6f9b5354db135d842ce",
+                "source": "Yahoo",
+                "date": "2025-09-25",
+                "close": 256.87,
+                "performance": 0.0181,
+                "label": "positive"
+            },
+            {
+                "headline": "Apple (AAPL) Stock Target Lifted to $280 as Analysts See Upside in iPhone 17 Cycle",
+                "summary": "Apple Inc. (NASDAQ:AAPL) is one of the Buzzing AI Stocks on Wall Street. On September 19, JPMorgan reiterated the stock as \u201cOverweight\u201d and raised its price target on the stock to $280 per share from $255. The firm cited favorable early demand for the iPhone 17 series. \u201ciPhone 17 series has been available to consumers for [\u2026]",
+                "url": "https://finnhub.io/api/news?id=c9494a7e287cbe0bc13f65fa985424a23b05a0f09bb6ed52e0688820469e8816",
+                "source": "Yahoo",
+                "date": "2025-09-25",
+                "close": 256.87,
+                "performance": 0.0181,
+                "label": "positive"
+            },
+            {
                 "headline": "Is Best Buy Co (BBY) a Safe Bet for Income Investors in Retail Dividend Stocks?",
                 "summary": "Best Buy Co., Inc. (NYSE:BBY) is included among the 12 Best Retail Dividend Stocks to Buy Now. Best Buy Co., Inc. (NYSE:BBY) is an American multinational retailer specializing in consumer electronics, offering a broad range of products and related services. Along with its physical stores, the company has built a strong online presence, with both [\u2026]",
                 "url": "https://finnhub.io/api/news?id=6cb9ab9aab786a3b3568ddbda2b1c03b1af2a5dd8ae9a20fb2004abdbd64ebc6",
@@ -1842,16 +2322,6 @@
                 "label": "positive"
             },
             {
-                "headline": "Sector Update: Tech Stocks Mixed Late Afternoon",
-                "summary": "Tech stocks were mixed late Friday afternoon with the Technology Select Sector SPDR Fund (XLK) risin",
-                "url": "https://finnhub.io/api/news?id=36a5437002e572ddb0380453910dc81df98950488d42d046b1cbc8ea4e013bcc",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
                 "headline": "Why Apple Stock Is Gaining Today",
                 "summary": "Did Apple investors just get great iPhone news?",
                 "url": "https://finnhub.io/api/news?id=fde403dc6cea4f980f2c3dca1342109affbc29e3c1d4cf9d7cbed0e9fa138dfb",
@@ -2000,471 +2470,381 @@
                 "close": 245.5,
                 "performance": 0.032,
                 "label": "positive"
-            },
-            {
-                "headline": "Apple Stock Rises As iPhone 17 Officially Goes On Sale",
-                "summary": "Apple Stock Rises As iPhone 17 Officially Goes On Sale",
-                "url": "https://finnhub.io/api/news?id=6da81c947753fec6966d92e954ba4e2476e948f9e6045e9c8de07e81c6a6379e",
-                "source": "DowJones",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Apple\u2019s iPhone 17 Sales Open to Strong Demand for Pro Models",
-                "summary": "The time has come for those consumers, with the iPhone 17 Pro, Pro Max and iPhone Air going on sale Friday.  It\u2019s the first time since 2020 that Apple has rolled out several new phone designs.  Alongside the new handsets, it also released into stores the Apple Watch SE, Watch Series 11, Watch Ultra 3 and AirPods Pro 3.",
-                "url": "https://finnhub.io/api/news?id=271e4eabc470f11d710efbd2c0f630d505d35f561d1ef7027dabf974ddf838a6",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Meta Connect 2025: What to expect and how to watch",
-                "summary": "Meta is expected to unveil new versions of its AI-powered smart glasses, as well as a gesture-indicating wristband.",
-                "url": "https://finnhub.io/api/news?id=471e9935625e9b7782aa5fbaf0a94eb20e3abd727f8156d3b588f5a0b71bd329",
-                "source": "Yahoo",
-                "date": "2025-09-16",
-                "close": 238.15,
-                "performance": 0.0061,
-                "label": "positive"
-            },
-            {
-                "headline": "Apple's new iPhone 17 is available. Will users upgrade devices?",
-                "summary": "Apple's (AAPL) new iPhone 17 and Apple Watch are available to consumers on Friday. Mariner Wealth Advisors chief investment strategist and head of equities Jeff Krumpelman and Yahoo Finance Senior Reporter Ines Ferr\u00e9 join Opening Bid with Allie Canal to discuss the launch. To watch more expert insights and analysis on the latest market action, check out more Opening Bid.",
-                "url": "https://finnhub.io/api/news?id=c79e05a0bb07a47fa679e72183efcd3394d3a32bdb19857c21817bb0eb174706",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Should inheritance tax rules be tightened? How readers voted",
-                "summary": "Speculation is brewing as to what changes Rachel Reeves could announce in the autumn budget, as she faces growing pressure over the state of public finances.",
-                "url": "https://finnhub.io/api/news?id=49a7d2d5c3931c68943dda8ce7545640d31b1b41513ac54149736cbaa675cc1a",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "How developers are using Apple\u2019s local AI models with iOS 26",
-                "summary": "A list of apps that are using Apple's local models to introduce new features.",
-                "url": "https://finnhub.io/api/news?id=6f5f886c5afac20b3adf212b7504187f365df8ea0a37bd98fa546c6c43f79256",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "This Analyst Was Right About Apple (AAPL)",
-                "summary": "We recently published Top 10 Stocks to Watch After Federal Reserve\u2019s Rate Cut. Apple Inc (NASDAQ:AAPL) is one of the stocks analysts were recently talking about. Jeff Kilburg from KKM Financial said in a program on CNBC late July that he was selling Nvidia shares and buying Apple Inc (NASDAQ:AAPL). The analyst at the time [\u2026]",
-                "url": "https://finnhub.io/api/news?id=af49545437193bf1ca109b4897d7c70178e3e55dc17efecce028adf1a1a9ee19",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Stock Market Today: Dow Ticks Up During Trump-Xi Call; Tesla Upgraded (Live Coverage)",
-                "summary": "The Dow Jones index dropped Friday during the Trump-Xi phone call. Tesla stock rallied on an analyst upgrade.",
-                "url": "https://finnhub.io/api/news?id=1fd46114b3d5d4a9e84845b1eaaaaf383b07ee143c3375597769eff93ca70558",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Apple iPhone 17 Shoppers Notice Scratches on Latest Models",
-                "summary": "The deep blue variants of the iPhone 17 Pro and Pro Max exhibited scuffs after just a few hours of being on display, Bloomberg News found from visits to Apple stores in Hong Kong, Shanghai and London.  The black iPhone Air also showed itself to be prone to scratching, the reporters observed.  With this generation, the handsets return to an aluminum shell and feature what Apple has touted as a more scratch-resistant finish on the back.",
-                "url": "https://finnhub.io/api/news?id=a99d7e6e13eb8951b82e9b96e1bf08281a315252e8f2c974e93443d92a079ca9",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Market Chatter: Apple Uses AI in Apple Watch Series 11 for Hypertension Detection",
-                "summary": "Apple (AAPL) has used artificial intelligence in its Apple Watch Series 11 models to detect high blo",
-                "url": "https://finnhub.io/api/news?id=474dc335bfd0d06cdb6ae214113629ce4d6c9deba4d2b5188cfea870b7e2aaba",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "OpenAI taps Apple supplier to make AI device, the Information reports",
-                "summary": "The device is currently a prototype under development and is expected to be pocket-sized and aware of context, designed to work closely with the ChatGPT parent's artificial intelligence models.  Such a gadget could eat into the markets of Apple and other consumer electronics makers by offering an alternative to users for interacting with AI, challenging the dominance of smartphones and traditional hardware.  OpenAI bought hardware startup io Products, founded by former Apple designer Jony Ive, earlier this year in a $6.5 billion deal, underscoring its push to move beyond software into consumer hardware.",
-                "url": "https://finnhub.io/api/news?id=980a7e66a50cc510e198560a526d59d442370eb6555dfac15b15a3e6bd417312",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Prediction: This AI Growth Stock Will Become Europe's First $1 Trillion Company by 2035",
-                "summary": "Even near a 52-week high, ASML has plenty of room to run for patient investors.",
-                "url": "https://finnhub.io/api/news?id=2b7bde98783357de6cea9864dd5240c863df836525404dbfedb822bdd9b0168d",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Apple Stock Rises as iPhone 17 Goes on Sale. Investors, Though, Await Something Else.",
-                "summary": "Some new features have arrived with the release of Apple\u2019s latest operating system, but one piece is missing.",
-                "url": "https://finnhub.io/api/news?id=7b96aafd0e2455316c3175c31e622ec090424b10a95c16ce06f123e4332d9ff0",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Analyst Explains Why He\u2019s Selling Nvidia (NVDA) \u2013 \u2018I Know It Sounds Crazy\u2019",
-                "summary": "We recently published Top 10 Stocks to Watch After Federal Reserve\u2019s Rate Cut. Nvidia Corp (NASDAQ:NVDA) is one of the stocks analysts were recently talking about. Jeff Kilburg from KKM Financial said in a program on CNBC late July that he was planning to sell Nvidia Corp (NASDAQ:NVDA) shares despite the idea sounding \u201ccrazy.\u201d Here [\u2026]",
-                "url": "https://finnhub.io/api/news?id=079a1f53b22a2e099130c612429d05cdf41552a99b7f100e2c62c08c2c05b086",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Stocks to Watch Friday: Lennar, FedEx, Apple",
-                "summary": "\u2198\ufe0f Lennar (LEN): The homebuilder's profit fell for a fourth consecutive quarter and its sales missed expectations. Shares slipped 3% ahead of the open. \u2197\ufe0f FedEx (FDX): The parcel-delivery company said it expects a $1 billion tariff-related hit to annual earnings.",
-                "url": "https://finnhub.io/api/news?id=0c1f1af5e71520fb0b137ec2b855df62ba103a84c4873599e81bc404ffd7fbf4",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "The Zacks Analyst Blog Highlights Netflix, Amazon, Disney and Apple",
-                "summary": "Netflix shares surged 28% in 6 months, but rising costs, tougher competition from Amazon, Disney and Apple, and valuation risks cloud the outlook.",
-                "url": "https://finnhub.io/api/news?id=7b84712aef705fa61b0720dc06d16f329ed902570cb803ce406ebaa6298e8824",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "These Stocks Are Moving the Most Today: Intel, Nvidia, FedEx, Tesla, Apple, Lennar, Netskope, and More",
-                "summary": "Intel trades lower after posting its best day since 1987 following Nvidia\u2019s purchase of $5 billion of the chip maker\u2019s stock.",
-                "url": "https://finnhub.io/api/news?id=a9199a5a54618a09209a7a97ff127270cc000154429c1031957cbc0e8ae6501d",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Nvidia Solves 4 of Intel\u2019s 5 Big Problems. The Final One Is a Doozy.",
-                "summary": "Nvidia\u2019s $5 billion deal solves four problems for Intel, but it doesn\u2019t address the company\u2019s biggest issue: manufacturing technology.",
-                "url": "https://finnhub.io/api/news?id=ef856e350aca0273e579bba5170ce6cda90690655761a554a89b3520e4573656",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Cloud AI Today - Revolutionizing Security With NexaiQ AI Platform",
-                "summary": "Soterix Systems has introduced NexaiQ\u2122, an AI-driven cloud-computing platform designed to transform security intelligence and operational efficiency across industries. The cloud-native, device-agnostic solution integrates seamlessly with existing infrastructures, delivering enhanced real-time insights from video surveillance and business intelligence. By offering a scalable, self-learning AI platform at a reduced cost, NexaiQ empowers organizations to adopt advanced security measures and...",
-                "url": "https://finnhub.io/api/news?id=51da12d58bb24fe3d77b839d6a5b0786541d4b4c6841047587c4e825e127de37",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Apple launches iPhone 17 worldwide as investors eye China and AI",
-                "summary": "New iPhone 17 Pro, Pro Max and Air debut as Apple faces pressure on growth and innovation",
-                "url": "https://finnhub.io/api/news?id=bc4007e2338849d63a3bf4446868b37cabfc32dd2747cde432aca68c8089e12e",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Apple fans queue up as the iPhone 17 goes on sale",
-                "summary": "Customers took their place in the queue on Regent Street in London as early as 5am.",
-                "url": "https://finnhub.io/api/news?id=eab06473670f315f68b246a9dad5d789c3224676c5c82482a0a9ba2b42a72f01",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Here\u2019s How Apple (AAPL) Contributed to Macquarie Core Equity Fund\u2019s Performance",
-                "summary": "Macquarie Asset Management, an investment management company, released its \u201cMacquarie Core Equity Fund\u201d investor letter for the second quarter of 2025. A copy of the letter can be downloaded here. The US large-cap equity market surged in Q2 2025, with the S&P 500\u00ae Index rising 10.94%. The equity market\u2019s strength was due to reduced concerns over [\u2026]",
-                "url": "https://finnhub.io/api/news?id=2737915f49992a814afd5c242b047978f7ba511472e5d5bb717ac4aa5e29d493",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Wall Street Roundup: We Need To Talk About Intel",
-                "summary": "We need to talk about Intel (and Nvidia). FedEx earnings, macro worries.",
-                "url": "https://finnhub.io/api/news?id=ece8ef783bbdb0c330480172c5d82d85cf9fedc11343729ab5d16205ff26390a",
-                "source": "SeekingAlpha",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Apple's iPhone 17 Goes on Sale Globally With Reported Strong Demand for Pro Models",
-                "summary": "Apple's iPhone 17 lineup went on sale Friday, with early sales of the devices across Europe and Asia reportedly drawing long lines amid strong demand\u2014especially for the Pro models.",
-                "url": "https://finnhub.io/api/news?id=8304715e516a850a798c579c078d163507c862c70ba6cf6c6fb00fa757f0b22e",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "Apple: Ignore The Noise, iPhone 17 Could Be The Catalyst Bulls Waited For",
-                "summary": "",
-                "url": "https://finnhub.io/api/news?id=957a85857777dc3c2f70a203bf982fb9975b8b19ecbcbead83eb59c16d806cad",
-                "source": "SeekingAlpha",
-                "date": "2025-09-19",
-                "close": 245.5,
-                "performance": 0.032,
-                "label": "positive"
-            },
-            {
-                "headline": "EQL: Broad Market ETF With Low Tech Exposure And A Tilt To Value",
-                "summary": "EQL offers equal-weight exposure across all 11 GICS sectors, reducing tech risk but lagging SPY and active peers. Learn why EQL ETF is a hold.",
-                "url": "https://finnhub.io/api/news?id=dd45f38bbfb6b0d4045a84be3986d8278206b5afca9b5abf4432a619fa4dd3e8",
-                "source": "SeekingAlpha",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Mark Zuckerberg has begun his quest to kill the smartphone",
-                "summary": "\"The promise of glasses is to preserve this sense of presence that you have with other people,\" Mark Zuckerberg said.",
-                "url": "https://finnhub.io/api/news?id=525dfbb22700c726c5b4ee1d98d603911841c4110b096b9a4682921033fada32",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "\u2018Unimpressed\u2019: D.A. Davidson Downgrades Apple Inc. (AAPL) To Neutral, Maintains Price Target of $250",
-                "summary": "Apple Inc. (NASDAQ:AAPL) is among the 15 Stocks ChatGPT Predicts Could Make You Wealthy in 5 Years. On September 11, investment firm D.A. Davidson downgraded the stock to Neutral from Buy, saying it was \u2018unimpressed\u2019 by its latest products. However, analyst Gil Luria maintained his earlier price target of $250, which represents a 7% upside [\u2026]",
-                "url": "https://finnhub.io/api/news?id=c790dc599758ea103c3b85348a395f958c369267354b903a3ee3666ab3c64498",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Alphabet Inc. (GOOGL) Crosses $3 Trillion In Market Cap For First Time",
-                "summary": "Alphabet Inc. (NASDAQ:GOOGL) is among the 15 Stocks ChatGPT Predicts Could Make You Wealthy in 5 Years. On September 12, the firm hit a market capitalization of $3 trillion for the first time, after a favorable antitrust ruling and renewed optimism around AI. The company\u2019s class A shares rose 4.49% on Monday to close at [\u2026]",
-                "url": "https://finnhub.io/api/news?id=a6332af0f81816ad4d539823f2fa29a04cbbad44cdb74c089ba46fb24b26e1e0",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Big Tech\u2019s Double Standard: Parler Demands Answers and Accountability",
-                "summary": "PLANO, Texas, Sept. 18, 2025 (GLOBE NEWSWIRE) -- Parler is demanding answers from Apple, Google, and Amazon: Why was Parler erased from the digital marketplace in 2021 while today\u2019s major platforms openly host violent calls against conservatives without consequence? In January 2021, Parler was wiped out overnight accused of \u201cinciting violence\u201d and tied to January 6th. The punishment was catastrophic: more than 20 million voices silenced, with Amazon Web Services pointing to a mere 98 flagged pos",
-                "url": "https://finnhub.io/api/news?id=6d864f8dd1e1589ac0c11a3de955714565b31c78d52d91338f018c317e8ad15c",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Foldable iPhone in the Works: Apple Prepares for 2026 Debut",
-                "summary": "Production trials underway with Foxconn in Taiwan",
-                "url": "https://finnhub.io/api/news?id=11aa32ef8dc3807eec163e618d4948e02d85677c126fe9570f5f8477d535cc65",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Microsoft boosts Wisconsin data center spending to $7 billion",
-                "summary": "SAN FRANCISCO (Reuters) -Microsoft on Thursday said it plans to build a second massive artificial intelligence data center in Wisconsin, bringing its spending in the state to more than $7 billion.  The new project will join a $3.3 billion data center in Mount Pleasant in the southeastern corner of the state, announced last year.  Microsoft said Thursday that the initial data center remains on track to open next year and will employ about 500 people at its peak, expanding to about 800 once the second data center is complete.",
-                "url": "https://finnhub.io/api/news?id=dba31343f1f74061c0e4838340de266485c284f34fdf23532d63480c4c19608c",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Meta showcases new AI smart glasses. What this means for Apple.",
-                "summary": "Meta Platforms (META) unveiled its new AI smart glasses in a partnership with Ray-Ban. The AI-powered pair of smart shades will go on sale starting September 30. B. Riley Wealth Management chief market strategist Arthur Hogan comments on Meta's latest product and the competition this could present to Apple's (AAPL) own wearable devices. To watch more expert insights and analysis on the latest market action, check out more\u00a0Opening Bid.",
-                "url": "https://finnhub.io/api/news?id=ff8bd69d4a55d9552d9873412a5c89e475c97751153a3271c4a8c871b9719075",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Start.io Releases New State-by-State Data on iPhone Ownership Ahead of iPhone 17 Launch",
-                "summary": "Analysis reveals premium adoption accelerating while older models remain entrenched across the U.S. NEW YORK CITY, NY / ACCESS Newswire / September 18, 2025 / With Apple's release of the iPhone 17, Start.io unveiled new research providing a detailed ...",
-                "url": "https://finnhub.io/api/news?id=4b1cd27c4e492abc42944ab3889fdbc5ecd02e7c04cdd50bfe32c700fd9d21ac",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "We\u2019ve Got You, Fans! Chicago Fire FC Gifts One-Month of MLS Season Pass To All Chicagoans For Long-Awaited Playoff Push",
-                "summary": "While the \u201cMen in Red\u201d fight for a playoff berth, all fans new and old have access to a limited-time one-month free trial of MLS Season Pass on Apple TV Chicago Fire FC Gifts One-Month of MLS Season Pass Get your 1-month free trial of MLS Season Pass on Apple TV on us! CHICAGO, Sept. 18, 2025 (GLOBE NEWSWIRE) -- As Chicago Fire FC fights for its first MLS Playoff berth since 2017, the Club is inviting all Chicagoans to join the ride for the rest of the season. Apple and the Fire are offering a o",
-                "url": "https://finnhub.io/api/news?id=1de3387b15d029f3dd671359f6d25f4b943f2d65a7e5f8cb1b5a8befb158988c",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "What many people get wrong about DeFi, according to the co-CEO of Kraken",
-                "summary": "Arjun Sethi also explained the company\u2019s new xStocks offerings, which let users trade shares with more freedom than traditional brokerages.",
-                "url": "https://finnhub.io/api/news?id=ee6c71922c6ee38b750192e8acdb75e46350d7b7bb68763e2e3d91d64d32902f",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Meta's Pipeline Sets The Stage For Its Next Bull Run",
-                "summary": "See why Meta Platforms, Inc. is a Strong Buy, with soaring AI ad growth, user gains, and innovative products driving future stock potential. Click for my update.",
-                "url": "https://finnhub.io/api/news?id=23fdc3fe849ac4c41f9eb8472776dfa961223a1d6d26a0ca511e08baa3c10cc4",
-                "source": "SeekingAlpha",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Is Meta Ray-Ban Display a threat to Apple\u2019s ecosystem?",
-                "summary": "Investing.com -- Meta has unveiled its latest step into smart glasses with the launch of the $799 Meta Ray-Ban Display, featuring an in-lens display and an EMG wristband for gesture control.",
-                "url": "https://finnhub.io/api/news?id=27c8ef184ce5d797b58b3035e4c1e8db0a356c13f3fc1ecf56d1e10f3e16655e",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Is Warner Bros Discovery Stock a Buy Amid Reports of a Potential Paramount Bid?",
-                "summary": "With shares already surging on talk of a Paramount tie-up, should investors still chase WBD stock? Or has the run already played out?",
-                "url": "https://finnhub.io/api/news?id=ab63d51436624f02f97b0dbb8b58e5c7a7454171b3c0bdace4b171e2917676c7",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Ice Mobility Guarantees Day-One Accessory Availability for Fall 2025 Flagship Smartphone Launches",
-                "summary": "Ice Mobility, a leading wireless distribution and third-party logistics provider, announced full readiness to supply accessories for the highly anticipated Fall 2025 phone releases from Apple, Google Pixel, and Samsung. The company has an inventory of premier brands such as Case-Mate, ITSKINS, Nimbus9, PETL, Simple, TUFF8, and ZAGG, and 30 additional partners to ensure immediate product availability when consumer demand peaks.",
-                "url": "https://finnhub.io/api/news?id=2823bf435f161b5e886ba45874ef729e2ce6c183a62004568fd9b512df9b4d96",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Contrarian Take: We Didn't Hate The Apple Event (Long-Term Buy)",
-                "summary": "Apple stock dipped post-event, but AI integration and new devices signal growth. Click here to know why AAPL stock remains a long-term buy.",
-                "url": "https://finnhub.io/api/news?id=bb025a4b8bd82e6d7b2f74287b51d286c10bf413435391cab17b60f60231ad27",
-                "source": "SeekingAlpha",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Here's How Much You'd Have If You Invested $1000 in Apple a Decade Ago",
-                "summary": "Why investing for the long run, especially if you buy certain popular stocks, could reap huge rewards.",
-                "url": "https://finnhub.io/api/news?id=3972226f50f0f1468aba4c5f75ad546b06a76e4c801c14094c3f9258731de1e4",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Ready on Day One: DIVEVOLK Announces Adapter Modules for iPhone 17",
-                "summary": "ZHUHAI, China, Sept. 18, 2025 (GLOBE NEWSWIRE) -- DIVEVOLK, the industry leader in underwater full touchscreen technology, today announced immediate compatibility and the release of new, precision-engineered adapter modules for Apple\u2019s just-launched iPhone 17 series. The adapters ensure that owners of the SeaTouch 4 Max Plus and SeaTouch 4 Max Platinum underwater housings can utilize the full potential of the new iPhone 17, iPhone 17 Air, iPhone 17 Pro, and iPhone 17 Pro Max from day one. On Sep",
-                "url": "https://finnhub.io/api/news?id=0c82c953d71668ac5b5add1c5da77de316571d36d545f8a9984781671e488c58",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Top Funds Connect With This Tesla, Google, And Amazon Supplier \u2014 Big Time",
-                "summary": "Helping build AI infrastructure for Alphabet, Tesla and more, TE Connectivity stock sees huge demand from top funds as it teases a breakout.",
-                "url": "https://finnhub.io/api/news?id=1dd865bfaf9fd6ef4b345a5bd43ad06d391bfa4ed04e58fb9589c4caa7957683",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Can Broadcom\u2019s Valuation Withstand Apple\u2019s Move to In-House Wireless Chips?",
-                "summary": "If you have been eyeing Broadcom lately, you are not alone. The stock has delivered eye-catching results over the last few years, and if you are wondering what to do next, the decision has never been more intriguing. After a jaw-dropping five-year run that put Broadcom shares up almost 1,000%, plus a 49.2% gain year-to-date, it is no surprise that this company keeps popping up in conversations about tech growth leaders. But hold on, Broadcom\u2019s recent swings have added some uncertainty to the...",
-                "url": "https://finnhub.io/api/news?id=5f96c4a11d63d13efb0f27610cc99aeed2c4238338293c79c51c7202ef3a1b10",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
-            },
-            {
-                "headline": "Magnificent Seven Tech Stocks Rally After Fed Rate Cut",
-                "summary": "Each of the \"Magnificent Seven\" megacap tech stocks was rising on Thursday, buoyed by the Federal Reserve's decision to cut interest rates for the first time this year. The Roundhill Magnificent Seven exchange-traded fund, which trades under the ticker MAGS, climbed 1.",
-                "url": "https://finnhub.io/api/news?id=bffd03aa9c090b6189e740c03730a09dd60b74278f36076bb1377f7aeb19c406",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 237.88,
-                "performance": -0.0046,
-                "label": "negative"
             }
         ]
     },
     "TSLA": {
         "data": [
+            {
+                "headline": "Stock Market Week Ahead: Tesla, Payrolls Data And A Peek At Q3 Earnings",
+                "summary": "The stock market heads for a positive September close, with Nike deliveries and monthly jobs data due.",
+                "url": "https://finnhub.io/api/news?id=a4808c1594e79cdb1ef413afbd2c669ce5f01379e1c28eb15c95e05b76f6c845",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "EV sales surge ahead of Sept. 30 tax credit expiration",
+                "summary": "Electric vehicle (EV) sales rose in August compared to the month prior, just ahead of the expiration of the EV tax credit on Sept. 30. CarGurus director of economic and market intelligence Kevin Roberts discusses the sales increase and the state of the EV industry. To watch more expert insights and analysis on the latest market action, check out more Asking for a Trend.",
+                "url": "https://finnhub.io/api/news?id=7b74d8fa99d930d88182ff0a85492b5c11c335d3991354cf293ba88f661a7693",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Dow Jones Futures: Market Rallies Off Key Support, 5 Stocks Eye Buy Points; Tesla Deliveries Due",
+                "summary": "The major indexes bounced late in the week. Palantir, DoorDash are near buy points. Tesla deliveries and jobs data loom.",
+                "url": "https://finnhub.io/api/news?id=d09161d54ba1ab2cfbfcb47cf11b05abbfae1bd5809ce9ca8bc2110a9bf531ed",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Wall Street Snaps 3-Day Drop as Traders Parse Fed Officials' Remarks, Spending Data",
+                "summary": "US equities rebounded Friday after a three-day drop as traders weighed remarks by two Federal Reserv",
+                "url": "https://finnhub.io/api/news?id=38ce4a083129dc1fbcf52fa521ddb04d204219962c9de180e003c9b363321422",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Tesla Stock Has a New Price Target\u2014and It\u2019s the Highest on Wall Street",
+                "summary": "Friday, Wedbush analyst Dan Ives hiked his Tesla price target to a Street-high $600 from $500 a share, keeping his Buy rating on the stock.  The average Buy-rating ratio for stocks in the S&P 500 is about 55%.",
+                "url": "https://finnhub.io/api/news?id=cecdb36de793adfe71ad9122e84be16267517f7de1494e2067722b8f00b09352",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Sector Update: Consumer Stocks Rise Late Afternoon",
+                "summary": "Consumer stocks advanced late Friday afternoon, with the Consumer Discretionary Select Sector SPDR F",
+                "url": "https://finnhub.io/api/news?id=c747be053f36b42437dd05436f7dccfcbcda6e55b348f125c5596a01b7fe5c0f",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Why Tesla (TSLA) Stock Is Trading Up Today",
+                "summary": "Shares of electric vehicle pioneer Tesla (NASDAQ:TSLA) jumped 3.1% in the afternoon session after Wall Street analysts raised their price targets on the company, citing optimism over its artificial intelligence-driven initiatives, robotaxi rollout, and humanoid robotics business.",
+                "url": "https://finnhub.io/api/news?id=dbc56d85dd851b29cd86a704079ed811d3fd0212c5e0a49feca6ee3d1f83479e",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Equities Rise Intraday as Markets Weigh Fed Officials' Comments, Macro Data",
+                "summary": "US benchmark equity indexes were higher intraday as traders assessed remarks by two Federal Reserve",
+                "url": "https://finnhub.io/api/news?id=fcb8ccf2b9f9613400affc350ec776938718b5b786216121a9078ae06a7c48fc",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Tesla urges Trump administration to keep vehicle emissions rules, climate finding",
+                "summary": "WASHINGTON (Reuters) -Electric vehicle manufacturer Tesla urged the Trump administration not to repeal vehicle emissions standards or the long-standing U.S. finding that greenhouse gas emissions endanger human health.  Tesla said in comments posted on Thursday that the Environmental Protection Agency's proposal to repeal the standards \"would give a pass to engine and vehicle manufacturers for all measurement, control, and reporting of GHG emissions for any highway engine and vehicle.\"",
+                "url": "https://finnhub.io/api/news?id=9c65110094c9e153fd2038c552ddc2377d488f5e4ce1d8fab867f5aac25ab316",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "TSLA: Tesla Stock Rises as Wedbush Hikes Target To $600 On AI Growth",
+                "summary": "Wedbush Sees $3 Trillion Valuation For Tesla By 2026 On Robotics Push",
+                "url": "https://finnhub.io/api/news?id=d23a879c2ae8a28626564212a6f148180f2773941461d992aa46b453fdf09810",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Wall Street Analysts Are Catching Up to Tesla Stock's Climb With Deliveries Data Coming",
+                "summary": "The EV maker's shares have been hot lately, adding nearly a third of their value this month alone through Friday's close. The Street's mean price target, however, is substantially lower, according to Visible Alpha data, recently hanging out around $340\u2014a level the stock hasn't closed below since early this month.",
+                "url": "https://finnhub.io/api/news?id=05549e8b3feeff6eea1e29cd775b142404436d1b48c52dd2b515206b70924c49",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Tesla Target Raised by Deutsche Bank on AI Growth Potential",
+                "summary": "Analyst sees artificial intelligence initiatives as long-term driver",
+                "url": "https://finnhub.io/api/news?id=8d1ab7e1689055df86cd14cd89fa590d63e8e1b7cb4313f5bac98f4e502898bd",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Foran Mining Upgraded to Outperform, Speculative, Following McIlvenna Bay Visit; Price Target Raised to C$4.50",
+                "summary": "BMO Capital Markers on Friday upgraded its rating on the shares of Foran Mining (FOM.TO) to outperfo",
+                "url": "https://finnhub.io/api/news?id=a70f7f849c9e62bf7e0dfefcc1182545edbff57c19b3f962c9065d3625c6e598",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Update: Wedbush Raises Price Target on Tesla to $600 From $500, Maintains Outperform Rating",
+                "summary": "(Updated to include Wedbush commentary) Wedbush raises Tesla (TSLA) price target to $600 from $50",
+                "url": "https://finnhub.io/api/news?id=95e9935967b8cda0e7f6dae32a9ef4b902f44d776bce92a942e82b41c74a34a2",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Tesla Could Reach $2 Trillion Valuation in Early 2026 on Accelerated AI Autonomous Path, Wedbush Says",
+                "summary": "Tesla (TSLA) could reach a $2 trillion market capitalization in early 2026 as it takes big steps in",
+                "url": "https://finnhub.io/api/news?id=86c0178f260eff099ebaea62ba91a87d0f6e1853c75a7c97c079c5c191a9cd55",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Tesla Board Prints Billions In Pay As Musk Buys $1B, And I'm Shorting The Signal",
+                "summary": "Tesla's weak sales, eroding margins, and overvaluation signal risk amid tough market conditions. Click here to read why TSLA stock is a Strong Sell.",
+                "url": "https://finnhub.io/api/news?id=0e6c5acaad2fdd86e3b2c775ff1cb2672dbb5fe655ef7043e35e2424ca4912d9",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Tesla's Q3 Deliveries Seen 'Meaningfully Ahead' of Consensus Estimates, Deutsche Bank Says",
+                "summary": "Tesla's (TSLA) Q3 deliveries will likely be \"meaningfully ahead\" of Street estimates, backed by the",
+                "url": "https://finnhub.io/api/news?id=b7094d25c985961923e9135196919802cfcb933f299ab7d1956ec16478c64f41",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Intel chips, Tesla price target, Boeing 737: Trending Tickers",
+                "summary": "Market Catalysts host Julie Hyman tracks several of the day's top trending stock tickers, including Intel (INTC) gains spurred by the Trump administration's consideration of a \"1-to-1\" chip policy, Wedbush's Dan Ives raising his price target on Tesla stock (TSLA) to $600 per share, and the Federal Aviation Administration (FAA) to slowly ease restrictions on Boeing (BA) 737 Max production. To watch more expert insights and analysis on the latest market action, check out more\u00a0Market Catalysts.",
+                "url": "https://finnhub.io/api/news?id=68b9ea480ed3d6a153b4b7e6326348edf1e35638314d4971dfa963d45864d259",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Tesla Stock Now Has a $600 Price Target on Wall Street",
+                "summary": "Friday, Wedbush analyst Dan Ives hiked his Tesla price target to a Street-high $600 from $500 a share, keeping his Buy rating on the stock.  The average Buy-rating ratio for stocks in the S&P 500 is about 55%.",
+                "url": "https://finnhub.io/api/news?id=e4666cded8c9016a65c7a99d7b78e4d00c466f7ff1a9da88b2593a672792d4b1",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Why This Tesla Stock Super Bull Sees 42% Upside As Tesla Optimism Continues",
+                "summary": "Wedbush Securities analyst Dan Ives, a long-time Tesla bull, on Friday raised his price target to 600, up from 500.  The 600 price target is also 23% higher than Tesla stock's all-time high of 488.54, which it hit in December 2024.",
+                "url": "https://finnhub.io/api/news?id=215ac53f0f2d334178b3179bc31d08b4759e3f30f39ceac2978729b7e049f690",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "'Don't wait': EV buyers have one last weekend to get the $7,500 tax credit",
+                "summary": "Buyers in the US looking to take advantage of the federal EV tax credit have one last weekend to hunt for a good deal.",
+                "url": "https://finnhub.io/api/news?id=de1a2637f5ac73c52cc2c3590f99b4ace5618c17df81eded635f7212bb8582e6",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Tesla Likely to Beat Third-Quarter Delivery Estimates Amid Stabilizing Global Demand, Wedbush Says",
+                "summary": "Tesla's (TSLA) third-quarter deliveries are likely to top market estimates amid stabilizing global d",
+                "url": "https://finnhub.io/api/news?id=67a4f13625867d32f4b2665c2be8776a4967fb2e7b9a7dcc25d5fd3c40a6092b",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "PCE Inflation Data In Line, Bolsters Fed Rate Cut Outlook (Live Coverage)",
+                "summary": "The Federal Reserve's primary inflation rate, the core PCE price index, came in right in line with modest expectations, helping to cement expectations for an Oct. 30 rate cut. S&P 500 futures climbed modestly after three straight down days, with Intel among the top early performers amid news that President Trump is threatening tariffs on chip imports for companies that don't meet demands for domestic production.",
+                "url": "https://finnhub.io/api/news?id=2aab8497a35a4ade2664d669fd172bfb12a11456ba5bca338d3426cc79a4922a",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "There\u2019s No One Who Wants To Go Against Tesla, Inc. (TSLA), Says Jim Cramer",
+                "summary": "We recently published 14 Stocks Jim Cramer Discussed Including His 2 Top Quantum Computing Stocks. Tesla, Inc. (NASDAQ:TSLA) is one of the stocks Jim Cramer recently discussed. Like Tesla, Inc. (NASDAQ:TSLA) CEO Elon Musk, Jim Cramer also believes that the firm is more of a technology company than a car company. In this episode, he [\u2026]",
+                "url": "https://finnhub.io/api/news?id=6ed78347ed7f803330451f1fca5103e8db70df9e9d7215bf63e6a2412c298570",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Is NIO Emerging as a Better Investment Option Than TSLA Stock?",
+                "summary": "NIO's surging deliveries, battery swap edge, and improving margins set it apart as Tesla grapples with sales declines and policy headwinds.",
+                "url": "https://finnhub.io/api/news?id=4f40fa7989f8b31af318356cf87b898e1ae4b4300a6bffcc37aa980270d37ac8",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Tesla Faces $51 Million Lawsuit Over Robot Injury as It Pushes Into AI",
+                "summary": "Worker says incident left him with lasting injuries",
+                "url": "https://finnhub.io/api/news?id=bbabeb2b29985b6dcf253aa00b751f05d6a346b56566d184c987e430938f93d9",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "The Maximum Valuation For Tesla",
+                "summary": "The disconnect between Tesla's narrative and achievable fundamentals is too wide to justify the current share price. Click here to find out why TSLA is a Sell.",
+                "url": "https://finnhub.io/api/news?id=c63c6c020bb1eb1ee4e0508d6de8f2e58cd00761bf71760ece7e97c4b46bc13d",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Dan Ives, Tom Lee Bypass Wall Street With Social Media Megaphone",
+                "summary": "ETFs launched separately by veteran strategist Tom Lee and longtime tech bull Dan Ives have found success by betting big on the technology stocks benefiting from the AI boom, all while leveraging their founders\u2019 personal brands to attract investors.  Lee, who broadcasts to more than half a million followers on X and is the co-founder of Fundstrat Global Advisors, has seen his Granny Shots US Large Cap ETF (ticker GRNY) pull in roughly $2.5 billion in less than 12 months.  Ives\u2019s eponymous Wedbush AI Revolution ETF (IVES), meanwhile, has shot to around $750 million in assets since its June debut.",
+                "url": "https://finnhub.io/api/news?id=4a93c7a88f1b3b882c7545c691550a99f8142d07161f341f2db85c56f2154771",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Wedbush lifts Tesla target: March to an AI-driven valuation has now begun",
+                "summary": "Investing.com -- Wedbush raised its price target for Tesla to $600 from $500 per share in a note on Friday, citing what it called an \u201caccelerated AI path\u201d that investors are underestimating.",
+                "url": "https://finnhub.io/api/news?id=9ded86ecb91d967e9214d135267c52c473bc477422909e9df541a2d175086dd0",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "The Best Stocks to Invest $50,000 in Right Now",
+                "summary": "These companies are the top dogs in chips, physical AI, and software.",
+                "url": "https://finnhub.io/api/news?id=71014a10877c88a970f9f99ce97d94cbe07b1d1b9b55a1e4c2dccd2f23b10770",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Solid Power: The EV Battery Stock That Could Either 10x Or Go To Zero",
+                "summary": "",
+                "url": "https://finnhub.io/api/news?id=a994da54ca6807b5635a1e6fdfe63dd9d93c2731feb0efbf101c54dd0ba00a43",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Tesla\u2019s UK sales plunge by \u00a3500m as drivers boycott Elon Musk",
+                "summary": "Tesla\u2019s UK sales dropped by \u00a3500m last year as the electric car maker faced a backlash over boss Elon Musk\u2019s politics.",
+                "url": "https://finnhub.io/api/news?id=900126bfd5fe67bf7554868bd258f54c47d86f4e1ea325ff8775bc1e34691018",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Elon Musk's xAI Sues OpenAI Again, This Time Over Alleged Trade Secret Theft",
+                "summary": "The lawsuit alleges OpenAI orchestrated a \"coordinated campaign\" to steal xAI's source code and data center secrets.",
+                "url": "https://finnhub.io/api/news?id=12454d0f686d3662ff6d5397ead6656ca176decc0d98d50b6a6268d8112913ae",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Is Rivian Stock Your Ticket to Becoming a Millionaire?",
+                "summary": "Rivian looks increasingly like it will be a successful EV start-up, but don't get overexcited by the Tesla similarities.",
+                "url": "https://finnhub.io/api/news?id=f0d5ce976adc5c58d1cdc30a529a4d81437caf8d33b69a2f93332af27271a6ea",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "China's Momenta considers shifting IPO to Hong Kong from New York, sources say",
+                "summary": "The potential change in Momenta's listing venue comes after the expiration in June of an approval by China's securities regulator to list in the U.S., which was granted mid-last year, according to the regulator's website.  Momenta is a leading Chinese supplier of advanced driving assisted system features, akin to Tesla's self-driving technology that can navigate urban traffic under human drivers' supervision.  The company recently informed some of its investors about its plan to potentially list in Hong Kong in 2026, two of the people said, adding the plan, which has not been reported previously, is at an early stage and is subject to changes.",
+                "url": "https://finnhub.io/api/news?id=1f7a6a4d8a5ca7eb50578f9a8694d5f25fec931229f035b400406eb32340f19e",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Tesla: A Better 3Q Deliveries Won't Likely Fix Stock's Front-Load Bubble",
+                "summary": "Tesla nears record highs on bullish 3Q 2025 delivery outlook and Musk's stock buy, but weak fundamentals raise concerns. See more on TSLA stock here.",
+                "url": "https://finnhub.io/api/news?id=4bdc67c1e9c0da920c2b7f9023517b02bb81fd5c9ae91ce530fb73f9536cbfce",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 440.4,
+                "performance": 0.0402,
+                "label": "positive"
+            },
+            {
+                "headline": "Xiaomi Debuts a $630 Answer to iPhone 17",
+                "summary": "Xiaomi Corp.'s billionaire co-founder unveiled a $630 smartphone designed to take on the just-released iPhone 17, underscoring the Chinese company's broader ambitions to take on US rivals from\u00a0Apple Inc.\u00a0to\u00a0Tesla Inc.",
+                "url": "https://finnhub.io/api/news?id=f07f970e11be0f03b5c1e1239f3adf71646a4ee2725eb6f9b5354db135d842ce",
+                "source": "Yahoo",
+                "date": "2025-09-25",
+                "close": 423.39,
+                "performance": -0.0438,
+                "label": "negative"
+            },
             {
                 "headline": "Review & Preview: Too Much Good News",
                 "summary": "The latest economic data suggest the recent slowing\u2014and the hope for more interest rate cuts\u2014might have been a mirage.",
@@ -2939,16 +3319,6 @@
                 "headline": "U.S. Stocks End Lower As Tech Continues to Recede",
                 "summary": "Chinese tech titan Alibaba upsized its pledge to spend on artificial intelligence and released a new model, helping send its U.S.-listed shares higher.  Other Chinese tech stocks that trade in New York also rose, including search-engine company Baidu and e-commerce giant PDD.  Alibaba\u2019s pledge to spend more than $53 billion on AI and cloud infrastructure comes on the heels of big investment announcements from U.S. chip maker Nvidia, with Intel and OpenAI, and Oracle\u2019s windfall cloud deal with OpenAI.",
                 "url": "https://finnhub.io/api/news?id=fb45e8d5a9941e08998d2c1eaa46a7c32267b8e7408e9b6774f4d442deaf134c",
-                "source": "Yahoo",
-                "date": "2025-09-24",
-                "close": 442.79,
-                "performance": 0.0398,
-                "label": "positive"
-            },
-            {
-                "headline": "Why Tesla (TSLA) Stock Is Trading Up Today",
-                "summary": "Shares of electric vehicle pioneer Tesla (NASDAQ:TSLA) jumped 3.9% in the afternoon session after it received a wave of positive commentary from Wall Street analysts and upbeat forecasts for third-quarter vehicle deliveries.",
-                "url": "https://finnhub.io/api/news?id=41362579bcd362bd71b5b523080936028e7c7e73a1db49bb1103bbcda970bb3c",
                 "source": "Yahoo",
                 "date": "2025-09-24",
                 "close": 442.79,
@@ -4544,361 +4914,421 @@
                 "close": 425.86,
                 "performance": 0.0101,
                 "label": "positive"
-            },
-            {
-                "headline": "S&P 500 crypto stocks tank after Fed\u2019s surprising rate cut",
-                "summary": "Fed cuts rates by 25 bps to 4\u20134.25%, citing slower growth and softer jobs; crypto stocks trade mixed as investors eye Powell\u2019s guidance on future easing.",
-                "url": "https://finnhub.io/api/news?id=3f77c85048706c9bef279a727299d260bea10c6380e49dd4742d515db8871c08",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Lyft stock surges 13% on Waymo robotaxi deal in Nashville",
-                "summary": "Lyft and Waymo said they plan to roll out an autonomous ride-hailing service in Nashville next year.",
-                "url": "https://finnhub.io/api/news?id=0141ef9a1f3710daef350fb90e0a5170708cf0407dca69c4746a29645d482d75",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "xStocks Issuer Chose Switzerland to Avoid Whitelisting Tokenized Tesla Shares: CEO",
-                "summary": "Some assets deserve to be permissionless, according to Adam Levi.",
-                "url": "https://finnhub.io/api/news?id=6e1a2d305151cbaf20e4e9d164570465178f4dca54f6a2a7275835951c362ca4",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Tesla Faces New Probe As Model Y Doors Fail To Open",
-                "summary": "NHTSA says kids were trapped, parents smashed windows to help",
-                "url": "https://finnhub.io/api/news?id=98c49bfc6d63afd987fe3d5341a156fc136b8cca73a3b34f9051a5d28f8ac039",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Tesla Cybertruck Underperformed In The US: Will The International Launch Be Different?",
-                "summary": "Electric vehicle giant Tesla Inc. (NASDAQ:TSLA) and CEO Elon Musk had grand ambitions with the launch of the Cybertruck. Expectations have underperformed, but there could be good news with the vehicle expanding to more international markets. What Happened: Tesla officially launched the Cybertruck in November 2023, and for the first two years, the vehicle was only sold in North America. The electric vehicle company is now branching out to other parts of the world with the recent launch of the Cyb",
-                "url": "https://finnhub.io/api/news?id=c707c9aa626bd6853ec07a1f78af8de6e4d69fb6458c8574572cc7a60e9ba231",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Tesla's full self-driving isn't prime-time ready: CFRA analyst",
-                "summary": "Tesla (TSLA) stock was downgraded to Sell by CFRA's team over the disconnect between the EV stock's fundamentals and value. Shares of the EV developer are ticking higher after CEO Elon Musk bought $1 billion worth of stock earlier this week. CFRA analyst Garrett Nelson \u2014 the analyst behind the call \u2014 speaks further with Josh Lipton about his assessment of the electric vehicle company and shares his thoughts on Tesla's full self-driving business. To watch more expert insights and analysis on the latest market action, check out more\u00a0Market Domination.",
-                "url": "https://finnhub.io/api/news?id=d72022df88acf5c82f6b3b687f6813163dd4ba3b72226b6a7bfc9abcdaa77334",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Tesla Stock Clinched a 7-Day Winning Streak. Here\u2019s How.",
-                "summary": "Coming into Wednesday trading, Tesla stock has risen for six consecutive trading sessions, gaining about 22% in the process.",
-                "url": "https://finnhub.io/api/news?id=e87f78cd00325dc53d3146de8680cbc3ebb80a8f193cd6291fed9ac5cd219da0",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Fed Signals More Cuts, But Powell Says Don't Be Too Sure (Live Coverage)",
-                "summary": "The Federal Reserve delivered its first interest-rate cut of the year on Wednesday and bolstered hopes for further rate cuts in October and December.  After the 2 p.m. ET policy statement, the S&P 500 traded fractionally higher in afternoon stock market action as Fed chief Jerome Powell painted a cautiously upbeat picture of where the economy stands.  What Wall Street really wanted to know was whether the Fed saw this as the first cut of a bunch or whether we could quickly be back in wait-and-see mode.",
-                "url": "https://finnhub.io/api/news?id=d2ba97f790a1248890869866b77a86234ca5ae7b07f2a1f2a42660cfa79d3bee",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Stock Market Today: Dow Up As Powell Outlines 'Risk-Management Cut' In 'Challenging Situation' (Live Coverage)",
-                "summary": "The Dow Jones index rises Wednesday after the Federal Reserve cut interest rates. Nvidia stock sells off.",
-                "url": "https://finnhub.io/api/news?id=4facc1213e26e99af4f74f0d79f305b23b892fae7d64c465791337fce52e472a",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Harvard Dropouts Behind Mercor Target $10 Billion Valuation As Startup Supplying OpenAI, Tesla And Nvidia Hits $450 Million Run Rate",
-                "summary": "Mercor, a startup connecting domain experts to technology giants like OpenAI, Meta (NASDAQ:META), and Tesla (NASDAQ:TSLA), is in discussions with investors for a Series C round that could value the company at more than $10 billion, according to TechCrunch. The potential raise comes less than two years after the company's founding and follows a $100 million Series B announced in February at a $2 billion valuation led by Felicis. Sources familiar with the matter told TechCrunch that Felicis is con",
-                "url": "https://finnhub.io/api/news?id=ae2b5ed24543dcbd0a1b9927acb7573a851baca694df5cb1c9064584f3ae0a30",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Tesla is redesigning its door handles following safety probe, Bloomberg investigation",
-                "summary": "Chief designer Franz von Holzhausen said Wednesday that the company is \"working on\" combining the electronic and manual door releases after owners have reported getting trapped.",
-                "url": "https://finnhub.io/api/news?id=2e6af4cce8521c389645dd0ad96646c093e78a737bf727809c2a17cd0d925bce",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Tesla Is Redesigning Door Handles That Drew Scrutiny Over Safety",
-                "summary": "Franz von Holzhausen, Tesla\u2019s longtime design chief, said the company is looking to combine the electronic and manual door-release mechanisms, which are currently in separate locations.  \u201cThe idea of combining the electronic one and the manual one together into one button, I think, makes a lot of sense,\u201d he said Wednesday in an interview for Bloomberg\u2019s  podcast.  Tesla\u2019s handles have drawn attention after a Bloomberg News investigation this month uncovered a series of incidents in which people were injured or died after they were unable to open doors after a loss of power, particularly after crashes.",
-                "url": "https://finnhub.io/api/news?id=c167f998258c66d25d57c7e3e09f484b7cf09021cdbccefbe44bace3fc51708d",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "As Drone Stocks Skyrocket, Cathie Wood Can\u2019t Get Enough of This 1 Name",
-                "summary": "Shares of Kratos Defense and Security Solutions have been on an absolute tear in the last 12 months, more than tripling in market value. Is KTOS stock still a good buy?",
-                "url": "https://finnhub.io/api/news?id=bd7c1bb3b0668fddfd0005d5ad8543e27989a375684a2bfedc3e35c1d291378d",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "The iPhone Air\u2019s real breakthrough is its battery",
-                "summary": "Apple's slimmest iPhone uses a \"revolutionary\" battery design that allows the cell to fill more space within the device, boosting overall energy storage.",
-                "url": "https://finnhub.io/api/news?id=e3457a72d17e54d4e0d054060ca5694d065ccaffbf6bcfd8932bff62a5580733",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Barclays Forecasts 465,000 Tesla (TSLA) Deliveries in Q3, Above Consensus",
-                "summary": "Tesla, Inc. (NASDAQ:TSLA) is one of the AI Stocks Analysts Say You Should Watch Closely. On September 15, Barclays maintained its Equal Weight rating on the stock with a price target of $275.00, raising its third-quarter delivery forecast. According to the investment bank, Tesla will deliver an estimated 465,000 vehicles in the third quarter, which is [\u2026]",
-                "url": "https://finnhub.io/api/news?id=2cc44bae828e430eb43728a1dba3590e9aa64f5d5a18d9c65f34ac2c3f3afcd3",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Car Stocks Race Higher After Fed Cuts Rates",
-                "summary": "Shares of auto makers got a boost from the Fed rate decision.  General Motors and Ford Motor shares extended daily gains, leaving shares up 1.7% and 2%, respectively, shortly after the Fed\u2019s decision to lower benchmark interest rates to a range of 4% to 4.25% from the prior range of 4.25% to 4.5%.  Coming into Wednesday trading, Tesla stock rose for six consecutive sessions, adding about 22% over that span.",
-                "url": "https://finnhub.io/api/news?id=d3bf6a28b5ce2eef71e25adc65cef0014a2e35ea71aeabaae4f97c8f9404d667",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Tesla, Inc (TSLA) to Raise Production at its German Factory",
-                "summary": "Tesla, Inc. (NASDAQ:TSLA) is among the Stocks That Could 10X in the Next 3 Years. On September 14, Reuters reported that Tesla, Inc. (NASDAQ:TSLA) plans to raise production at its German factory in Gruenheide for the rest of 2025. The decision comes after the company experienced strong sales across the markets it serves. Although Germany [\u2026]",
-                "url": "https://finnhub.io/api/news?id=bbd4292d8d51046b44402f4a64324958c888aecbd0f881201fe84cd8a2f8afce",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "'Daddy Is Very Much Home,' Says Elon Musk, Reiterating Commitment To Tesla Amid $1 Billion TSLA Stock Buy",
-                "summary": "Tesla Inc. (NASDAQ:TSLA) CEO Elon Musk reiterates his commitment to the EV giant and his other ventures amid TSLA stock rally fueled further by his $1 billion share purchase. Elon Musk Shares Busy Schedule A user, Greggertruck, took to the social ...",
-                "url": "https://finnhub.io/api/news?id=178ff28b331beb7b03542188094525e48634898c45732206026fc0c04cb52533",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "The Pope and Trillion-Dollar Elon Musk",
-                "summary": "The Pope and Trillion-Dollar Elon Musk",
-                "url": "https://finnhub.io/api/news?id=983b6c0fac742532d24a971b3d1bc5a36a49cc8b70f979bfc785030c864666df",
-                "source": "DowJones",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Why Lyft Stock Was Climbing Today",
-                "summary": "Lyft surprised the market with a new partnership with Waymo.",
-                "url": "https://finnhub.io/api/news?id=5cd0f0ed809196c2a6c98d7184d59e96ad9a046e3c48eaa3d11785293dad1af1",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Market Chatter: Tesla Facing Scrutiny From NHTSA Over Self-Driving Issues at Rail Crossings",
-                "summary": "Tesla (TSLA) has come under scrutiny from the National Highway Traffic Safety Administration amid co",
-                "url": "https://finnhub.io/api/news?id=20135d93a2a7992b3fa8183bb9f5f36bee2132af9f00f56465785ad97b438207",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Stock Market Today: Dow Jumps 300 Points As Fed Looms; Nvidia Breaks Key Level (Live Coverage)",
-                "summary": "The Dow Jones index rose Wednesday ahead of the Fed's rate decision and Powell's comment. Nvidia stock sold off.",
-                "url": "https://finnhub.io/api/news?id=da73ef1ad1e28d95e47d0f4c3e266eb0c7c1e38b80309a3b36262cbb35b3197f",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Senior Yale Professor on Tesla (TSLA): \u2018This is the Biggest Meme Stock We\u2019ve Ever Seen\u2019",
-                "summary": "Jeff Sonnenfeld, Yale School of Management senior associate dean, said in a recent program on CNBC that investors are relying too much on the capabilities of Tesla (TSLA) CEO Elon Musk. He called TSLA a meme stock and highlighted its high valuation. \u201cThis is the biggest meme stock we\u2019ve ever seen. Even at its peak, [\u2026]",
-                "url": "https://finnhub.io/api/news?id=e117a2b38945165eec1ad92c11b794ffad58be2a9c7f958291f2e9ed5a3ad349",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Almost Everything Is Rallying Ahead of Fed Decision. What\u2019s Not Matters More.",
-                "summary": "The closest it got was on July 11, 2024 when the index fell 0.9% and 396 stocks gained, according to Dow Jones Market Data.  On that day, it was Tesla, Lam Research, Nvidia, Applied Materials, and Micron that dragged on the index.  This time around Broadcom, Palantir Technologies, and Nvidia were the among the big laggards, but Microsoft, Alphabet, Meta Platforms, Tesla, and Amazon.com were also dragging on the index.",
-                "url": "https://finnhub.io/api/news?id=03d9c3ebc1ef1319fe13c553a88e7180333133a8969427aa9cf73acc62df7e5d",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "BLBD or TSLA: Which Is the Better Value Stock Right Now?",
-                "summary": "BLBD vs. TSLA: Which Stock Is the Better Value Option?",
-                "url": "https://finnhub.io/api/news?id=c6b3a33191fbced9468eda082bdd27500fec33e2d918444cc00f69d6773931cd",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Stock Market Today: Dow Jumps, Nasdaq Lags As Powell Sees 'Challenging Situation' (Live Coverage)",
-                "summary": "Stock Market Today: Dow Jumps, Nasdaq Lags As Powell Sees 'Challenging Situation' (Live Coverage)",
-                "url": "https://finnhub.io/api/news?id=7159b0eb2bca6206f282d3f26f1cb30aa339a86c1e14e96f7bbc00b505f482ad",
-                "source": "DowJones",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Fed Meeting: Rate-Cut Coming, But Watch Out For These 2 Words (Live Coverage)",
-                "summary": "The Federal Reserve is set to deliver its first interest-rate cut after a nine-month pause, and markets have little doubt that it will be a quarter-point move.  Any surprise is likely to come from the rate cut's packaging \u2014 from the number of dissenting votes, to future interest-rate projections to the outlook Fed Chairman Jerome Powell offers at his post-meeting news conference.  What Wall Street really wants to know is whether the Fed sees this as the first cut of a bunch or whether we could quickly be back in wait-and-see mode.",
-                "url": "https://finnhub.io/api/news?id=08d2321e71fd5179ca7bb9d06aa9e79ce7b99daf851f1e51c7a875993f5746ce",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Lyft stock surges 12% on Waymo robotaxi deal in Nashville",
-                "summary": "Lyft and Waymo said they plan to roll out an autonomous ride-hailing service in Nashville next year.",
-                "url": "https://finnhub.io/api/news?id=bace2514764dc378a4fcdc581ce9843a031cfa1554e3f0e9c35a60614f52acd0",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Tesla Settles Two More Autopilot Lawsuits. Investors Shrug.",
-                "summary": "Tesla Settles Two More Autopilot Lawsuits. Investors Shrug.",
-                "url": "https://finnhub.io/api/news?id=cb645b040e79681b7f14502143e1854f0aebd5a305ee503aab62e5ea926eb713",
-                "source": "DowJones",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Inflation Expectations, Tech\u00a0Valuations, Healthcare Opportunities",
-                "summary": "Why Michael Kramer from Mott Capital Management and Reading The Markets\u00c2\u00a0is focused on Fed dot plot, BOJ and true valuations.",
-                "url": "https://finnhub.io/api/news?id=6dfb79aa603802347162e17dd840c28414278d01f346373d52415cf6259f14ba",
-                "source": "SeekingAlpha",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Should You Get Too Optimistic on Tesla After Musk's $1B Bet?",
-                "summary": "Musk's $1B Tesla buy boosted shares, but with falling deliveries and rising competition, investor optimism may be premature.",
-                "url": "https://finnhub.io/api/news?id=c8586dbb8da84339b30f082c5a66012e5cb7a7ec53b68b4eda7c5b07d243febb",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Is Lucid Group Stock Expensive? 4 Charts to Explore",
-                "summary": "Lucid Group stock is cheaper than many investors realize. But is it a buy?",
-                "url": "https://finnhub.io/api/news?id=16fc592ae163b3c6244c7c2735000ae63438760fe289f5461d0257b72ab42afd",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "China humanoid stocks are rallying. Here\u2019s why",
-                "summary": "Investing.com -- China-listed humanoid value chain stocks have surged 13.5% since September 5, significantly outperforming the MSCI\u2019s 4.4% gain, driven largely by developments around Tesla\u2019s Optimus robots, Morgan Stanley analysts said.",
-                "url": "https://finnhub.io/api/news?id=6f1ba8b2915ff81c70504fa8a492b338f68fe668b430e055a2838bb21e416bea",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "Stock Market Today: Dow Climbs Ahead Of Fed Vote; Nvidia Slides On China Ban (Live Coverage)",
-                "summary": "The Dow Jones index rose Wednesday ahead of the Fed's rate decision and Powell's comment. Nvidia stock sold off.",
-                "url": "https://finnhub.io/api/news?id=83441c23b3a7b1abed37f384a2fba099beffab4f5fcdfa1b09a95c283ec7495e",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
-            },
-            {
-                "headline": "NIO's ES8 Deliveries Begin This Week: Can It Compete With TSLA and LI?",
-                "summary": "NIO is set to commence deliveries of its third-gen ES8 SUV, aiming to boost sales with smart pricing, luxury features, and strong pre-orders.",
-                "url": "https://finnhub.io/api/news?id=90b5dfc7621ae2d194bffbfb98acb99340a078c6841d023ad2caee13ef0bdaf7",
-                "source": "Yahoo",
-                "date": "2025-09-17",
-                "close": 425.86,
-                "performance": 0.0101,
-                "label": "positive"
             }
         ]
     },
     "MSFT": {
         "data": [
+            {
+                "headline": "Trump Demands Microsoft Fire Its Head of Global Affairs",
+                "summary": "Trump\u2019s post marks the latest example of his administration\u2019s effort to exercise control over corporate America.",
+                "url": "https://finnhub.io/api/news?id=c38d5f96c0eee6a36c4462d58ff78b50e84e3e652d7d08978a4ac61ca3d147f7",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Prediction: This Artificial Intelligence (AI) Semiconductor Stock Will Join Nvidia, Microsoft, Apple, Alphabet, and Amazon in the $2 Trillion Club by 2028. (Hint: Not Broadcom)",
+                "summary": "When you're the industry leader by a large margin, growth is on your side.",
+                "url": "https://finnhub.io/api/news?id=e04aa76ead8f9ee17cd3da5137fa1db6f5a8becfa2a6b1bc9ec7777a4e0a8323",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "'Sports Engagement Is Stuck In The Past': Tristan Thompson Is Bringing Fantasy Basketball On-Chain",
+                "summary": "Former NBA player Tristan Thompson is trying to reimagine fan engagement with a blockchain-based platform. \u200b \"Sports engagement is stuck in the past,\" Thompson said on X last week, adding that he intended to change the status quo with a platform ...",
+                "url": "https://finnhub.io/api/news?id=c36d83cc109e3916eda0560a8a985e27b714bcc271c4779e7142eac90b3c68ef",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Trump Calls for Microsoft to Fire Former Biden Aide Lisa Monaco",
+                "summary": "Trump has long been critical of Monaco, who was US deputy attorney general under former President Joe Biden, accusing her of using that post to push various investigations into his conduct.  \u201cIt is my opinion that Microsoft should immediately terminate the employment of Lisa Monaco,\u201d Trump added.",
+                "url": "https://finnhub.io/api/news?id=840896c36fbdff0ebc5ce3a616db9de662ea06b59b9e4b47089609649800f5bd",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Anthony Scaramucci Says SEC Should Cut Some Red Tape So Everyday Joes Can Get A Piece Of SpaceX And OpenAI: 'Hard For The Public To Get Access'",
+                "summary": "Anthony Scaramucci, the SkyBridge founder known as \"The Mooch,\" once argued that heavy-handed Securities and Exchange Commission rules are shutting ordinary Americans out of the country's most exciting companies. Scaramucci Criticizes SEC Regulations In a July 2025 YouTube Shorts clip, Scaramucci said the U.S. is seeing fewer \"great companies going into the hands of the public.\" He pointed to privately held firms such as Elon Musk's xAI and SpaceX, which remain out of reach for everyday investor",
+                "url": "https://finnhub.io/api/news?id=4d81f81a139b4a4aaa19f05d82fe9ae918696ab831ce68d74202c0d23158110f",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Trump says Microsoft should fire its global affairs president Lisa Monaco",
+                "summary": "The move appears to be the latest effort by Trump to exact retribution on those he sees on political enemies and comes one day after the indictment of former FBI Director James Comey.  Monaco had helped coordinate the Justice Department's response to the January 6, 2021, attacks by Trump supporters on the U.S. Capitol.",
+                "url": "https://finnhub.io/api/news?id=0bfcbf34fb7d19591c5af940e4e4aace963802d573fc5a14d7c9b3ddb9c0fd3c",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "AI Stocks Wobble As Spending Balloons. Another DeepSeek Dip, or a Dark Fiber Moment?",
+                "summary": "If data-center investments were to decline suddenly by 20%, S&P 500 earnings estimates would take only a 3% to 4% hit, Barclays reckons.",
+                "url": "https://finnhub.io/api/news?id=87150299714a08678f9f848213fa4ec42fa64bbd817ab80b9d186c3cf70a7b45",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Prediction: This Artificial Intelligence (AI) Stock Will Be Worth More Than $5 Trillion by 2030 (Hint: It's Not Nvidia or Apple)",
+                "summary": "Amazon could pleasantly surprise long-term investors.",
+                "url": "https://finnhub.io/api/news?id=d379b4e26e1d95ca68fcfc7f4f217e7dfccd2095f50b8b581d764617ce514bd0",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Microsoft Stock Elevated To Top Pick At Morgan Stanley",
+                "summary": "Investment bank Morgan Stanley on Friday elevated Microsoft stock to its \"top pick\" in the software sector.",
+                "url": "https://finnhub.io/api/news?id=7800d0f6161587dde114445f32b7f583a5b96cfb95c74a62048906f37d6caa9e",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Sector Update: Tech Stocks Mixed Late Afternoon",
+                "summary": "Tech stocks were mixed late Friday afternoon with the Technology Select Sector SPDR Fund (XLK) incre",
+                "url": "https://finnhub.io/api/news?id=b6b3555b14466eebef6bcf6e700a240230d6c0b291a38597548e1a2746ed49f7",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Timeline, other details revealed for potential Microsoft data center in Caledonia",
+                "summary": "As Caledonia considers voting to rezone property to make way for a Microsoft data center, new details about the construction timeline have emerged.",
+                "url": "https://finnhub.io/api/news?id=03f251facfa218d53f7f6b2f65c121534bc97ef13679bf47ffe4f6835c0ca646",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "His Peers Have Debt and Job Anxiety. He Has a Nearly Six-Figure Business And Zero Loans.",
+                "summary": "While many of his peers juggle student loan debt and uncertain job prospects, 23-year-old Jacob Palmer of Concord, North Carolina, is debt-free and running a nearly six-figure electrical business. After high school, Palmer tried online college during the pandemic. \"School looked drastically different doing online classes and Zoom calls. It felt very intangible,\" he told Fortune. He added that it didn't work for him and that he hated it. Don't Miss: These five entrepreneurs are worth $223 billion",
+                "url": "https://finnhub.io/api/news?id=a8a409ffa688081bb4955edabcd2f6b453320f3a824396808676a2d2dd4bfb0b",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "How Microsoft's AI play is transforming the NFL sidelines",
+                "summary": "The NFL's latest MVP isn't a player \u2014 it's Microsoft's (MSFT) latest technology. This week on Yahoo Finance Sports Report, host Joe Pompliano has a one-on-one conversation with Microsoft's head of strategic partnerships, Monica Robbins. Robbins discusses the company's Sideline Viewing System (SVS), which is shaping the way NFL coaches and analysts access real-time game data. Pompliano also sits down with Roger Federer's longtime agent of 20 years, Tony Godsick, to discuss the tennis star's departure from Nike (NKE) and his groundbreaking $600 million deal with Uniqlo. Yahoo Finance Sports Report with Joe Pompliano, a vodcast brought to you by Yahoo Finance and Yahoo Sports, looks beyond the latest sports business headlines, analyzes all the need-to-know news \u2014 the teams, trades, and billion-dollar deals \u2014 so you and your portfolio will win BIG. Yahoo Finance Sports Report is developed and produced by Lauren Pokedoff.",
+                "url": "https://finnhub.io/api/news?id=f2a6ef9228c871aa1670512b69cad47d1a46b739715c8427851b6cb1a6ad5e3d",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "How Microsoft tablets became the NFL sideline MVP",
+                "summary": "The NFL's playbook has gone digital, and Microsoft (MSFT) is calling the shots. This week on Yahoo Finance Sports Report, host Joe Pompliano is joined by Microsoft's head of strategic partnerships, Monica Robbins, to discuss the company's nearly decade-long partnership with the NFL and how Microsoft is transforming the way coaches and analysts work on the sidelines on game day. Robbins breaks down the functionality of the 2,500 Microsoft tablets distributed to NFL teams, emphasizing how they help track play, adjust strategy, and collect data. To hear more, check out this week\u2019s episode of Yahoo Finance Sports Report here. Yahoo Finance Sports Report with Joe Pompliano, a vodcast brought to you by Yahoo Finance and Yahoo Sports, looks beyond the latest sports business headlines, analyzes all the need-to-know news \u2014 the teams, trades, and billion-dollar deals \u2014 so you and your portfolio will win BIG.Yahoo Finance Sports Report is developed and produced by Lauren Pokedoff.",
+                "url": "https://finnhub.io/api/news?id=2e76c99be43247618ca4b7f0fa3a242c064f344f46ba72666524669db8714681",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Sector Update: Tech Stocks Advance Friday Afternoon",
+                "summary": "Tech stocks were higher Friday afternoon, with the Technology Select Sector SPDR Fund (XLK) adding 0",
+                "url": "https://finnhub.io/api/news?id=8ea0bb3c2eb7293ec1806a2cf6436978c178bf32cc67be0f8a158124327bbd78",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Michigan Bitcoin Reserve Bill Gains Momentum After Months-Long Pause: Will The Great Lakes State Be The Next To Adopt BTC?",
+                "summary": "Michigan has gotten one step closer to adopting Bitcoin as a reserve asset. \u200b House Bill 4087 finally made progress last week after stalling for seven months. Lawmakers moved the bill to a second reading and referred it to the Government Operations ...",
+                "url": "https://finnhub.io/api/news?id=84699a17422c4a416a0ff7f2f11ce28e56c08b287b15a95c216308579af3d19c",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Amazon loses VP helping lead development of artificial general intelligence",
+                "summary": "SAN FRANCISCO (Reuters) -An Amazon vice president helping to oversee one of the company's highest profile projects, artificial general intelligence, is stepping down on Friday, the online retailer confirmed after a Reuters inquiry.  Karthik Ramakrishnan, a 13-year veteran of Amazon, is stepping down, according to\u00a0internal communications reviewed by Reuters.  It could\u00a0not be learned if he had another job lined up and Ramakrishnan did not respond to a request for comment.",
+                "url": "https://finnhub.io/api/news?id=daf2e2f90bd2b423c821cd44e964d1304dee83e7de2e3395fb0eb97d31a0a553",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Anthropic to triple international workforce as AI models drive growth outside US",
+                "summary": "Nearly 80% of consumer usage for Claude comes from outside the United States, with per-person usage in countries like South Korea, Australia and Singapore outpacing that of America, the company said.  Anthropic, valued at $183 billion and backed by Google-parent Alphabet and Amazon.com, has distinguished itself, in part, by building AI models that excel at coding.  Its Claude large language models are widely regarded as one of the most powerful frontier models on the market, and this has helped grow the company's global business customer base from under 1,000 to more than 300,000 in two years.",
+                "url": "https://finnhub.io/api/news?id=3648fd40281f0cfdd777b6dddba8aaf9a9a1ef555d49c315780e3a6a901e61c1",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Jim Cramer Highlights Nebius \u201cHas Some Good Contacts and a Relationship With Microsoft\u201d",
+                "summary": "Nebius Group N.V. (NASDAQ:NBIS) is one of the stocks Jim Cramer recently commented on. Cramer discussed the NBIS stock\u2019s rally despite losing money. He said: \u201cBut then there\u2019s a company like Nebius\u2026 which has some good contacts and a relationship with Microsoft, but it loses a lot of money, yet its stock\u2019s rallied more than [\u2026]",
+                "url": "https://finnhub.io/api/news?id=06ff0d3aad9b13e1dc3242bff6d7022077c586e30fa199cb1a7f736a768ee9b4",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Microsoft Signs Major Agreement With Nscale and Aker Worth $6.2 Billion",
+                "summary": "Microsoft Corporation (NASDAQ:MSFT) is one of the 10 Best AI Stocks to Buy According to Goldman Sachs. On September 17, Microsoft Corporation (NASDAQ:MSFT) announced an agreement with AI hyperscaler Nscale and Aker worth $6.2 billion. The three companies are collaborating on a project to provide sustainable AI infrastructure for all of Europe. The deal between [\u2026]",
+                "url": "https://finnhub.io/api/news?id=c37bf5bc879f7636dfb0829954602590c9c717e96dfe64336ca7cfeaf2ce0792",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Microsoft, Riot, Pernod Ricard: Top analyst calls",
+                "summary": "Yahoo Finance Senior Reporter Brooke DiPalma takes a look at some of Wall Street's top calls right now: Morgan Stanley (MS) raising its Microsoft (MSFT) price target, Bank of America (BAC) downgrading Pernod Ricard (PRNDY), and Citi (C) and JPMorgan (JPM) upgrading Riot (RIOT). To watch more expert insights and analysis on the latest market action, check out more Market Catalysts.",
+                "url": "https://finnhub.io/api/news?id=71085ac571ee54ec3c475505cc7cf9fb83ee88bf5a914d2edf469e0c95f4c542",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Tesla Board Prints Billions In Pay As Musk Buys $1B, And I'm Shorting The Signal",
+                "summary": "Tesla's weak sales, eroding margins, and overvaluation signal risk amid tough market conditions. Click here to read why TSLA stock is a Strong Sell.",
+                "url": "https://finnhub.io/api/news?id=0e6c5acaad2fdd86e3b2c775ff1cb2672dbb5fe655ef7043e35e2424ca4912d9",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "ServiceNow Stock and 4 More AI Losers to Consider Buying Now",
+                "summary": "It may be time to start making some contrarian bets in software, services, and other areas of the market.",
+                "url": "https://finnhub.io/api/news?id=1175bc6fb91f9c5532a48a58dbe73189a27d90c6b3b8cbcefb1daa8276681f17",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Company News for Sep 26, 2025",
+                "summary": "Companies in The News Are: BB,MSFT,KMX,SNX",
+                "url": "https://finnhub.io/api/news?id=e2245c9e9d5318cfb849f013bfb681d18c7441bac7eda68905f1aca88a63cad5",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Record High Stock Buybacks Could Hint At An AI Bubble",
+                "summary": "Surging AI spending may be driven by FOMO and a lack of other profitable opportunities, risking the formation of an AI investment bubble. Read what investors need to know.",
+                "url": "https://finnhub.io/api/news?id=0334094321704a7344900ea02a247363a93e37c8e2e64795b44e4b238485ace7",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Coinbase's Ambition Is To Replace Banks, CEO Brian Armstrong Says",
+                "summary": "Coinbase (NASDAQ: COIN) CEO Brian Armstrong has set an ambitious target for the leading U.S. cryptocurrency exchange: replacing consumer banks. \u200b \"Ultimately, we want to be a bank replacement for people,\" Armstrong told Fox Business last week. \"We ...",
+                "url": "https://finnhub.io/api/news?id=a018f6f1e95a225da95d0f5a3f905cef382546ee2c56b0e31a1e8f71305777bc",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "I Don't Look At My Stock Prices - August Dividend Income Report",
+                "summary": "",
+                "url": "https://finnhub.io/api/news?id=7cbbf6b16638eb2f09a88f776481ae65d890caca399d51575831f99ca10c6163",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Bond King's Dire AI Warning: A Major Market Reversal Could Be Coming",
+                "summary": "AI sector faces major risk, warns the Bond King. Read about how to protect your portfolio and optimize risk-reward amid potential market upheaval.",
+                "url": "https://finnhub.io/api/news?id=0863f2ddcdd4c909ab6281b96db497f4bf2289d163b4478d40ce23e37efee58a",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "'Trending Today' TV Series on Fox Business to Feature Coretek's Cutting-Edge Cloud and AI Solutions in Upcoming Episode",
+                "summary": "Coretek delivers outcome-driven strategies that help organizations modernize infrastructure, secure environments, and unlock innovation. FARMINGTON HILLS, MI / ACCESS Newswire / September 26, 2025 / Coretek , a cloud-first managed services provider ...",
+                "url": "https://finnhub.io/api/news?id=40a4e3a44ea2ccb86a94b30044209e77b15465852415563865ea775f8d9ad770",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Jim Cramer Discusses Optimistic Analyst Note About Microsoft (MSFT)",
+                "summary": "We recently published 14 Stocks Jim Cramer Discussed Including His 2 Top Quantum Computing Stocks. Microsoft Corporation (NASDAQ:MSFT) is one of the stocks Jim Cramer recently discussed. Microsoft Corporation (NASDAQ:MSFT)\u2019s shares have gained 21% year-to-date, with media reports attributing the rise to a turnaround in the firm\u2019s software business and the Azure cloud computing division. [\u2026]",
+                "url": "https://finnhub.io/api/news?id=531cd041311b4ee8cdb62b5a263d337baef7dee9ef90cc65b909e733ac8c0bda",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "This Week In Cloud AI - Navigating The AI Investment Shift Toward Sustainable Growth",
+                "summary": "Recent developments in Cloud AI are underscored by a shift in investment trends, highlighting the rapid growth of generative AI and an increased focus on AI infrastructure and data management. The landscape has seen a move beyond traditional venture capital toward areas like national interests, suggesting a broader commitment to sustainable, AI-driven value. This shift is significant as AI becomes the dominant theme in both private and public investment strategies. The surge in AI spending...",
+                "url": "https://finnhub.io/api/news?id=364fd4c27de16fdd67b45bba41f825eaec9cc804dd730be5e1327748640247fa",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "NiCE Appoints Jeff Comstock as President, CX Product & Technology",
+                "summary": "HOBOKEN, N.J., September 26, 2025--NiCE (Nasdaq: NICE) today announced the appointment of Jeff Comstock as President, CX Product & Technology, effective October 1, 2025. Comstock will report directly to NiCE Chief Executive Officer Scott Russell and will join the company\u2019s Executive Leadership Team.",
+                "url": "https://finnhub.io/api/news?id=2a9a5bdefde17066a9fcbc5477120188557a0748aa6a499c5f7c12706d549e64",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Foreigners Are Buying US Stocks at Record Pace Despite Trade War",
+                "summary": "Foreign purchases rose to a record in the second quarter, according to Federal Reserve Board data.  While data show that foreigners have scaled back on travel to the US along with some purchases of US-made products, the American stock market has proven too enticing to quit.  Part of that owes to the dominance of firms chasing riches in artificial intelligence, which has swelled the share prices of Nvidia Corp., Microsoft Corp. and Alphabet Inc., among others.",
+                "url": "https://finnhub.io/api/news?id=a084687ddf4ac62ff2d94ba02aeee523151be80225e21a14ec4d3b2cd54a8056",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "This Week In AI Chips - Revolutionizing Cooling to Boost AI Chip Performance",
+                "summary": "Recent advancements in AI chip technology have highlighted the critical importance of effective cooling solutions as a means to overcome computational power bottlenecks. Corintis has announced a $24 million Series A funding round aimed at tackling these challenges through innovative microfluidic cooling technology. Their collaboration with Microsoft has yielded a significant breakthrough, achieving a threefold improvement in chip cooling efficiency compared to existing solutions. This...",
+                "url": "https://finnhub.io/api/news?id=6451270e49740b5c9c1e1af4c6f2478fa976243efc89fe6944f4a4d9c286b76f",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Meet the Newest Artificial Intelligence (AI) Stock to Join Nvidia, Microsoft, and Apple in the $3 Trillion Club",
+                "summary": "It might not take very much longer for it to reach $4 trillion.",
+                "url": "https://finnhub.io/api/news?id=b492f4cd41d3714500f89e5d8e61c254f8983d9a9b0451e3cc7391d59c881ccc",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Amazon.com's High Implied Growth: Realistic Or A Bubble?",
+                "summary": "Amazon is priced for 15.75% real EPS growth over the next decade as the market bets on continued dominance and rising profitability. Read why AMZN stock is a hold.",
+                "url": "https://finnhub.io/api/news?id=9f63b233b0d05ec698489607faf74450256a0a68c849b9814ff9a3cb0f38bb26",
+                "source": "SeekingAlpha",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "This Artificial Intelligence (AI) Giant Could Increase Its $10 Billion Business 14-Fold in 5 Years",
+                "summary": "But it doesn't come without some significant risks for investors.",
+                "url": "https://finnhub.io/api/news?id=e49e4bfde21dff9133ab40a12487b95a3ac0ae305ee889dae635dd4027961b76",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Nvidia\u2019s AI Deals Might Be \u2018Circular.\u2019 They\u2019re Also Smart Business.",
+                "summary": "Artificial-intelligence leader  Nvidia  generated $112 billion in free cash flow in the past six quarters\u2014and more is coming, at an increasing rate.  For  Nvidia  the decision is to backstop the AI investment boom, where it remains the primary winner.  Nvidia, to be sure, has also done buybacks and reinvestments.",
+                "url": "https://finnhub.io/api/news?id=cbb07794e61be7006112e25dc178018fb44e5a49c8feff1fd986e46a0a266016",
+                "source": "Yahoo",
+                "date": "2025-09-26",
+                "close": 511.46,
+                "performance": 0.0087,
+                "label": "positive"
+            },
+            {
+                "headline": "Truist Keeps Buy Rating on Microsoft (MSFT) After New OpenAI Deal",
+                "summary": "Microsoft Corporation (NASDAQ:MSFT) is one of the 15 Best American Tech Stocks to Buy Right Now. On September 15, Truist Securities reaffirmed its Buy rating on Microsoft Corporation (NASDAQ:MSFT) with a $675 price target. This decision came after Microsoft Corporation (NASDAQ:MSFT) signed a non-binding deal with OpenAI for new relationship terms that allow OpenAI to [\u2026]",
+                "url": "https://finnhub.io/api/news?id=d34a54abcf520f95332a2d7ba149959b70396f1f6960a1e36e6eeffc7ea39255",
+                "source": "Yahoo",
+                "date": "2025-09-25",
+                "close": 507.03,
+                "performance": -0.0061,
+                "label": "negative"
+            },
+            {
+                "headline": "Elon Musk Is Looking For Help In Building Macrohard, The AI Software Company That Could 'Simulate' Microsoft",
+                "summary": "Elon Musk is ramping up hiring for Macrohard, his newly announced AI software venture, through which he plans to create simulations of software companies like Microsoft Corporation (NASDAQ: MSFT). Musk Pitches Macrohard As AI-Only Software ...",
+                "url": "https://finnhub.io/api/news?id=375ad79feff63b3fb212fbf82ceb7863c73605b0d093357590021a364da5a427",
+                "source": "Yahoo",
+                "date": "2025-09-25",
+                "close": 507.03,
+                "performance": -0.0061,
+                "label": "negative"
+            },
+            {
+                "headline": "Microsoft (MSFT) Unveils Microfluidic Cooling Technology for Data Centers",
+                "summary": "Microsoft Corporation (NASDAQ:MSFT) is one of the Buzzing AI Stocks on Wall Street. On September 23, the company announced that it has successfully tested a new microfluidic cooling system that can remove heat up to three times better than cold plates currently used in data centers. Microfluidics is an approach that allows bringing the liquid coolant directly [\u2026]",
+                "url": "https://finnhub.io/api/news?id=2370b2707ef580441e3ec4fa8c41d4395bccaf22c83b2bc1efdf475da2d12d64",
+                "source": "Yahoo",
+                "date": "2025-09-25",
+                "close": 507.03,
+                "performance": -0.0061,
+                "label": "negative"
+            },
             {
                 "headline": "'The Age Of Crypto Index Investing': Grayscale ETF Holding Bitcoin, Ethereum, Solana And More Goes Live",
                 "summary": "The first U.S. cryptocurrency index exchange-traded fund has gone live for trading. \u200b \"We are ushering in the age of crypto index investing,\" Grayscale CEO Peter Mintzberg told CNBC last week as the Grayscale Digital Large Cap Fund (NYSE: GDLC) ...",
@@ -6710,16 +7140,6 @@
                 "label": "positive"
             },
             {
-                "headline": "Sector Update: Tech Stocks Mixed Late Afternoon",
-                "summary": "Tech stocks were mixed late Friday afternoon with the Technology Select Sector SPDR Fund (XLK) risin",
-                "url": "https://finnhub.io/api/news?id=36a5437002e572ddb0380453910dc81df98950488d42d046b1cbc8ea4e013bcc",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 517.93,
-                "performance": 0.0186,
-                "label": "positive"
-            },
-            {
                 "headline": "Alight Inc. (ALIT) Focused on Diversifying and Strengthening Revenue Streams",
                 "summary": "Alight Inc. (NYSE:ALIT) is one of the best AI stocks to buy under $5. On September 4, at Citi\u2019s 2025 Global Technology, Media, and Telecommunications Conference, the company expressed optimism about future growth and strategic partnerships. The optimism stems from the company\u2019s transition to focus on employee benefits services following the divestment of its payroll [\u2026]",
                 "url": "https://finnhub.io/api/news?id=7acd06b36e6078a95dc389740ad73a5eca53df10cae7cf8282942eb1f3ffb605",
@@ -6958,416 +7378,6 @@
                 "close": 517.93,
                 "performance": 0.0186,
                 "label": "positive"
-            },
-            {
-                "headline": "The Best Trillion-Dollar Stock to Buy Now, According to Wall Street (Hint: Not Nvidia)",
-                "summary": "Wall Street is bullish on most trillion-dollar stocks, but this one stands above the rest.",
-                "url": "https://finnhub.io/api/news?id=afa185555235b025d5bd84141b566b8e3f63579980cf47e0b7b520e11ef35363",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 517.93,
-                "performance": 0.0186,
-                "label": "positive"
-            },
-            {
-                "headline": "BofA\u2019s Hartnett Says Magnificent 7 Stock Bubble Is Still Growing",
-                "summary": "A BofA team led by Michael Hartnett studied 10 equity bubbles since the start of the previous century, finding that these periods of extreme overvaluation produced average trough-to-peak gains of 244%.  Current valuations also support the notion of further gains for the group, the strategists said.",
-                "url": "https://finnhub.io/api/news?id=620fe74bd96b7ed837cb764c7e90e662edfe86551cd26c674c7963d1e9dced51",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 517.93,
-                "performance": 0.0186,
-                "label": "positive"
-            },
-            {
-                "headline": "Cluster Reply Supports Riverty\u2019s AI-first Strategy for Omnichannel, Human-centric Customer Service",
-                "summary": "TURIN, Italy, September 19, 2025--Cluster Reply, the Reply company specialised in digital platform solutions leveraging Microsoft technologies, has partnered with fintech company Riverty to accelerate the rollout of a pioneering customer service platform \u2013 delivered in record time of just 100 days.",
-                "url": "https://finnhub.io/api/news?id=9823760f6500550588cfa295a7304cbbaa227a1030051800ba8aa6a751b86aa3",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 517.93,
-                "performance": 0.0186,
-                "label": "positive"
-            },
-            {
-                "headline": "4 Top Quantum Computing Stocks to Buy in 2025",
-                "summary": "The quantum computing arms race is heating up.",
-                "url": "https://finnhub.io/api/news?id=902b4c319185f1fa3895383a2f3e24aea74fc3097691f794f8f7db288856b4bc",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 517.93,
-                "performance": 0.0186,
-                "label": "positive"
-            },
-            {
-                "headline": "2 Tech Giants, One AI Future: Why Intel, Not Nvidia, Is My Pick Today",
-                "summary": "Intel Corporation and Nvidia Corporation partner on custom AI chips as NVDA invests $5B. Click for how this alliance boosts INTC\u00e2\u0080\u0099s outlook and AI market potential.",
-                "url": "https://finnhub.io/api/news?id=0a9929dfca84e369bf5131fe18737af822a1435d1689883a1b04ba11022fa594",
-                "source": "SeekingAlpha",
-                "date": "2025-09-19",
-                "close": 517.93,
-                "performance": 0.0186,
-                "label": "positive"
-            },
-            {
-                "headline": "3 Top Artificial Intelligence Stocks to Buy Right Now",
-                "summary": "Nvidia, Alphabet, and Microsoft are all riding the AI wave.",
-                "url": "https://finnhub.io/api/news?id=492af7f12bffcc8a8f2842ef3667be3e5e9a6b0585ed0ff6f93d21b1d94cad2e",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 517.93,
-                "performance": 0.0186,
-                "label": "positive"
-            },
-            {
-                "headline": "AI Sovereignty and CoreWeave's Big UK Bet",
-                "summary": "Coreweave, Microsoft ,\u00a0OpenAI\u00a0and other American companies announced plans to spend tens of billions of dollars on technology infrastructure in the UK, part of a series of business deals that coincide with President\u00a0Donald Trump's visit to the nation earlier this week.\u00a0CoreWeave, which supplies data center capacity to companies like OpenAI, said it will invest \u00a31.5 billion in the UK. It's working with Nvidia and Scottish data center company DataVita Ltd. to put its technology in a DataVita-owned facility in Chapelhall. CoreWeave's spending comes on top of \u00a31 billion the company is already investing in the UK at two sites London Docklands and Crawley. Mike Mattacola is General Manager for International at CoreWeave, responsible for growth and expansion into new markets. He joined Caroline Hepker on Bloomberg Radio.",
-                "url": "https://finnhub.io/api/news?id=ab3a3ff78b2b1c102a8578e3b4b312ba984746f22b167cd79a0360945b57bb00",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 517.93,
-                "performance": 0.0186,
-                "label": "positive"
-            },
-            {
-                "headline": "From Mag 7 To Great 8: Why Palantir Could Be The Next Trillion-Dollar Giant",
-                "summary": "Palantir Technologies is emerging as a future tech giant with strong government ties, AI growth, and high-margin potential. See why PLTR stock is a buy.",
-                "url": "https://finnhub.io/api/news?id=b2ebdc80b5dc2e75b62b7f4e3f849940e36cf24b7daf49521e273693aeb5199e",
-                "source": "SeekingAlpha",
-                "date": "2025-09-19",
-                "close": 517.93,
-                "performance": 0.0186,
-                "label": "positive"
-            },
-            {
-                "headline": "Did Nvidia Just Help Amazon, Microsoft, and Google at CoreWeave's Expense?",
-                "summary": "Nvidia's decisions can have huge ripple effects through the AI world. But probably not this time.",
-                "url": "https://finnhub.io/api/news?id=c1446191a5f0ef1cd75cd1bb048419e4260edc2564ba00049c5bf329249d154e",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 517.93,
-                "performance": 0.0186,
-                "label": "positive"
-            },
-            {
-                "headline": "Nvidia to Invest $2.7 Billion in U.K. AI Startup Development",
-                "summary": "Nvidia  pledged 2 billion pounds ($2.71 billion) to boost U.K. artificial-intelligence startups and speed up the creation of new jobs and businesses.  The U.S. AI chip giant, the world\u2019s most valuable company, said Thursday that venture-capital investors Accel, Air Street Capital, Balderton, Hoxton Ventures and Phoenix Court will join it in the effort to jumpstart the AI startup ecosystem in the U.K..  Nvidia\u2019s U.K. investment plans add to a flurry of spending commitments by U.S. tech giants coinciding with President Trump\u2019s state visit this week.",
-                "url": "https://finnhub.io/api/news?id=886cd82f44623d8ae8be04d199ef651916c26441204ea3d0b55be2b1b2abc7f9",
-                "source": "Yahoo",
-                "date": "2025-09-19",
-                "close": 517.93,
-                "performance": 0.0186,
-                "label": "positive"
-            },
-            {
-                "headline": "EQL: Broad Market ETF With Low Tech Exposure And A Tilt To Value",
-                "summary": "EQL offers equal-weight exposure across all 11 GICS sectors, reducing tech risk but lagging SPY and active peers. Learn why EQL ETF is a hold.",
-                "url": "https://finnhub.io/api/news?id=dd45f38bbfb6b0d4045a84be3986d8278206b5afca9b5abf4432a619fa4dd3e8",
-                "source": "SeekingAlpha",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Jim Cramer Highlights Microsoft as Data Center Beneficiary",
-                "summary": "Microsoft Corporation (NASDAQ:MSFT) is one of the stocks Jim Cramer weighed in on. Cramer mentioned the company while highlighting the renewed optimism around data center demand and its impact on leading tech companies. He said: \u201cNow, some of today\u2019s strength in tech has, really has to do with still one more celebration of the data [\u2026]",
-                "url": "https://finnhub.io/api/news?id=59623a6d0eaaf64a3defd9b083cb8a380d9af870a7183dcefccaa3fbf24b8e24",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Citizens JMP Upgrades CoreWeave (CRWV) to Outperform, Sets $180 Price Target",
-                "summary": "CoreWeave, Inc. (NASDAQ:CRWV) is one of the AI Stocks Making Headlines This Week. On September 16, Citizens JMP upgraded the stock to \u201cOutperform\u201d from Market Perform. The firm believes that investors are not aware enough of how the firm generates its revenue. This is why the stock is misunderstood. Moreover, analyst Greg Miller sees accelerating hyperscale outsourcing [\u2026]",
-                "url": "https://finnhub.io/api/news?id=25a780c4f348dc03b9b495f5cfa109a604ccf666372cbca75085cc8fe83ad8d1",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Microsoft Stock (MSFT) Seen Delivering Strong Total Returns, Analyst Notes",
-                "summary": "Microsoft Corporation (NASDAQ:MSFT) is one of the AI Stocks Making Headlines This Week. On September 16, Morgan Stanley reiterated the stock as \u201cOverweight\u201d stating that its shares remain \u201cattractive.\u201d The firm noted that Microsoft\u2019s 10% dividend increase has reinforced its strong earnings and return profile. It lifted its quarterly dividend by eight cents to $0.91 per share, [\u2026]",
-                "url": "https://finnhub.io/api/news?id=ab343bd593bbd5d9eb920a15a165245425a9c088bc32bf28e7cf5d9bde83d797",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "U.K. Unveils Tech Partnerships on Trump Visit",
-                "summary": "The president's visit this week underscores how Britain seems to have perfected the art of managing Trump.  The American president, unpopular in Britain, was kept away from the crowds, given a heavy dose of tightly choreographed British pageantry and the opportunity to ink a deal.  Several chief executives, including Jensen Huang of Nvidia, were in attendance.",
-                "url": "https://finnhub.io/api/news?id=c77c7f70bff42281348d03771706c6d788f1c00aa734b4c959f9adbf6ee34bd6",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Microsoft Pours Billions Into New AI Data Center Packed With NVIDIA Chips",
-                "summary": "MSFT Boosts U.S. AI Footprint With $4B Data Center Spend, Expands Partnership With NVIDIA",
-                "url": "https://finnhub.io/api/news?id=96176ec1da015113f6c3c3ff7ee4f324c1b3c147bfca712c7a8bbd702f534d6b",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Former Trump adviser says US can't rely on foreign chips as Nvidia invests in Intel",
-                "summary": "IBM vice chairman Gary Cohn says domestic chip production is critical for national security, AI growth, and economic resilience",
-                "url": "https://finnhub.io/api/news?id=2a5fb7e4b305213c6c98ba4f9b18e5a478e831fd80f23c3dd7476c14b8e934f4",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Stock market today: Dow, S&P 500, Nasdaq on pace for records after Fed signals more cuts, Nvidia bets on Intel",
-                "summary": "Markets are shaking off initial hesitation prompted by Powell's warning that there's no 'risk-free path' for policy.",
-                "url": "https://finnhub.io/api/news?id=f861e75472a63b64588a7a910237540bed11acdf305967056c8c93d9a3625db5",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Trump Flattery Pays Off for Starmer With Major Pitfalls Averted",
-                "summary": "Appearing before reporters Thursday at the close of Trump\u2019s two-day trip, the US president still seemed dazzled by the previous day\u2019s events at Windsor Castle, calling it a \u201cspectacular honor\u201d and describing King Charles III and Queen Camilla as \u201camazing people.\u201d  It was exactly the kind of response UK officials had been hoping for, and Starmer played on the sentiment by repeatedly stressing the \u201cunique bond\u201d between the nations forged through historic ties that made them \u201cfirst partners.\u201d",
-                "url": "https://finnhub.io/api/news?id=85211a170b02b0bd21a5ae7a5a6dcbca147e5e526b1f2afd0a6279f320ac9807",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "3 Reasons Growth Investors Will Love Microsoft (MSFT)",
-                "summary": "Microsoft (MSFT) could produce exceptional returns because of its solid growth attributes.",
-                "url": "https://finnhub.io/api/news?id=7af6ab638d1539f896491aa335eb52775432b6195681083102681b9847e1351a",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Booking Holdings Inc. (BKNG) Taps AI Innovation to Enhance Booking Experiences",
-                "summary": "Booking Holdings Inc. (NASDAQ:BKNG) is one of the best beginner stocks to buy, according to analysts. On September 11 at the Goldman Sachs Communicopia + Technology Conference 2025, the company affirmed plans to expand its footprint as it also seeks to enhance customer experiences through technology. Part of the plan entails leveraging artificial intelligence to [\u2026]",
-                "url": "https://finnhub.io/api/news?id=3660aeb983e14cd05675ca8b557d8f9e2676251d117404587e42a4d3d485b87f",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Microsoft Corporation (MSFT) Takes Down Raccoonn365 Phishing Network",
-                "summary": "Microsoft Corporation (NASDAQ:MSFT) is one of the best beginner stocks to buy, according to analysts. On September 16, the company confirmed that its Digital Crimes Unit had successfully brought the Raccoon365 phishing network under control. Cybercriminals have used the tool to steal Microsoft 365 usernames and passwords. With the help of a court order, the [\u2026]",
-                "url": "https://finnhub.io/api/news?id=cdd8db7ec24d51a7fb065abbe6f141e1db63c5c0363613db4754762a499cba48",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "CEO of $22.5 billion Ramp calls advisors like OpenAI\u2019s Fidji Simo and Microsoft\u2019s Satya Nadella when he needs business advice",
-                "summary": "Eric Glyman\u2019s six-year-old startup just notched $1 billion in annualized revenue.",
-                "url": "https://finnhub.io/api/news?id=ac9a36df15867ad77264af34276359ca004f1c416e19dbaf99f561c267cc22b7",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "C3.ai vs. Microsoft: Which AI Stock Is the Safer Bet for Investors?",
-                "summary": "AI's execution hurdles and widening losses contrast sharply with MSFT's scale, profitability and broad AI adoption.",
-                "url": "https://finnhub.io/api/news?id=d148d53cd1adbaebb065e298dca9bf5d910f52867e2915ffa9f347fb413a0f34",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Udemy (UDMY) Stock Is Up, What You Need To Know",
-                "summary": "Shares of online learning platform Udemy (NASDAQ:UDMY) jumped 2.6% in the morning session after the company released a report highlighting a surge in demand for Artificial Intelligence (AI) skills on its platform, which happened during a broader market rally fueled by a Federal Reserve interest rate cut.",
-                "url": "https://finnhub.io/api/news?id=866d4d6bcaa7bdc370485266a72b18acbdc010a2ab9d47c9e5cc96864a583521",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "CrowdStrike Stock Rallies. Wall Street Just Got a Nice Surprise.",
-                "summary": "CrowdStrike  stock was one of the biggest gainers in the  on Thursday.  Wall Street analysts are increasing their price targets on shares of the cybersecurity firm after the company\u2019s Fal.Con conference and investor meeting.  Shares were up 11% to roughly $492 in Thursday trading.",
-                "url": "https://finnhub.io/api/news?id=60180d7658f74bf71e846ff9ef81efe67ada17599ecf5c760aabbca0259afa70",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Alphabet Inc. (GOOGL) Crosses $3 Trillion In Market Cap For First Time",
-                "summary": "Alphabet Inc. (NASDAQ:GOOGL) is among the 15 Stocks ChatGPT Predicts Could Make You Wealthy in 5 Years. On September 12, the firm hit a market capitalization of $3 trillion for the first time, after a favorable antitrust ruling and renewed optimism around AI. The company\u2019s class A shares rose 4.49% on Monday to close at [\u2026]",
-                "url": "https://finnhub.io/api/news?id=a6332af0f81816ad4d539823f2fa29a04cbbad44cdb74c089ba46fb24b26e1e0",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "If The U.S. Economy Is So Good...",
-                "summary": "Explore key economic warning signs behind strong U.S. growth\u00e2\u0080\u0094Las Vegas tourism drops, loan delinquencies surge. Here's what investors need to keep in mind.",
-                "url": "https://finnhub.io/api/news?id=b9b1d4cd4fe6d6e19d4395c5bef7816e5577b13f23eae08efd3fbe79d43a91c5",
-                "source": "SeekingAlpha",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "EC Approves Microsoft Corporation (MSFT)\u2019s Commitments Over Teams Integration Concerns",
-                "summary": "Microsoft Corporation (NASDAQ:MSFT) is among the 15 Stocks ChatGPT Predicts Could Make You Wealthy in 5 Years. Last week, the European Commission (EC) accepted the company\u2019s proposed commitments to address EU competition concerns related to the integration of Teams with M365 and Office 365 suites. The commitments, which will be legally binding under the EU [\u2026]",
-                "url": "https://finnhub.io/api/news?id=ea90303a1ecac4e7c2a1df360ca00d5c43840e2ad5770214cbfd265203d66950",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Wall Street Sees Oracle Taking Run At Cloud's 'Big Three' With AI Growth Targets",
-                "summary": "The cloud-computing era for enterprise tech has been dominated by a \"Big Three\" of tech giants: Amazon, Microsoft and Google parent company Alphabet.  With AI demand supercharging growth for Oracle's cloud business, some stock analysts predict that the database tech stalwart will soon disrupt the status quo.  Oracle stock posted its best single-day this century on Sept. 10, a day after reporting its fiscal Q1 results.",
-                "url": "https://finnhub.io/api/news?id=440bc6c3d0a18538db6dc2ccb70a06012803031db1455cf62bfa89b0040e4f22",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Microsoft building world\u2019s most powerful AI datacenter in Wisconsin",
-                "summary": "Investing.com -- Microsoft CEO Satya Nadella announced Thursday that the company is building what it calls the world\u2019s most powerful AI datacenter in southeastern Wisconsin.",
-                "url": "https://finnhub.io/api/news?id=92bcd020fc5e76ce6507d6a69e49761536e89205837fa1e3ac19cc2f6c3535ce",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Truist Reaffirms Buy on Microsoft Corporation (MSFT), Sees 32% Upside with OpenAI Boost",
-                "summary": "Microsoft Corporation (NASDAQ:MSFT) is among the high growth mega cap stocks you can buy and hold for the next 3 years. Analysts at Truist Securities have reaffirmed their \u2018Buy\u2019 rating on Microsoft Corporation (NASDAQ:MSFT) while maintaining a price target of $675.00, implying an upside of nearly 32%. This confidence stems from the company\u2019s revised partnership [\u2026]",
-                "url": "https://finnhub.io/api/news?id=f885da80cb3468d569521f431b823823a541f11c8623b79033c614bdd624e6e7",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "SoundHound Bets on Amelia 7: Can Agentic AI Boost Enterprise Growth?",
-                "summary": "SOUN leans on Amelia 7's agentic AI to win enterprise customers, drive efficiency gains and unlock new growth opportunities.",
-                "url": "https://finnhub.io/api/news?id=78dfa26fece56b045bf98ce03f4f8d5fff07cb3933da3e8c262b148a1e01d190",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Nvidia\u2019s UK Partner Is a 16-Month-Old Crypto Mining Spinout",
-                "summary": "Nvidia Corp. is investing \u00a3500 million ($683 million) in Nscale, Chief Executive Officer Jensen Huang told reporters in London on Wednesday, and said the UK-based company would be part of an AI infrastructure buildout valued at as much as \u00a311 billion.  OpenAI named it as a partner for Stargate UK, an offshoot of an even larger US effort to increase the capacity to run AI systems.",
-                "url": "https://finnhub.io/api/news?id=042f7bace4cef85355d88f01bc45eea7824a228ec2f3b4917da8b99d89f874ae",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Inside Microsoft\u2019s Plans for the \u2018Most Advanced AI Data Center in the World\u2019",
-                "summary": "Microsoft said it is in the final stages of construction on the $3.3 billion project in Wisconsin it is calling the most advanced AI data center in the world.",
-                "url": "https://finnhub.io/api/news?id=6bcae4b8dce8658b8ce3a514421891dcd5d8b874a73935616c278657a0d621f8",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Microsoft boosts Wisconsin data center spending to $7 billion",
-                "summary": "SAN FRANCISCO (Reuters) -Microsoft on Thursday said it plans to build a second massive artificial intelligence data center in Wisconsin, bringing its spending in the state to more than $7 billion.  The new project will join a $3.3 billion data center in Mount Pleasant in the southeastern corner of the state, announced last year.  Microsoft said Thursday that the initial data center remains on track to open next year and will employ about 500 people at its peak, expanding to about 800 once the second data center is complete.",
-                "url": "https://finnhub.io/api/news?id=dba31343f1f74061c0e4838340de266485c284f34fdf23532d63480c4c19608c",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Microsoft plans $4 billion expansion of Racine County work for an advanced AI data center",
-                "summary": "This new announcement doubles the amount Microsoft plans to spend on its Racine County data center complex.",
-                "url": "https://finnhub.io/api/news?id=872a69dfb63485100b0c807036fdb9e28919aa7a75bbf7239cdf9106a2996868",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Nebius Reaffirms $2B Capex for 2025: Enough to Fuel Expansion?",
-                "summary": "NBIS reaffirms $2 billion 2025 capex, doubling down on AI infrastructure growth while rivals ramp up massive spending of their own.",
-                "url": "https://finnhub.io/api/news?id=6d6b93a8ca8f6036996756f1b0554d0719d19326e06b2f29ed8940bfd41e6708",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "Think It's Too Late to Buy Nebius Group? Here's the 1 Reason Why There's Still Time.",
-                "summary": "Nebius stock just rocketed higher by 50% in a single day. Here's why there should be more gains to come.",
-                "url": "https://finnhub.io/api/news?id=2027bcf7600d17802b0d0c94ac54138794a1dd74819fec4b9aee725756868328",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "UK Focuses on AI With \u00a331B in Big Tech Deals While Keeping Crypto at Arm\u2019s Length",
-                "summary": "Big Tech firms announced \u00a331 billion of new investments in the U.K. this week. AI is central to a new technology partnership between the U.K. ...",
-                "url": "https://finnhub.io/api/news?id=b0da1380f6adf10f62d3a038e1ee4acb4cf05fe8c82ff0157bd92611480e8166",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
-            },
-            {
-                "headline": "ISG\u00ae Names Vena a Top Complete Planning Platform Across Three New Buyers Guides",
-                "summary": "TORONTO, September 18, 2025--Vena, the only Complete FP&A platform powered by agentic AI and purpose-built to amplify the Microsoft technology ecosystem, today announced ISG Research has recognized the Vena platform as a Manageability Leader and with a high overall ranking across three separate Buyers Guide research reports: Record to Report, Financial Close and Financial Consolidation. In each report, Vena\u2019s solution suite was compared directly to a number of other major industry players\u2014and ra",
-                "url": "https://finnhub.io/api/news?id=017d3646882d16a0ec2fa29899a428bea4036e16a7eb2dda713f00fdfd00b535",
-                "source": "Yahoo",
-                "date": "2025-09-18",
-                "close": 508.45,
-                "performance": -0.0031,
-                "label": "negative"
             }
         ]
     }

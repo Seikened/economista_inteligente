@@ -74,6 +74,6 @@ class FetchNews:
             json.dump(self.ticker_news, f, indent=4)
 
 if __name__ == "__main__":
-    news = FetchNews(tickers=["AAPL", "TSLA", "MSFT"], days_back=180)
+    news = FetchNews(tickers=["AAPL", "TSLA", "MSFT"], days_back=365*7)
     news.fetch_news()
     news.save_to_json("noticias.json")
