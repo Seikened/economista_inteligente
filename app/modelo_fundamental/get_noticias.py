@@ -36,7 +36,7 @@ class FetchNews:
                 continue
             
             articles = response.json()
-            yfinance_data= yf.download(ticker, start=from_date, end=datetime.now().strftime('%Y-%m-%d'))
+            yfinance_data= yf.download(ticker, start=(datetime.now() - timedelta(days=self.days_back+1)).strftime('%Y-%m-%d'), end=datetime.now().strftime('%Y-%m-%d'))
             if yfinance_data is None or yfinance_data.empty:
                 print(f"No stock data found for {ticker}")
                 continue
@@ -62,7 +62,7 @@ class FetchNews:
                     "date": article_date,
                     "close": close_price,
                     "performance": rendimiento,
-                    "label": "positive" if rendimiento > 0 else "negative" if rendimiento < 0 else "neutral"
+                    "label": "positive" if rendimiento > 0 else "negative"
                 })
 
         return self.ticker_news
@@ -74,6 +74,30 @@ class FetchNews:
             json.dump(self.ticker_news, f, indent=4)
 
 if __name__ == "__main__":
-    news = FetchNews(tickers=["AAPL", "TSLA", "MSFT"], days_back=180)
+
+
+    top_20_tech = [
+        "NVDA",  # NVIDIA
+        "MSFT",  # Microsoft
+        "AAPL",  # Apple
+        "GOOGL", # Alphabet (Google)
+        "AMZN",  # Amazon
+        "META",  # Meta (Facebook)
+        "AVGO",  # Broadcom
+        "TSLA",  # Tesla
+        "TSM",   # Taiwan Semiconductor (TSMC)
+        "ORCL",  # Oracle
+        "TCEHY", # Tencent
+        "NFLX",  # Netflix
+        "PLTR",  # Palantir
+        "BABA",  # Alibaba
+        "ASML",  # ASML Holding
+        "SAP",   # SAP SE
+        "CSCO",  # Cisco
+        "IBM",   # IBM
+        "AMD"    # Advanced Micro Devices
+    ]
+    # desde hace 7 años
+    news = FetchNews(tickers=top_20_tech, days_back=365*7)
     news.fetch_news()
     news.save_to_json("noticias.json")
