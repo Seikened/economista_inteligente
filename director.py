@@ -19,13 +19,13 @@ class EmpresasDirectory:
         """Crea un archivo JSON con noticias si no existe."""
         ruta_json = "/Users/ferleon/Github/economista_inteligente/noticias.json"
         if not pathlib.Path(ruta_json).exists():
-            #Logger.info("No se encontró el archivo de noticias. Creando uno nuevo...")
-            news = FetchNews(tickers=self._empresas, days_back=365*7) # type: ignore
+            Logger.info("No se encontró el archivo de noticias. Creando uno nuevo...")
+            news = FetchNews(tickers=self.empresas_tickers, days_back=365*7) # type: ignore
             news.fetch_news()
             news.save_to_json("noticias.json")
-            #Logger.info("Archivo de noticias creado.")
+            Logger.info("Archivo de noticias creado.")
             return
-        #Logger.info("Archivo de noticias ya existe.")
+        Logger.info("Archivo de noticias ya existe.")
         return
         
     def _cargar_empresas_clasificadas(self) -> None:
