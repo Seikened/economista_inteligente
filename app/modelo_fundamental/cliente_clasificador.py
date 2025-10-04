@@ -5,7 +5,7 @@ import numpy as np
 from colorstreak import Logger
 import matplotlib.pyplot as plt
 from .modelo_clasificador import ClasificadorSentimientos
-
+import pathlib
 
 
 
@@ -38,6 +38,7 @@ class Empresa():
         self._noticias: pl.LazyFrame = self._cargar_noticias(self._link)
         self._empresa = empresa
         self._tokenizar = tokenizar
+        self._ruta_base = '/Users/ferleon/Github/economista_inteligente/data/'
 
     def _cargar_noticias(self, ruta: str) -> pl.LazyFrame:
         """ Carga las noticias desde un archivo JSON y las convierte en un LazyFrame de Polars."""
@@ -150,25 +151,51 @@ class Empresa():
         )
         return mezclar_noticias_precios
     
-# ============================ METODOS DE USO ============================
-    def crear_parquet(self,dataframe: pl.DataFrame) -> None:
+    def _crear_parquet(self,lazyframe: pl.LazyFrame) -> None:
         """ Guarda las noticias y precios de cierre diarios de la empresa en un archivo Parquet."""
-        import pathlib
-        ruta = pathlib.Path(f"noticias_{self._empresa}.parquet")
-        df = dataframe
-        df.write_parquet(ruta)
-        Logger.info(f"Archivo Parquet guardado en: {ruta}")
+        
+        path = self._ruta_base + "parquets_finanzas"
+        ruta = pathlib.Path(f"{path}/noticias_{self._empresa}.parquet")
+        dataframe = lazyframe.collect()
+        dataframe.write_parquet(ruta) # Guardar como Parquet
+        #Logger.info("Archivo Parquet guardado 💾")
+        
+    def _cargar_parquet(self,) -> pl.LazyFrame:
+        """ Carga las noticias y precios de cierre diarios de la empresa desde un archivo Parquet."""
+        
+        path = self._ruta_base + "parquets_finanzas"
+        ruta = pathlib.Path(f"{path}/noticias_{self._empresa}.parquet")
+        lazyframe = pl.read_parquet(ruta).lazy() # Cargar como LazyFrame
+        #Logger.info("Archivo Parquet cargado 📂")
+        return lazyframe
+
+    def _cache_parquet(self, lazyframe: pl.LazyFrame) -> pl.LazyFrame:
+        """ Carga el archivo Parquet si existe, de lo contrario lo crea."""
+        
+        path = self._ruta_base + "parquets_finanzas"
+        ruta = pathlib.Path(f"{path}/noticias_{self._empresa}.parquet")
+        if ruta.exists():
+            #Logger.info(f"Parquet ya existe {ruta}, cargando...")
+            return self._cargar_parquet()
+        else:
+            #Logger.info(f"Parquet no existe {ruta}, creando...")
+            self._crear_parquet(lazyframe)
+            return lazyframe
+
+# ============================ METODOS DE USO ============================
 
     @property
     def all_info(self) -> pl.DataFrame:
         """ Devuelve un DataFrame con todas las noticias y precios de cierre diarios de la empresa."""
-        return self._ordenar_noticias().collect()
+        all_info_df = self._cache_parquet(self._ordenar_noticias()).collect()
+        return all_info_df
     
     
     @property
     def noticias_tabla(self) -> pl.DataFrame:
         " Devuelve un DataFrame con las noticias filtradas de la empresa."
-        return self._noticias_filtradas().collect()
+        noticias_df = self._noticias_filtradas().collect()
+        return noticias_df
     
     
     @property
@@ -203,26 +230,14 @@ class Empresa():
 
 
 
-# ================ LISTAR NOTICIAS ================
+# ================ GRPÁFICAR NOTICIAS ================
 
 def graficas(positivo, negativo, neutro, empresa_ticker: empresas_lit | str) -> None:
-    print("=== Resultados Clasificación ===")
+
 
     total_positivos = positivo
     total_neutros = neutro
     total_negativos = negativo
-
-    Logger.info(" Sentimiento | Total")
-    Logger.info("-----------------------")
-    porcentaje_positivo = total_positivos / sum([total_positivos, total_neutros, total_negativos]) if (total_positivos + total_neutros + total_negativos) > 0 else 0
-    porcentaje_neutro = total_neutros / sum([total_positivos, total_neutros, total_negativos]) if (total_positivos + total_neutros + total_negativos) > 0 else 0
-    porcentaje_negativo = total_negativos / sum([total_positivos, total_neutros, total_negativos]) if (total_positivos + total_neutros + total_negativos) > 0 else 0
-
-    Logger.info(f" Positivo   | {total_positivos} {porcentaje_positivo:.2%}")
-    Logger.info(f" Neutro     | {total_neutros} {porcentaje_neutro:.2%}")
-    Logger.info(f" Negativo   | {total_negativos} {porcentaje_negativo:.2%}")
-    Logger.info(f"Total Clasificaciones: {total_positivos + total_neutros + total_negativos}")
-    Logger.info("-----")
 
     # --- Plot bonito y minimal ---
     labels = ["Positivo", "Neutro", "Negativo"]
@@ -249,7 +264,7 @@ def graficas(positivo, negativo, neutro, empresa_ticker: empresas_lit | str) -> 
 
     # Fondo transparente y nombre de archivo seguro
     safe_name = str(empresa_ticker).replace("/", "-").strip()
-    ruta = "/Users/ferleon/Github/economista_inteligente/data"
+    ruta = "/Users/ferleon/Github/economista_inteligente/data/graficas"
     plt.savefig(f"{ruta}/clasificacion_noticias_{safe_name}.png", bbox_inches="tight", transparent=False)
     plt.close(fig)
 
