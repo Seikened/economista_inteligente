@@ -2,141 +2,12 @@ import polars as pl
 import json
 from typing import Literal
 import numpy as np
-from transformers import pipeline
 from colorstreak import Logger
 import matplotlib.pyplot as plt
-from functools import lru_cache
-
-# ===============================================================================================
+from .modelo_clasificador import ClasificadorSentimientos
 
 
 
-
-@lru_cache(maxsize=1)
-def clasificador_cache():
-    return pipeline(
-        task="text-classification",
-        model="ProsusAI/finbert",
-        tokenizer="ProsusAI/finbert",
-        top_k=None,
-        truncation=True,            # corta seguro a 512 tokens
-        max_length=512,
-        )
-
-
-class ClasificadorSentimientos:
-    
-    def __init__(self,noticia : dict):
-        self.noticia = noticia
-        self.clasificador = clasificador_cache()
-        self.probabilidad_positiva = 0.0
-        self.probabilidad_negativa = 0.0
-        self.probabilidad_neutra = 0.0
-        self.sentimiento = ""
-
-
-    def _ordenar_probabilidades(self, resultados):
-        puntajes_ordenados = sorted(resultados, key=lambda x: x["score"], reverse=True)
-        etiqueta_principal = puntajes_ordenados[0]
-        suma_total = sum(p["score"] for p in resultados) or 1.0
-        probabilidades = {p["label"]: p["score"]/suma_total for p in resultados}
-        return etiqueta_principal["label"], {k: round(v, 4) for k, v in probabilidades.items()}
-
-
-    def _clasificar_titulo_noticia(self):
-        titulo = self.noticia.get("headline", "")
-        resultados = self.clasificador(titulo)
-
-        puntajes = resultados[0] 
-        etiqueta_principal, probabilidades = self._ordenar_probabilidades(puntajes)
-
-        resultado = {
-            "sent": etiqueta_principal,
-            "positive": probabilidades.get("positive", 0.0),
-            "negative": probabilidades.get("negative", 0.0),
-            "neutral": probabilidades.get("neutral", 0.0)
-        }
-        return resultado
-
-
-    def _clasificar_resumen_noticia(self):
-        resumen = self.noticia.get("summary", "")
-        tamaño_noticia = len(resumen)
-        
-        # Si viene vacío o solo espacios, sal temprano con neutro
-        if not resumen.strip():
-            return {"sent": "neutral", "positive": 0.0, "negative": 0.0, "neutral": 1.0}
-        
-        chunks = []
-        if tamaño_noticia > 512:
-            chunks = [resumen[i:i + 512] for i in range(0, len(resumen), 512)]
-        else:
-            chunks = [resumen]
-        
-        resultados_lista = [self.clasificador(chunk) for chunk in chunks]
-        positivos = []
-        negativos = []
-        neutros = []
-        for resultados in resultados_lista:
-            puntajes = resultados[0] 
-            etiqueta_principal, probabilidades = self._ordenar_probabilidades(puntajes)
-            positivos.append(probabilidades.get("positive", 0.0))
-            negativos.append(probabilidades.get("negative", 0.0))
-            neutros.append(probabilidades.get("neutral", 0.0))
-        
-        # Promedio pero por pesos de los chunks
-        total_peso = sum(len(chunk) for chunk in chunks)
-        pesos = [len(chunk) / total_peso for chunk in chunks]
-        positivos = [p * peso for p, peso in zip(positivos, pesos)]
-        negativos = [n * peso for n, peso in zip(negativos, pesos)]
-        neutros = [ne * peso for ne, peso in zip(neutros, pesos)]
-        
-        # Promedio simple
-        probabilidad_promedio = {
-            "positive": round(sum(positivos), 4),
-            "negative": round(sum(negativos), 4),
-            "neutral": round(sum(neutros), 4)
-        }
-        
-        etiqueta_principal = max(probabilidad_promedio, key=probabilidad_promedio.get) # type: ignore
-        
-        resultado = {
-            "sent": etiqueta_principal,
-            "positive": probabilidad_promedio["positive"],
-            "negative": probabilidad_promedio["negative"],
-            "neutral": probabilidad_promedio["neutral"]
-        }
-        return resultado
-    
-    
-            
-    
-    
-    def clasificar_noticia(self):
-        resultado_titulo = self._clasificar_titulo_noticia()
-        resultado_resumen = self._clasificar_resumen_noticia()
-        peso_titulo = 0.3
-        peso_resumen = 1 - peso_titulo
-        self.probabilidad_positiva = round((resultado_titulo["positive"] * peso_titulo + resultado_resumen["positive"] * peso_resumen), 4)
-        self.probabilidad_negativa = round((resultado_titulo["negative"] * peso_titulo + resultado_resumen["negative"] * peso_resumen), 4)
-        self.probabilidad_neutra = round((resultado_titulo["neutral"] * peso_titulo + resultado_resumen["neutral"] * peso_resumen), 4)
-
-        probabilidades = {
-            "positive": self.probabilidad_positiva,
-            "negative": self.probabilidad_negativa,
-            "neutral": self.probabilidad_neutra
-        }
-        self.sentimiento = max(probabilidades, key=probabilidades.get) # type: ignore
-        probabilidad_mas_alta = probabilidades[self.sentimiento]
-        
-        return self.sentimiento, probabilidad_mas_alta
-
-
-
-    @classmethod
-    def predecir(cls, noticia: dict):
-        instancia = cls(noticia)
-        return instancia.clasificar_noticia()
 
 # ===============================================================================================
 empresas_lit = Literal[
@@ -334,23 +205,12 @@ class Empresa():
 
 # ================ LISTAR NOTICIAS ================
 
-def graficas(dataframe: pl.DataFrame, empresa_ticker: empresas_lit) -> None:
+def graficas(positivo, negativo, neutro, empresa_ticker: empresas_lit | str) -> None:
     print("=== Resultados Clasificación ===")
-    
-    resultados_df = (
-        dataframe
-        .group_by("sentiment")
-        .agg(pl.count().alias("total"))
-        .sort("sentiment")
-        .to_dicts()
-    )
-    
-    resultados = {row["sentiment"]: row["total"] for row in resultados_df}
-    Logger.info(resultados)
-    
-    total_positivos = resultados.get("positive", 0)
-    total_neutros = resultados.get("neutral", 0)
-    total_negativos = resultados.get("negative", 0)
+
+    total_positivos = positivo
+    total_neutros = neutro
+    total_negativos = negativo
 
     Logger.info(" Sentimiento | Total")
     Logger.info("-----------------------")
@@ -389,7 +249,8 @@ def graficas(dataframe: pl.DataFrame, empresa_ticker: empresas_lit) -> None:
 
     # Fondo transparente y nombre de archivo seguro
     safe_name = str(empresa_ticker).replace("/", "-").strip()
-    plt.savefig(f"clasificacion_noticias_{safe_name}.png", bbox_inches="tight", transparent=False)
+    ruta = "/Users/ferleon/Github/economista_inteligente/data"
+    plt.savefig(f"{ruta}/clasificacion_noticias_{safe_name}.png", bbox_inches="tight", transparent=False)
     plt.close(fig)
 
 
@@ -399,24 +260,24 @@ if __name__ == "__main__":
     # ================ CARGA DE NOTICIAS ================
     empresas_tickers: list[empresas_lit] = [
             "NVDA",  # NVIDIA
-            "MSFT",  # Microsoft
-            "AAPL",  # Apple
-            "GOOGL", # Alphabet (Google)
-            "AMZN",  # Amazon
-            "META",  # Meta (Facebook)
-            "AVGO",  # Broadcom
-            "TSLA",  # Tesla
-            "TSM",   # Taiwan Semiconductor (TSMC)
-            "ORCL",  # Oracle
-            "TCEHY", # Tencent
-            "NFLX",  # Netflix
-            "PLTR",  # Palantir
-            "BABA",  # Alibaba
-            "ASML",  # ASML Holding
-            "SAP",   # SAP SE
-            "CSCO",  # Cisco
-            "IBM",   # IBM
-            "AMD"    # Advanced Micro Devices
+            # "MSFT",  # Microsoft
+            # "AAPL",  # Apple
+            # "GOOGL", # Alphabet (Google)
+            # "AMZN",  # Amazon
+            # "META",  # Meta (Facebook)
+            # "AVGO",  # Broadcom
+            # "TSLA",  # Tesla
+            # "TSM",   # Taiwan Semiconductor (TSMC)
+            # "ORCL",  # Oracle
+            # "TCEHY", # Tencent
+            # "NFLX",  # Netflix
+            # "PLTR",  # Palantir
+            # "BABA",  # Alibaba
+            # "ASML",  # ASML Holding
+            # "SAP",   # SAP SE
+            # "CSCO",  # Cisco
+            # "IBM",   # IBM
+            # "AMD"    # Advanced Micro Devices
         ]
 
 
@@ -431,18 +292,44 @@ if __name__ == "__main__":
 
     from time import perf_counter
     start_time = perf_counter()
-    empresas_clasificadas = [clasificar_empresa(empresa) for empresa in empresas_tickers]g
+    empresas_clasificadas = [clasificar_empresa(empresa) for empresa in empresas_tickers]
     end_time = perf_counter()
     Logger.debug(f"TIEMPO DE CLASIFICACIÓN: {end_time - start_time:.2f} SEGUNDOS")
 
     total_noticias = 0
+    positivo_acumulado = 0.0
+    negativo_acumulado = 0.0
+    neutro_acumulado = 0.0
     for ticker, noticias_clasificadas in empresas_clasificadas:
         print("=== Listar Noticias ===")
         print(f"Empresa: {ticker}")
         print(noticias_clasificadas)
-        graficas(noticias_clasificadas, ticker)
+        
         total_noticias += noticias_clasificadas.height
         
+        resultados_df = (
+            noticias_clasificadas
+            .group_by("sentiment")
+            .agg(pl.count().alias("total"))
+            .sort("sentiment")
+            .to_dicts()
+        )
+        
+
+        resultados = {row["sentiment"]: row["total"] for row in resultados_df}
+        positivo = resultados.get("positive", 0)
+        neutro = resultados.get("neutral", 0)
+        negativo = resultados.get("negative", 0)
+
+        graficas(positivo, negativo, neutro, ticker)
+        positivo_acumulado += positivo
+        neutro_acumulado += neutro
+        negativo_acumulado += negativo
+
+    graficas(positivo_acumulado, negativo_acumulado, neutro_acumulado, "ACUMULADO")
+    Logger.info(f"Total Positivos: {positivo_acumulado}")
+    Logger.info(f"Total Neutros: {neutro_acumulado}")
+    Logger.info(f"Total Negativos: {negativo_acumulado}")
     Logger.info(f"Total Noticias Clasificadas: {total_noticias}")
     Logger.info(f"Tiempo por noticia: {total_noticias / (end_time - start_time):.2f} noticias/segundo")
     
