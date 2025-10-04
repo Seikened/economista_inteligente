@@ -74,6 +74,30 @@ class FetchNews:
             json.dump(self.ticker_news, f, indent=4)
 
 if __name__ == "__main__":
-    news = FetchNews(tickers=["AAPL", "TSLA", "MSFT"], days_back=180)
+
+
+    top_20_tech = [
+        "NVDA",  # NVIDIA
+        "MSFT",  # Microsoft
+        "AAPL",  # Apple
+        "GOOGL", # Alphabet (Google)
+        "AMZN",  # Amazon
+        "META",  # Meta (Facebook)
+        "AVGO",  # Broadcom
+        "TSLA",  # Tesla
+        "TSM",   # Taiwan Semiconductor (TSMC)
+        "ORCL",  # Oracle
+        "TCEHY", # Tencent
+        "NFLX",  # Netflix
+        "PLTR",  # Palantir
+        "BABA",  # Alibaba
+        "ASML",  # ASML Holding
+        "SAP",   # SAP SE
+        "CSCO",  # Cisco
+        "IBM",   # IBM
+        "AMD"    # Advanced Micro Devices
+    ]
+    # desde hace 7 años
+    news = FetchNews(tickers=top_20_tech, days_back=365*7)
     news.fetch_news()
     news.save_to_json("noticias.json")
