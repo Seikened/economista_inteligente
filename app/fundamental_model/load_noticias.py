@@ -5,25 +5,30 @@ import numpy as np
 from transformers import pipeline
 from colorstreak import Logger
 import matplotlib.pyplot as plt
+from functools import lru_cache
 
 # ===============================================================================================
 
 
 
 
+@lru_cache(maxsize=1)
+def clasificador_cache():
+    return pipeline(
+        task="text-classification",
+        model="ProsusAI/finbert",
+        tokenizer="ProsusAI/finbert",
+        top_k=None,
+        truncation=True,            # corta seguro a 512 tokens
+        max_length=512,
+        )
+
+
 class ClasificadorSentimientos:
+    
     def __init__(self,noticia : dict):
         self.noticia = noticia
-        self.clasificador = pipeline(
-            task="text-classification",
-            model="ProsusAI/finbert",
-            tokenizer="ProsusAI/finbert",
-            top_k=None,
-            truncation=True,            # corta seguro a 512 tokens
-            max_length=512,
-        )
-        
-        
+        self.clasificador = clasificador_cache()
         self.probabilidad_positiva = 0.0
         self.probabilidad_negativa = 0.0
         self.probabilidad_neutra = 0.0
@@ -93,7 +98,7 @@ class ClasificadorSentimientos:
             "neutral": round(sum(neutros), 4)
         }
         
-        etiqueta_principal = max(probabilidad_promedio, key=probabilidad_promedio.get)
+        etiqueta_principal = max(probabilidad_promedio, key=probabilidad_promedio.get) # type: ignore
         
         resultado = {
             "sent": etiqueta_principal,
@@ -110,8 +115,8 @@ class ClasificadorSentimientos:
     def clasificar_noticia(self):
         resultado_titulo = self._clasificar_titulo_noticia()
         resultado_resumen = self._clasificar_resumen_noticia()
-        peso_titulo = 0.6
-        peso_resumen = 0.4
+        peso_titulo = 0.3
+        peso_resumen = 1 - peso_titulo
         self.probabilidad_positiva = round((resultado_titulo["positive"] * peso_titulo + resultado_resumen["positive"] * peso_resumen), 4)
         self.probabilidad_negativa = round((resultado_titulo["negative"] * peso_titulo + resultado_resumen["negative"] * peso_resumen), 4)
         self.probabilidad_neutra = round((resultado_titulo["neutral"] * peso_titulo + resultado_resumen["neutral"] * peso_resumen), 4)
@@ -121,7 +126,7 @@ class ClasificadorSentimientos:
             "negative": self.probabilidad_negativa,
             "neutral": self.probabilidad_neutra
         }
-        self.sentimiento = max(probabilidades, key=probabilidades.get)
+        self.sentimiento = max(probabilidades, key=probabilidades.get) # type: ignore
         probabilidad_mas_alta = probabilidades[self.sentimiento]
         
         return self.sentimiento, probabilidad_mas_alta
@@ -212,9 +217,9 @@ class Empresa():
             .drop_nulls(subset=["rend_log", "rend_simple"]) # Elimina filas con valores nulos en rendimientos
         )
         return empresa_rendimientos
-    
-    
-    def _ordenar_noticias(self):
+
+
+    def _ordenar_noticias(self) -> pl.LazyFrame:
         """ Mezcla las noticias de una empresa con sus precios de cierre diarios."""
         empresa_noticias: pl.LazyFrame = self._filtrar_empresa(self._empresa)
         precios_rendimientos = self._tratar_cierre(empresa_noticias)
@@ -229,23 +234,16 @@ class Empresa():
             .drop_nulls(subset=["rend_log", "rend_simple"]) # Elimina filas sin precios de cierre asociados
         )
         return mezclar_noticias_precios
-    
 
-    @property
-    def all_info(self) -> pl.DataFrame:
-        """ Devuelve un DataFrame con todas las noticias y precios de cierre diarios de la empresa."""
-        return self._ordenar_noticias().collect()
-        
-        
-    
-    def _noticias_filtradas(self):
+
+    def _noticias_filtradas(self) -> pl.LazyFrame:
         empresa_noticias: pl.LazyFrame = self._ordenar_noticias()
         columnas_a_excluir = ["close", "ticker", "rend_log", "rend_simple","performance","label"]
         empresa_noticias = empresa_noticias.select(pl.all().exclude(columnas_a_excluir))
         return empresa_noticias
     
     
-    def _listar_noticias(self):
+    def _listar_noticias(self) -> pl.LazyFrame:
         noticias =(
             self._noticias_filtradas()
             .select("headline","summary")    
@@ -255,6 +253,11 @@ class Empresa():
     
     
 # ============================ METODOS DE USO ============================
+    @property
+    def all_info(self) -> pl.DataFrame:
+        """ Devuelve un DataFrame con todas las noticias y precios de cierre diarios de la empresa."""
+        return self._ordenar_noticias().collect()
+    
     
     @property
     def noticias_tabla(self) -> pl.DataFrame:
@@ -294,7 +297,7 @@ class Empresa():
             pl.Field("probability", pl.Float64),
         ])
 
-        # Mapeo por fila: usa tu @classmethod predecir para no instanciar manualmente aquí
+        # Mapeo por fila
         def _clasificar_fila(noticia: dict) -> dict:
             titulo = noticia.get("headline")
             resumen = noticia.get("summary")
@@ -377,46 +380,43 @@ def clasificar_noticia(noticia, resultados):
     Logger.debug(f"Sentimiento: {sentimiento}, Probabilidad: {probabilidad}")
 
 
-
-# ================ CARGA DE NOTICIAS ================
-empresas_tickers =[
-        "NVDA",  # NVIDIA
-        # "MSFT",  # Microsoft
-        # "AAPL",  # Apple
-        # "GOOGL", # Alphabet (Google)
-        # "AMZN",  # Amazon
-        # "META",  # Meta (Facebook)
-        # "AVGO",  # Broadcom
-        # "TSLA",  # Tesla
-        # "TSM",   # Taiwan Semiconductor (TSMC)
-        # "ORCL",  # Oracle
-        # "TCEHY", # Tencent
-        # "NFLX",  # Netflix
-        # "PLTR",  # Palantir
-        # "BABA",  # Alibaba
-        # "ASML",  # ASML Holding
-        # "SAP",   # SAP SE
-        # "CSCO",  # Cisco
-        # "IBM",   # IBM
-        # "AMD"    # Advanced Micro Devices
-    ]
-
-def crear_empresa(empresa):
-    Logger.info(f"Cargando datos de {empresa}...")
-    empresa_obj = Empresa(empresa)
-    Logger.debug(f"Datos de {empresa} cargados.")
-    return empresa_obj
+if __name__ == "__main__":
+    # ================ CARGA DE NOTICIAS ================
+    empresas_tickers: list[empresas_lit] = [
+            "NVDA",  # NVIDIA
+            "MSFT",  # Microsoft
+            "AAPL",  # Apple
+            "GOOGL", # Alphabet (Google)
+            "AMZN",  # Amazon
+            "META",  # Meta (Facebook)
+            "AVGO",  # Broadcom
+            "TSLA",  # Tesla
+            "TSM",   # Taiwan Semiconductor (TSMC)
+            "ORCL",  # Oracle
+            "TCEHY", # Tencent
+            "NFLX",  # Netflix
+            "PLTR",  # Palantir
+            "BABA",  # Alibaba
+            "ASML",  # ASML Holding
+            "SAP",   # SAP SE
+            "CSCO",  # Cisco
+            "IBM",   # IBM
+            "AMD"    # Advanced Micro Devices
+        ]
 
 
-empresas = [crear_empresa(empresa) for empresa in empresas_tickers]
+    def clasificar_empresa(empresa: empresas_lit) -> tuple[empresas_lit, pl.DataFrame]:
+        Logger.info(f"Cargando datos de {empresa}...")
+        empresa_obj = Empresa(empresa)
+        df = empresa_obj.clasificar_noticias().collect()
+        Logger.info(f"Noticias clasificadas de {empresa}...")
+        return empresa, df
 
+    empresas_clasificadas = [clasificar_empresa(empresa) for empresa in empresas_tickers]
 
-
-
-for empresa in empresas:
-    print("=== Listar Noticias ===")
-    noticias_clasificadas = empresa.clasificar_noticias()
-    print(noticias_clasificadas)
-
+    for ticker, noticias_clasificadas in empresas_clasificadas:
+        print("=== Listar Noticias ===")
+        print(f"Empresa: {ticker}")
+        print(noticias_clasificadas)
     
-    #graficas(empresa)
+        
