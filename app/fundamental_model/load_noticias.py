@@ -217,27 +217,10 @@ class Empresa():
             .drop_nulls(subset=["rend_log", "rend_simple"]) # Elimina filas con valores nulos en rendimientos
         )
         return empresa_rendimientos
-
-
-    def _ordenar_noticias(self) -> pl.LazyFrame:
-        """ Mezcla las noticias de una empresa con sus precios de cierre diarios."""
-        empresa_noticias: pl.LazyFrame = self._filtrar_empresa(self._empresa)
-        precios_rendimientos = self._tratar_cierre(empresa_noticias)
-
-        mezclar_noticias_precios = (
-            empresa_noticias
-            .join(precios_rendimientos, on="date", how="left")
-            .select(
-                pl.all().
-                exclude("close_right")
-            )
-            .drop_nulls(subset=["rend_log", "rend_simple"]) # Elimina filas sin precios de cierre asociados
-        )
-        return mezclar_noticias_precios
-
+    
 
     def _noticias_filtradas(self) -> pl.LazyFrame:
-        empresa_noticias: pl.LazyFrame = self._ordenar_noticias()
+        empresa_noticias: pl.LazyFrame = self._filtrar_empresa(self._empresa)
         columnas_a_excluir = ["close", "ticker", "rend_log", "rend_simple","performance","label"]
         empresa_noticias = empresa_noticias.select(pl.all().exclude(columnas_a_excluir))
         return empresa_noticias
@@ -246,13 +229,65 @@ class Empresa():
     def _listar_noticias(self) -> pl.LazyFrame:
         noticias =(
             self._noticias_filtradas()
-            .select("headline","summary")    
+            .select("headline","summary","date")    
 
         )
         return noticias
     
     
+    def _clasificar_noticias(self) -> pl.LazyFrame:
+        # Esquema para la salida
+        esquema_de_salida = pl.Struct([
+            pl.Field("sentiment", pl.Utf8),
+            pl.Field("probability", pl.Float64),
+        ])
+
+        # Mapeo por fila
+        def _clasificar_fila(noticia: dict) -> dict:
+            titulo = noticia.get("headline")
+            resumen = noticia.get("summary")
+            sentimiento, probabilidad = ClasificadorSentimientos.predecir({"headline": titulo, "summary": resumen})
+            return {"sentiment": sentimiento, "probability": probabilidad}
+
+        noticias_clasificadas = (
+            self._listar_noticias()
+            .with_columns(
+                pl.struct(["headline", "summary"])
+                .map_elements(_clasificar_fila, return_dtype=esquema_de_salida)
+                .alias("pred")
+            )
+            .unnest("pred") # Desempaqueta las columnas del struct
+        )
+        return noticias_clasificadas
+
+    
+    def _ordenar_noticias(self) -> pl.LazyFrame:
+        """ Mezcla las noticias de una empresa con sus precios de cierre diarios."""
+        empresa_noticias: pl.LazyFrame = self._filtrar_empresa(self._empresa)
+        precios_rendimientos = self._tratar_cierre(empresa_noticias)
+        empresa_noticias_clasificadas = self._clasificar_noticias()
+
+        mezclar_noticias_precios = (
+            empresa_noticias
+            .join(precios_rendimientos , on="date", how="left")
+            .join(empresa_noticias_clasificadas, on=["headline", "summary", "date"], how="left")
+            .select(
+                pl.all().
+                exclude("close_right")
+            )
+            .drop_nulls(subset=["rend_log", "rend_simple"]) # Elimina filas sin precios de cierre asociados
+        )
+        return mezclar_noticias_precios
+    
 # ============================ METODOS DE USO ============================
+    def crear_parquet(self,dataframe: pl.DataFrame) -> None:
+        """ Guarda las noticias y precios de cierre diarios de la empresa en un archivo Parquet."""
+        import pathlib
+        ruta = pathlib.Path(f"noticias_{self._empresa}.parquet")
+        df = dataframe
+        df.write_parquet(ruta)
+        Logger.info(f"Archivo Parquet guardado en: {ruta}")
+
     @property
     def all_info(self) -> pl.DataFrame:
         """ Devuelve un DataFrame con todas las noticias y precios de cierre diarios de la empresa."""
@@ -290,30 +325,7 @@ class Empresa():
     
 
 
-    def clasificar_noticias(self) -> pl.LazyFrame:
-        # Esquema para la salida
-        esquema_de_salida = pl.Struct([
-            pl.Field("sentiment", pl.Utf8),
-            pl.Field("probability", pl.Float64),
-        ])
 
-        # Mapeo por fila
-        def _clasificar_fila(noticia: dict) -> dict:
-            titulo = noticia.get("headline")
-            resumen = noticia.get("summary")
-            sentimiento, probabilidad = ClasificadorSentimientos.predecir({"headline": titulo, "summary": resumen})
-            return {"sentiment": sentimiento, "probability": probabilidad}
-
-        noticias_clasificadas = (
-            self._listar_noticias()
-            .with_columns(
-                pl.struct(["headline", "summary"])
-                .map_elements(_clasificar_fila, return_dtype=esquema_de_salida)
-                .alias("pred")
-            )
-            .unnest("pred") # Desempaqueta las columnas del struct
-        )
-        return noticias_clasificadas
             
         
     
@@ -322,17 +334,33 @@ class Empresa():
 
 # ================ LISTAR NOTICIAS ================
 
-def graficas(resultados, empresa):
+def graficas(dataframe: pl.DataFrame, empresa_ticker: empresas_lit) -> None:
     print("=== Resultados Clasificación ===")
-    total_positivos = resultados.get("positive", {}).get("total", 0)
-    total_neutros = resultados.get("neutral", {}).get("total", 0)
-    total_negativos = resultados.get("negative", {}).get("total", 0)
+    
+    resultados_df = (
+        dataframe
+        .group_by("sentiment")
+        .agg(pl.count().alias("total"))
+        .sort("sentiment")
+        .to_dicts()
+    )
+    
+    resultados = {row["sentiment"]: row["total"] for row in resultados_df}
+    Logger.info(resultados)
+    
+    total_positivos = resultados.get("positive", 0)
+    total_neutros = resultados.get("neutral", 0)
+    total_negativos = resultados.get("negative", 0)
 
     Logger.info(" Sentimiento | Total")
     Logger.info("-----------------------")
-    Logger.info(f" Positivo   | {total_positivos} {total_positivos / sum([total_positivos, total_neutros, total_negativos]):.2%}")
-    Logger.info(f" Neutro     | {total_neutros} {total_neutros / sum([total_positivos, total_neutros, total_negativos]):.2%}")
-    Logger.info(f" Negativo   | {total_negativos} {total_negativos / sum([total_positivos, total_neutros, total_negativos]):.2%}")
+    porcentaje_positivo = total_positivos / sum([total_positivos, total_neutros, total_negativos]) if (total_positivos + total_neutros + total_negativos) > 0 else 0
+    porcentaje_neutro = total_neutros / sum([total_positivos, total_neutros, total_negativos]) if (total_positivos + total_neutros + total_negativos) > 0 else 0
+    porcentaje_negativo = total_negativos / sum([total_positivos, total_neutros, total_negativos]) if (total_positivos + total_neutros + total_negativos) > 0 else 0
+
+    Logger.info(f" Positivo   | {total_positivos} {porcentaje_positivo:.2%}")
+    Logger.info(f" Neutro     | {total_neutros} {porcentaje_neutro:.2%}")
+    Logger.info(f" Negativo   | {total_negativos} {porcentaje_negativo:.2%}")
     Logger.info(f"Total Clasificaciones: {total_positivos + total_neutros + total_negativos}")
     Logger.info("-----")
 
@@ -355,29 +383,16 @@ def graficas(resultados, empresa):
                 f"{val:,}{pct}", ha="center", va="bottom", fontsize=10)
 
     ax.set_ylabel("Total")
-    ax.set_title(f"Clasificación de Noticias — {getattr(empresa, '_empresa', 'empresa')}")
+    ax.set_title(f"Clasificación de Noticias — {empresa_ticker}")
     ax.grid(axis="y", linestyle="--", alpha=0.25)
     fig.tight_layout()
 
     # Fondo transparente y nombre de archivo seguro
-    safe_name = str(getattr(empresa, "_empresa", "empresa")).replace("/", "-").strip()
+    safe_name = str(empresa_ticker).replace("/", "-").strip()
     plt.savefig(f"clasificacion_noticias_{safe_name}.png", bbox_inches="tight", transparent=False)
     plt.close(fig)
 
-def clasificar_noticia(noticia, resultados):
-    Logger.info("="*70)
-    titulo = noticia["headline"]
-    resumen = noticia["summary"]
-    Logger.info(f"Título: {titulo}")
-    Logger.info(f"Resumen: {resumen}")
-    # ================ CLASIFICAR NOTICIAS ================
-    clasificador = ClasificadorSentimientos(noticia)
-    sentimiento, probabilidad = clasificador.clasificar_noticia()
-    resultados[sentimiento] = {
-        # Le simamos 1 si ya existe, sino es la primera vez
-        "total": resultados.get(sentimiento, {}).get("total", 0) + 1
-    }
-    Logger.debug(f"Sentimiento: {sentimiento}, Probabilidad: {probabilidad}")
+
 
 
 if __name__ == "__main__":
@@ -408,15 +423,27 @@ if __name__ == "__main__":
     def clasificar_empresa(empresa: empresas_lit) -> tuple[empresas_lit, pl.DataFrame]:
         Logger.info(f"Cargando datos de {empresa}...")
         empresa_obj = Empresa(empresa)
-        df = empresa_obj.clasificar_noticias().collect()
+        df = empresa_obj.all_info
         Logger.info(f"Noticias clasificadas de {empresa}...")
+        # empresa_obj.crear_parquet(df)
+        # Logger.info("Parquet creado.")
         return empresa, df
 
-    empresas_clasificadas = [clasificar_empresa(empresa) for empresa in empresas_tickers]
+    from time import perf_counter
+    start_time = perf_counter()
+    empresas_clasificadas = [clasificar_empresa(empresa) for empresa in empresas_tickers]g
+    end_time = perf_counter()
+    Logger.debug(f"TIEMPO DE CLASIFICACIÓN: {end_time - start_time:.2f} SEGUNDOS")
 
+    total_noticias = 0
     for ticker, noticias_clasificadas in empresas_clasificadas:
         print("=== Listar Noticias ===")
         print(f"Empresa: {ticker}")
         print(noticias_clasificadas)
+        graficas(noticias_clasificadas, ticker)
+        total_noticias += noticias_clasificadas.height
+        
+    Logger.info(f"Total Noticias Clasificadas: {total_noticias}")
+    Logger.info(f"Tiempo por noticia: {total_noticias / (end_time - start_time):.2f} noticias/segundo")
     
         
