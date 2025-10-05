@@ -39,8 +39,12 @@ class EmpresasDirectory:
             
             if self._graficas:
                 #Logger.info(f"Generando gráficos para {ticker}...")
-                positivo, neutro, negativo = self._helper_get_sentimientos(empresa_all_info)
-                graficas(positivo, negativo, neutro, ticker)
+                
+                positivo_h, neutro_h, negativo_h = self._helper_get_sentimientos(empresa_all_info)
+                positivo += positivo_h
+                negativo += negativo_h
+                neutro += neutro_h
+                graficas(positivo_h, negativo_h, neutro_h, ticker)
         # Graficos acumulados
         if self._graficas:
             #Logger.info("Generando gráficos acumulados...")
