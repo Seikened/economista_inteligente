@@ -22,21 +22,53 @@ class FetchNews:
 
 
         for ticker in self.tickers:
-            params = {
-                "symbol": ticker,
-                "from": from_date,
-                "to": to_date,
-                "token": FINNHUB_API_KEY,
-            }
-
-            response = requests.get(base_url, params=params)
-
-            if response.status_code != 200:
-                print(f"Error fetching news for {ticker}: {response.status_code}")
-                continue
+            print(f"Fetching news for {ticker}...")
+            articles = []
+            current_to_date = to_date  # Empezar con la fecha de "hasta" (hace 1 día)
+            datetime_from_date = datetime.strptime(from_date, '%Y-%m-%d')
             
-            articles = response.json()
-            yfinance_data= yf.download(ticker, start=(datetime.now() - timedelta(days=self.days_back+1)).strftime('%Y-%m-%d'), end=datetime.now().strftime('%Y-%m-%d'))
+            iteration = 0
+            while True:
+                iteration += 1
+                print(f"  Iteration {iteration}: from {from_date} to {current_to_date}")
+                
+                params = {
+                    "symbol": ticker,
+                    "from": from_date,
+                    "to": current_to_date,
+                    "token": FINNHUB_API_KEY,
+                }
+                response = requests.get(base_url, params=params)
+
+                if response.status_code != 200:
+                    print(f"Error fetching news for {ticker}: {response.status_code}")
+                    break
+                
+                batch_articles = response.json()
+                if not batch_articles:
+                    print(f"  No more articles found for {ticker}")
+                    break
+                
+                # Agregar artículos al array
+                articles.extend(batch_articles)
+                print(f"  Fetched {len(batch_articles)} articles, total: {len(articles)}")
+                
+                # Obtener la fecha del último artículo (más antiguo)
+                last_article_timestamp = min(article.get("datetime") for article in batch_articles)
+                last_article_date = datetime.fromtimestamp(last_article_timestamp)
+                
+                print(f"  Oldest article date: {last_article_date.strftime('%Y-%m-%d')}")
+                
+                # Si ya llegamos a la fecha inicial o antes, terminar
+                if last_article_date <= datetime_from_date:
+                    print("  Reached initial date, stopping")
+                    break
+                
+                # La nueva fecha "hasta" es la fecha del último artículo menos 1 día
+                current_to_date = (last_article_date - timedelta(days=1)).strftime('%Y-%m-%d')
+            
+            print(f"Total articles fetched for {ticker}: {len(articles)}")
+            yfinance_data= yf.download(ticker, start=(datetime.now() - timedelta(days=self.days_back+1)).strftime('%Y-%m-%d'), end=datetime.now().strftime('%Y-%m-%d'), progress=False, auto_adjust=True)
             if yfinance_data is None or yfinance_data.empty:
                 print(f"No stock data found for {ticker}")
                 continue
