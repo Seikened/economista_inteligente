@@ -17,12 +17,14 @@ class EmpresasDirectory:
 
     def _crear_json_noticias(self):
         """Crea un archivo JSON con noticias si no existe."""
-        ruta_json = "/Users/ferleon/Github/economista_inteligente/noticias.json"
+        
+        ruta_actual = pathlib.Path().resolve()
+        ruta_json = f"{ruta_actual}/noticias.json"
         if not pathlib.Path(ruta_json).exists():
             Logger.info("No se encontró el archivo de noticias. Creando uno nuevo...")
             news = FetchNews(tickers=self.empresas_tickers, days_back=365*7) # type: ignore
             news.fetch_news()
-            news.save_to_json("noticias.json")
+            news.save_to_json(ruta_json)
             Logger.info("Archivo de noticias creado.")
             return
         Logger.info("Archivo de noticias ya existe.")
@@ -39,8 +41,12 @@ class EmpresasDirectory:
             
             if self._graficas:
                 #Logger.info(f"Generando gráficos para {ticker}...")
-                positivo, neutro, negativo = self._helper_get_sentimientos(empresa_all_info)
-                graficas(positivo, negativo, neutro, ticker)
+                
+                positivo_h, neutro_h, negativo_h = self._helper_get_sentimientos(empresa_all_info)
+                positivo += positivo_h
+                negativo += negativo_h
+                neutro += neutro_h
+                graficas(positivo_h, negativo_h, neutro_h, ticker)
         # Graficos acumulados
         if self._graficas:
             #Logger.info("Generando gráficos acumulados...")
@@ -120,11 +126,10 @@ for ticker, empresa in directorio.empresas:
     cierres  = empresa.cierres
     rendimiento_simple = empresa.rendimiento_simple
     rendimiento_logaritmico = empresa.rendimiento_log
-    
+    print(ticker)
     Logger.info(f"Toda la información  {informacion_empresa}")
     Logger.info(f"Cierres  {cierres}")
     Logger.info(f"Rendimiento Simple  {rendimiento_simple}")
     Logger.info(f"Rendimiento Logaritmico  {rendimiento_logaritmico}")
-    
-    input('Enter para continuar')
+
 
