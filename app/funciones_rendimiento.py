@@ -13,6 +13,7 @@ def rendimiento_promedio(precios: np.array) -> float:
     r_simple = rendimientos_simples(precios)
     return np.mean(r_simple)
 
+
 # 4. Rendimiento anualizado
 def rendimiento_anualizado(precios: np.array, periodos_por_anio: int) -> float:
     r_simple = rendimientos_simples(precios)
@@ -30,4 +31,4 @@ def rendimiento_real_prueba(rendimiento_simple: np.array, inflacion: float) -> f
 
 # 6. Rendimiento esperado
 def rendimiento_esperado(rendimientos: np.array, probabilidades: np.array) -> float:
-    return np.sum(rendimientos * probabilidades)
+    return (np.sum(rendimientos * probabilidades)) * 100
