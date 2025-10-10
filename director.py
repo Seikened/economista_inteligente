@@ -17,12 +17,14 @@ class EmpresasDirectory:
 
     def _crear_json_noticias(self):
         """Crea un archivo JSON con noticias si no existe."""
-        ruta_json = "/Users/ferleon/Github/economista_inteligente/noticias.json"
+        
+        ruta_actual = pathlib.Path().resolve()
+        ruta_json = f"{ruta_actual}/noticias.json"
         if not pathlib.Path(ruta_json).exists():
             Logger.info("No se encontró el archivo de noticias. Creando uno nuevo...")
             news = FetchNews(tickers=self.empresas_tickers, days_back=365*7) # type: ignore
             news.fetch_news()
-            news.save_to_json("noticias.json")
+            news.save_to_json(ruta_json)
             Logger.info("Archivo de noticias creado.")
             return
         Logger.info("Archivo de noticias ya existe.")
@@ -124,9 +126,10 @@ for ticker, empresa in directorio.empresas:
     cierres  = empresa.cierres
     rendimiento_simple = empresa.rendimiento_simple
     rendimiento_logaritmico = empresa.rendimiento_log
-    
+    print(ticker)
     Logger.info(f"Toda la información  {informacion_empresa}")
-    Logger.info(f"Cierres  {cierres}")
-    Logger.info(f"Rendimiento Simple  {rendimiento_simple}")
-    Logger.info(f"Rendimiento Logaritmico  {rendimiento_logaritmico}")
+    Logger.info(f"Cierres  {cierres}| {len(cierres)}")
+    Logger.info(f"Rendimiento Simple  {rendimiento_simple} | {len(rendimiento_simple)} ")
+    Logger.info(f"Rendimiento Logaritmico  {rendimiento_logaritmico} | {len(rendimiento_logaritmico)}")
+
 
