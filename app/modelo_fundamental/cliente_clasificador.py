@@ -34,11 +34,11 @@ empresas_lit = Literal[
 
 class Empresa():
     def __init__(self, empresa: empresas_lit, tokenizar: bool = False) -> None:
-        self._link ='/Users/ferleon/Github/economista_inteligente/noticias.json'
+        self._link =f'{pathlib.Path().resolve()}/noticias.json'
         self._noticias: pl.LazyFrame = self._cargar_noticias(self._link)
         self._empresa = empresa
         self._tokenizar = tokenizar
-        self._ruta_base = '/Users/ferleon/Github/economista_inteligente/data/'
+        self._ruta_base = f'{pathlib.Path().resolve()}/data/'
 
     def _cargar_noticias(self, ruta: str) -> pl.LazyFrame:
         """ Carga las noticias desde un archivo JSON y las convierte en un LazyFrame de Polars."""
@@ -264,7 +264,7 @@ def graficas(positivo, negativo, neutro, empresa_ticker: empresas_lit | str) -> 
 
     # Fondo transparente y nombre de archivo seguro
     safe_name = str(empresa_ticker).replace("/", "-").strip()
-    ruta = "/Users/ferleon/Github/economista_inteligente/data/graficas"
+    ruta = f"{pathlib.Path().resolve()}/data/graficas"
     plt.savefig(f"{ruta}/clasificacion_noticias_{safe_name}.png", bbox_inches="tight", transparent=False)
     plt.close(fig)
 
