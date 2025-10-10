@@ -125,4 +125,6 @@ for ticker, empresa in directorio.empresas:
     Logger.info(f"Cierres  {cierres}")
     Logger.info(f"Rendimiento Simple  {rendimiento_simple}")
     Logger.info(f"Rendimiento Logaritmico  {rendimiento_logaritmico}")
+    
+    input('Enter para continuar')
 
