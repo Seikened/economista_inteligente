@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import json
 import yfinance as yf
 import pandas as pd
+import time
 
 FINNHUB_API_KEY = "d39i039r01qoho9fts30d39i039r01qoho9fts3g" 
 
@@ -13,6 +14,7 @@ class FetchNews:
     tickers: list[str]
     days_back: int = 30
     ticker_news: dict|None = None
+    
 
     def fetch_news(self):
         self.ticker_news = {ticker: {"data": []} for ticker in self.tickers}
@@ -20,14 +22,17 @@ class FetchNews:
         to_date = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
         from_date = (datetime.now() - timedelta(days=self.days_back)).strftime('%Y-%m-%d')
 
-
+        self.error_tickers: list[str] = []
         for ticker in self.tickers:
+            print("Esperando 5 segundos")
+            time.sleep(5)
             print(f"Fetching news for {ticker}...")
             articles = []
             current_to_date = to_date  # Empezar con la fecha de "hasta" (hace 1 día)
             datetime_from_date = datetime.strptime(from_date, '%Y-%m-%d')
             
             iteration = 0
+            response_status = 200
             while True:
                 iteration += 1
                 print(f"  Iteration {iteration}: from {from_date} to {current_to_date}")
@@ -41,7 +46,12 @@ class FetchNews:
                 response = requests.get(base_url, params=params)
 
                 if response.status_code != 200:
+                    print(response)
+                    print(f"TICKER FALLO: {ticker}")
                     print(f"Error fetching news for {ticker}: {response.status_code}")
+                    del self.ticker_news[ticker]
+                    self.error_tickers.append(ticker)
+                    response_status = response.status_code
                     break
                 
                 batch_articles = response.json()
@@ -66,7 +76,8 @@ class FetchNews:
                 
                 # La nueva fecha "hasta" es la fecha del último artículo menos 1 día
                 current_to_date = (last_article_date - timedelta(days=1)).strftime('%Y-%m-%d')
-            
+            if response_status != 200:
+                continue
             print(f"Total articles fetched for {ticker}: {len(articles)}")
             yfinance_data= yf.download(ticker, start=(datetime.now() - timedelta(days=self.days_back+1)).strftime('%Y-%m-%d'), end=datetime.now().strftime('%Y-%m-%d'), progress=False, auto_adjust=True)
             if yfinance_data is None or yfinance_data.empty:
@@ -95,6 +106,7 @@ class FetchNews:
                     "close": close_price,
                     "performance": rendimiento,
                     "label": "positive" if rendimiento > 0 else "negative"
+                    "label": "positive" if rendimiento > 0 else "negative"
                 })
 
         return self.ticker_news
@@ -109,25 +121,25 @@ if __name__ == "__main__":
 
 
     top_20_tech = [
-        "NVDA",  # NVIDIA
-        "MSFT",  # Microsoft
-        "AAPL",  # Apple
-        "GOOGL", # Alphabet (Google)
-        "AMZN",  # Amazon
+    #     "NVDA",  # NVIDIA
+    #     "MSFT",  # Microsoft
+    #     "AAPL",  # Apple
+    #     "GOOGL", # Alphabet (Google)
+    #     "AMZN",  # Amazon
         "META",  # Meta (Facebook)
         "AVGO",  # Broadcom
         "TSLA",  # Tesla
-        "TSM",   # Taiwan Semiconductor (TSMC)
-        "ORCL",  # Oracle
-        "TCEHY", # Tencent
-        "NFLX",  # Netflix
-        "PLTR",  # Palantir
-        "BABA",  # Alibaba
-        "ASML",  # ASML Holding
-        "SAP",   # SAP SE
-        "CSCO",  # Cisco
-        "IBM",   # IBM
-        "AMD"    # Advanced Micro Devices
+    #     "TSM",   # Taiwan Semiconductor (TSMC)
+    #     "ORCL",  # Oracle
+    #     "TCEHY", # Tencent
+    #     "NFLX",  # Netflix
+    #     "PLTR",  # Palantir
+    #     "BABA",  # Alibaba
+    #     "ASML",  # ASML Holding
+    #     "SAP",   # SAP SE
+    #     "CSCO",  # Cisco
+    #     "IBM",   # IBM
+    #     "AMD"    # Advanced Micro Devices
     ]
     # desde hace 7 años
     news = FetchNews(tickers=top_20_tech, days_back=365*7)
