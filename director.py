@@ -118,37 +118,16 @@ empresas_tickers: list[empresas_lit] = [
         "AMD"    # Advanced Micro Devices
     ]
 
-import numpy as np
-
-def ratio_sharpe(rendimientos: np.array) -> float:
-    dias_trading = 252
-    rf_anual = 0.074 
-    rf_diaria = rf_anual / dias_trading
-    
-    rp = rendimientos.mean().item()
-    sigma = rendimientos.std(axis=0).item()
-
-    sharpe_diario = (rp - rf_diaria) / sigma
-    sharpe_anual = sharpe_diario * np.sqrt(dias_trading)
-
-    return sharpe_diario, sharpe_anual
-
 
 
 directorio = EmpresasDirectory(empresas_tickers, graficas=True)
-print(f"Total de noticias clasificadas: {directorio.total_noticias}")
+Logger.info(f"Total de noticias clasificadas: {directorio.total_noticias:,}")
 
 for ticker, empresa in directorio.empresas:
     informacion_empresa = empresa.all_info
     cierres  = empresa.cierres
     rendimiento_simple = empresa.rendimiento_simple
     rendimiento_logaritmico = empresa.rendimiento_log
-    print(ticker)
+    Logger.library(f"Ticker: {ticker}")
     Logger.info(f"Toda la información  {informacion_empresa}")
-    Logger.info(f"Cierres  {cierres}| {len(cierres)}")
-    Logger.info(f"Rendimiento Simple  {rendimiento_simple} | {len(rendimiento_simple)} ")
-    Logger.info(f"Rendimiento Logaritmico  {rendimiento_logaritmico} | {len(rendimiento_logaritmico)}")
-    sharpe_diario, sharpe_anual = ratio_sharpe(rendimiento_logaritmico)
-    print(f"Ratio de Sharpe Diario: {sharpe_diario:.4f}, Anual: {sharpe_anual:.4f}")
-    input("Presiona Enter para continuar...")
-
+    #input("Presiona Enter para continuar...")
