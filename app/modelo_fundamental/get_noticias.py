@@ -62,7 +62,7 @@ class FetchNews:
                     "date": article_date,
                     "close": close_price,
                     "performance": rendimiento,
-                    "label": "positive" if rendimiento > 0 else "negative"
+                    "label": "positive" if rendimiento > 0 else "negative",
                 })
 
         return self.ticker_news
