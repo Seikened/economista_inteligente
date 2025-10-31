@@ -2,7 +2,8 @@ import pathlib
 from app.modelo_fundamental import graficas, Empresa , empresas_lit, FetchNews
 from colorstreak import Logger
 import polars as pl
-
+from app.modelo_matematico import ratio_sharpe, volatilidad, sortino
+import numpy as np
 
 class EmpresasDirectory:
     def __init__(self, empresas_tickers: list[empresas_lit], graficas: bool = False) -> None:
@@ -128,6 +129,15 @@ for ticker, empresa in directorio.empresas:
     cierres  = empresa.cierres
     rendimiento_simple = empresa.rendimiento_simple
     rendimiento_logaritmico = empresa.rendimiento_log
-    Logger.library(f"Ticker: {ticker}")
+    sharpe_diario, sharpe_anual = ratio_sharpe(rendimiento_simple)
+    volatil, volatilidad_anual = volatilidad(rendimiento_simple)
+    sortino_diario, sortino_anual = sortino(rendimiento_simple)
+    print(ticker)
     Logger.info(f"Toda la información  {informacion_empresa}")
-    #input("Presiona Enter para continuar...")
+    Logger.info(f"Cierres  {cierres}")
+    Logger.info(f"Rendimiento Simple  {np.round(rendimiento_simple,4)}")
+    Logger.info(f"Rendimiento Logaritmico  {np.round(rendimiento_logaritmico,4)}")
+    Logger.info(f'Sharpe diario: {sharpe_diario} \n Sharpe anual: {sharpe_anual}')
+    Logger.info(f'Volatilidad: {volatil} \n Volatilidad anual {volatilidad_anual}')
+    Logger.info(f'Sortino diaria: {sortino_diario} \n Sortino anual: {sortino_anual}')
+    input("Siguiente Empresa")
