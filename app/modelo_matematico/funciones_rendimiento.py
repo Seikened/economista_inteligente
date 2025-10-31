@@ -56,3 +56,14 @@ def ratio_sharpe(rendimientos: np.array) -> float:
 
     return sharpe_diario, sharpe_anual
 
+def sortino(rendimientos: np.array) -> float:
+    dias_trading = 252
+    rf_anual = 0.074 
+    rf_diaria = rf_anual / dias_trading
+    downside = rendimientos[rendimientos < rf_diaria] - rf_diaria
+    sigma_d = np.sqrt(np.mean(downside**2))
+    Rp = rendimientos.mean().item()
+    sortino_diario = (Rp - rf_diaria) / sigma_d
+    sortino_anual = sortino_diario * np.sqrt(dias_trading)
+    
+    return sortino_diario, sortino_anual
