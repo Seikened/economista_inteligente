@@ -4,7 +4,6 @@ from app.modelo_matematico import PromediosMoviles, VarianzaMovil, ModeloAR, Teo
 from app.modelo_matematico import ratio_sharpe, volatilidad, sortino
 from colorstreak import Logger
 import polars as pl
-import numpy as np
 from rich.console import Console, Group
 from rich.table import Table
 from rich.panel import Panel
