@@ -86,13 +86,14 @@ export default function App() {
         gsap.globalTimeline.progress(1, true)
         await new Promise(r => requestAnimationFrame(r))
         const canvas = await html2canvas(stage, {
-          scale: 1,
+          scale: 2,
           useCORS: true,
           logging: false,
+          imageTimeout: 0,
           ignoreElements: el => ['hud', 'seg-bar', 'overlay'].includes(el.id),
         })
         if (i > 0) pdf.addPage()
-        pdf.addImage(canvas.toDataURL('image/jpeg', 0.92), 'JPEG', 0, 0, W, H)
+        pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, W, H)
       }
 
       pdf.save('presentacion.pdf')
