@@ -1,6 +1,7 @@
 import pathlib
 from app.modelo_fundamental import graficas, Empresa, empresas_lit, FetchNews
 from app.modelo_matematico import ratio_sharpe, volatilidad, sortino, ModeloARIMA
+from app.estrategias import ESTRATEGIAS, evaluar_empresa, promediar
 from colorstreak import Logger
 import polars as pl
 from rich.console import Console
@@ -138,6 +139,51 @@ def _imprimir_empresa(ticker: str, arima, num_noticias: int,
     console.print(Columns([panel_rf, panel_ar], equal=True, expand=True))
 
 
+# ================ ESTRATEGIAS (VERSION FINAL) ================
+
+def _color_metrica(valor: float) -> str:
+    return f"[green]{valor:+.2f}[/]" if valor >= 0 else f"[red]{valor:+.2f}[/]"
+
+
+def _tabla_estrategias(titulo: str, metricas_por_estrategia: dict, estilo: str) -> Table:
+    tabla = Table(title=titulo, border_style=estilo, title_style=f"bold {estilo}")
+    tabla.add_column("Estrategia", style="bold")
+    tabla.add_column("Rend. acum. %", justify="right")
+    tabla.add_column("Sharpe anual", justify="right")
+    tabla.add_column("Volatilidad %", justify="right")
+    tabla.add_column("Precision %", justify="right")
+    tabla.add_column("Operaciones", justify="right")
+    for nombre in ESTRATEGIAS:
+        m = metricas_por_estrategia[nombre]
+        tabla.add_row(
+            nombre,
+            _color_metrica(m["rend_acumulado"]),
+            _color_metrica(m["sharpe"]),
+            f"{m['volatilidad']:.2f}",
+            f"{m['precision']:.1f}",
+            f"{m['operaciones']:,}",
+        )
+    return tabla
+
+
+def _correr_estrategias(directorio: "EmpresasDirectory") -> None:
+    console.print()
+    console.rule("[bold magenta]ANALISIS DE ESTRATEGIAS — VERSION FINAL[/]", style="magenta")
+    console.print()
+
+    resultados: dict[str, dict] = {}
+    for ticker, empresa in directorio.empresas:
+        metricas = evaluar_empresa(empresa)
+        resultados[ticker] = metricas
+        console.print(_tabla_estrategias(f"{ticker}", metricas, "magenta"))
+        console.print()
+
+    promedios = promediar(resultados)
+    console.rule("[bold cyan]RESUMEN GLOBAL[/]", style="cyan")
+    console.print(_tabla_estrategias("Promedio sobre todas las empresas", promedios, "cyan"))
+    console.print()
+
+
 # ================ MAIN ================
 
 empresas_tickers: list[empresas_lit] = [
@@ -172,3 +218,11 @@ for ticker, empresa in directorio.empresas:
 console.print()
 console.rule("[bold cyan]FIN DEL ANALISIS[/]", style="cyan")
 console.print()
+
+
+respuesta = console.input("[bold yellow]¿Correr analisis de estrategias (version final)? [y/n]: [/]").strip().lower()
+
+if respuesta in ("y", "yes", "s", "si"):
+    _correr_estrategias(directorio)
+else:
+    console.print("[dim]Saltando version final.[/]\n")
