@@ -1,0 +1,2 @@
+- [project_evolution.md](project_evolution.md) - Planned expansion: game theory, moving averages, variance, AR models in modelo_matematico/
+- [feedback_no_coauthor.md](feedback_no_coauthor.md) - Never add Co-Authored-By Claude to commits in this project

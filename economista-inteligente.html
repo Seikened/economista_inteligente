@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Economista Inteligente — Material de Econometría</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#060d1a; --surface:#0c1828; --surface2:#102035;
+      --gold:#f0a500; --gold-glow:rgba(240,165,0,0.12);
+      --blue:#5ba4f5; --blue-dim:rgba(91,164,245,0.08);
+      --white:#eef2f7; --muted:#5a6a80;
+      --border:rgba(240,165,0,0.18); --border-s:rgba(240,165,0,0.08);
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      background:var(--bg);
+      color:var(--white);
+      font-family:'IBM Plex Sans',sans-serif;
+      font-weight:300;
+      font-size:15px;
+      line-height:1.6;
+      -webkit-print-color-adjust:exact;
+      print-color-adjust:exact;
+    }
+
+    body::before {
+      content:''; position:fixed; inset:0;
+      background-image:
+        linear-gradient(rgba(91,164,245,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(91,164,245,0.03) 1px, transparent 1px);
+      background-size:36px 36px;
+      pointer-events:none; z-index:0;
+    }
+
+    .page { position:relative; z-index:1; max-width:860px; margin:0 auto; padding:64px 56px 72px; }
+
+    /* ── HERO ── */
+    .hero {
+      display:grid; grid-template-columns:1fr auto; align-items:end;
+      gap:24px; padding-bottom:40px; border-bottom:1px solid var(--border);
+      margin-bottom:48px; position:relative; overflow:hidden;
+    }
+    .hero-ghost {
+      position:absolute; bottom:-24px; right:-16px;
+      font-family:'Bebas Neue',cursive; font-size:200px;
+      color:rgba(240,165,0,0.035); letter-spacing:-6px;
+      line-height:1; pointer-events:none; user-select:none;
+    }
+    .chip {
+      display:inline-block; font-family:'IBM Plex Mono',monospace;
+      font-size:10px; letter-spacing:2.5px; text-transform:uppercase;
+      color:var(--gold); border:1px solid var(--border);
+      background:var(--gold-glow); padding:4px 12px; border-radius:2px; margin-bottom:20px;
+    }
+    h1 { font-family:'Bebas Neue',cursive; font-size:68px; line-height:0.88; letter-spacing:0.5px; color:var(--white); }
+    h1 em { color:var(--gold); font-style:normal; }
+    .hero-sub { font-size:14px; color:var(--muted); margin-top:18px; max-width:480px; line-height:1.75; }
+    .hero-date {
+      font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--muted);
+      letter-spacing:1.5px; text-align:right; border-top:1px solid var(--border-s); padding-top:8px;
+    }
+
+    /* ── TRANSVERSAL ── */
+    .transversal {
+      background:linear-gradient(120deg,rgba(240,165,0,0.07) 0%,rgba(91,164,245,0.04) 100%);
+      border:1px solid var(--gold); border-left:5px solid var(--gold);
+      padding:36px 40px; margin-bottom:56px; position:relative; overflow:hidden;
+    }
+    .transversal::after {
+      content:'∞'; position:absolute; right:28px; top:50%; transform:translateY(-50%);
+      font-size:96px; color:rgba(240,165,0,0.08); font-family:'IBM Plex Mono',monospace; pointer-events:none;
+    }
+    .transversal-label { font-family:'IBM Plex Mono',monospace; font-size:9px; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:14px; }
+    .transversal h2 { font-family:'Bebas Neue',cursive; font-size:34px; letter-spacing:1px; line-height:1.1; color:var(--white); max-width:580px; margin-bottom:14px; }
+    .transversal p { font-size:13.5px; color:#7a8fa8; max-width:560px; line-height:1.75; }
+
+    /* ── SECCIÓN ── */
+    .section { margin-bottom:52px; }
+    .section-head { display:flex; align-items:center; gap:14px; margin-bottom:22px; }
+    .sec-num { font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--gold); letter-spacing:2px; flex-shrink:0; }
+    .sec-title { font-family:'Bebas Neue',cursive; font-size:26px; letter-spacing:1px; color:var(--white); flex-shrink:0; }
+    .sec-rule { flex:1; height:1px; background:linear-gradient(90deg,var(--border),transparent); }
+
+    /* ── TABLA ── */
+    .table-wrap { border:1px solid var(--border); border-radius:3px; overflow:hidden; }
+    table { width:100%; border-collapse:collapse; }
+    thead tr { background:var(--surface); }
+    th { font-family:'IBM Plex Mono',monospace; font-size:9.5px; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold); padding:12px 20px; text-align:left; border-bottom:1px solid var(--border); }
+    td { padding:13px 20px; font-size:13.5px; border-bottom:1px solid var(--border-s); vertical-align:middle; }
+    tr:last-child td { border-bottom:none; }
+    td strong { font-weight:500; color:var(--white); }
+    td.muted { color:var(--muted); }
+    .badge { display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:9.5px; padding:3px 9px; border-radius:2px; letter-spacing:1px; }
+    .badge-active { background:rgba(52,211,153,0.1); color:#4ade80; border:1px solid rgba(52,211,153,0.25); }
+    .badge-wip { background:rgba(240,165,0,0.1); color:var(--gold); border:1px solid rgba(240,165,0,0.3); }
+
+    /* ── IDEA GRID ── */
+    .ideas-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .idea-card {
+      background:var(--surface); border:1px solid var(--border-s);
+      border-top:2px solid var(--gold); padding:22px 24px; border-radius:3px;
+    }
+    .idea-icon { font-size:18px; margin-bottom:10px; }
+    .idea-title { font-family:'Bebas Neue',cursive; font-size:19px; letter-spacing:1px; color:var(--white); margin-bottom:14px; }
+    .idea-list { list-style:none; }
+    .idea-list li { font-size:12.5px; color:#7a8fa8; padding:4px 0 4px 18px; position:relative; line-height:1.5; }
+    .idea-list li::before { content:'—'; position:absolute; left:0; color:var(--gold); font-size:9px; top:7px; }
+
+    /* ── PIPELINE ── */
+    .pipeline-flow { display:flex; align-items:center; gap:0; margin-bottom:20px; }
+    .pipe-node {
+      flex:1; background:var(--surface); border:1px solid var(--border-s);
+      border-top:2px solid var(--blue); border-radius:3px; padding:14px 10px; text-align:center;
+    }
+    .pipe-node.highlight { border-top-color:var(--gold); background:var(--gold-glow); }
+    .pipe-node-icon { font-size:18px; margin-bottom:6px; }
+    .pipe-node-label { font-family:'IBM Plex Mono',monospace; font-size:8.5px; letter-spacing:1.5px; color:var(--blue); text-transform:uppercase; margin-bottom:5px; line-height:1.3; }
+    .pipe-node.highlight .pipe-node-label { color:var(--gold); }
+    .pipe-node-desc { font-size:10px; color:var(--muted); line-height:1.4; }
+    .pipe-arrow { flex-shrink:0; width:22px; text-align:center; color:var(--blue); font-size:14px; opacity:0.45; }
+
+    /* ── TICKERS STRIP ── */
+    .tickers-strip {
+      margin-top:16px; padding:16px 20px;
+      background:var(--surface); border:1px solid var(--border-s); border-radius:3px;
+      display:flex; flex-wrap:wrap; gap:8px;
+    }
+    .ticker-tag {
+      font-family:'IBM Plex Mono',monospace; font-size:9px; letter-spacing:1.5px;
+      text-transform:uppercase; color:var(--blue);
+      padding:3px 9px; border:1px solid rgba(91,164,245,0.2);
+      background:var(--blue-dim); border-radius:2px;
+    }
+
+    /* ── CLOSING ── */
+    .closing {
+      margin-top:64px; padding:60px 48px; text-align:center;
+      background:var(--surface); border:1px solid var(--gold); border-radius:4px;
+      position:relative; overflow:hidden;
+    }
+    .closing::before {
+      content:''; position:absolute; top:-80px; left:50%; transform:translateX(-50%);
+      width:500px; height:300px;
+      background:radial-gradient(ellipse,rgba(240,165,0,0.07),transparent 70%); pointer-events:none;
+    }
+    .closing-kicker { font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:20px; }
+    .closing h2 { font-family:'Bebas Neue',cursive; font-size:58px; line-height:0.92; letter-spacing:1px; color:var(--white); margin-bottom:20px; }
+    .closing h2 em { color:var(--gold); font-style:normal; }
+    .closing p { font-size:14px; color:#7a8fa8; max-width:480px; margin:0 auto 28px; line-height:1.8; }
+    .closing-pills { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+    .pill { font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:1.5px; text-transform:uppercase; padding:6px 16px; border:1px solid var(--border); color:var(--muted); border-radius:100px; }
+
+    /* ── FOOTER ── */
+    .footer { margin-top:40px; padding-top:20px; border-top:1px solid var(--border-s); display:flex; justify-content:space-between; align-items:center; }
+    .footer-left { font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--muted); letter-spacing:1px; }
+    .footer-dot { width:6px; height:6px; border-radius:50%; background:var(--gold); opacity:0.6; }
+
+    @media print {
+      body::before { position:fixed; }
+      .page { padding:48px 40px 56px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <div class="chip">Material de Econometría · UNAM · 2026</div>
+      <h1>Economista<br /><em>Inteligente</em></h1>
+      <p class="hero-sub">
+        Pipeline de análisis de sentimientos financieros sobre 19 acciones tecnológicas.
+        Integra NLP, datos de mercado y econometría aplicada en un sistema end-to-end.
+      </p>
+    </div>
+    <div class="hero-date">
+      <div id="fecha-hero"></div>
+      <div>Documento Técnico</div>
+    </div>
+    <div class="hero-ghost">EI</div>
+  </div>
+
+  <!-- BLOQUE TRANSVERSAL -->
+  <div class="transversal">
+    <div class="transversal-label">Enfoque del proyecto</div>
+    <h2>Datos, lenguaje y mercados: un solo sistema.</h2>
+    <p>
+      El análisis de sentimientos en noticias financieras es una señal econométrica emergente.
+      Este proyecto construye la infraestructura completa para capturar, clasificar y correlacionar
+      ese sentimiento con los retornos reales de las acciones más grandes del mundo.
+    </p>
+  </div>
+
+  <!-- SECCIÓN 01: MÓDULOS DEL SISTEMA -->
+  <div class="section">
+    <div class="section-head">
+      <span class="sec-num">01</span>
+      <span class="sec-title">Módulos del Sistema</span>
+      <div class="sec-rule"></div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Módulo</th>
+            <th>Responsabilidad</th>
+            <th>Tecnología</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>director.py</strong></td>
+            <td class="muted">Orquestador del pipeline completo</td>
+            <td class="muted">EmpresasDirectory</td>
+            <td><span class="badge badge-active">Activo</span></td>
+          </tr>
+          <tr>
+            <td><strong>get_noticias.py</strong></td>
+            <td class="muted">Fetch de noticias con paginación</td>
+            <td class="muted">Finnhub API · yfinance</td>
+            <td><span class="badge badge-active">Activo</span></td>
+          </tr>
+          <tr>
+            <td><strong>cliente_clasificador.py</strong></td>
+            <td class="muted">Carga, filtrado y clasificación por ticker</td>
+            <td class="muted">Polars · Parquet</td>
+            <td><span class="badge badge-active">Activo</span></td>
+          </tr>
+          <tr>
+            <td><strong>modelo_clasificador.py</strong></td>
+            <td class="muted">Inferencia NLP con promedio ponderado</td>
+            <td class="muted">FinBERT · HuggingFace · PyTorch</td>
+            <td><span class="badge badge-active">Activo</span></td>
+          </tr>
+          <tr>
+            <td><strong>modelo_matematico/</strong></td>
+            <td class="muted">Modelos econométricos y ratios financieros</td>
+            <td class="muted">Rich · Matplotlib</td>
+            <td><span class="badge badge-wip">En progreso</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 02: ÁREAS DEL PROYECTO -->
+  <div class="section">
+    <div class="section-head">
+      <span class="sec-num">02</span>
+      <span class="sec-title">Áreas del Proyecto</span>
+      <div class="sec-rule"></div>
+    </div>
+    <div class="ideas-grid">
+      <div class="idea-card">
+        <div class="idea-icon">📰</div>
+        <div class="idea-title">Recopilación de Noticias</div>
+        <ul class="idea-list">
+          <li>Finnhub API con paginación automática</li>
+          <li>Enriquecimiento con precios desde yfinance</li>
+          <li>Cache local en <code style="color:var(--gold);font-size:11px">noticias.json</code></li>
+        </ul>
+      </div>
+      <div class="idea-card">
+        <div class="idea-icon">🧠</div>
+        <div class="idea-title">Análisis de Sentimientos</div>
+        <ul class="idea-list">
+          <li>Modelo FinBERT (ProsusAI/finbert)</li>
+          <li>Clasificación de titular + resumen con peso</li>
+          <li>Salida: Positivo · Negativo · Neutral</li>
+        </ul>
+      </div>
+      <div class="idea-card">
+        <div class="idea-icon">📈</div>
+        <div class="idea-title">Datos de Mercado</div>
+        <ul class="idea-list">
+          <li>19 tickers tecnológicos de gran capitalización</li>
+          <li>Precios históricos y retornos calculados</li>
+          <li>Merge con datos de sentimiento por fecha</li>
+        </ul>
+      </div>
+      <div class="idea-card">
+        <div class="idea-icon">📊</div>
+        <div class="idea-title">Visualización y Análisis</div>
+        <ul class="idea-list">
+          <li>Gráficas por ticker en <code style="color:var(--gold);font-size:11px">data/graficas/</code></li>
+          <li>Ratios financieros con tablas Rich</li>
+          <li>Parquet como capa de cache analítico</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 03: PIPELINE -->
+  <div class="section">
+    <div class="section-head">
+      <span class="sec-num">03</span>
+      <span class="sec-title">Pipeline de Datos</span>
+      <div class="sec-rule"></div>
+    </div>
+    <div class="pipeline-flow">
+      <div class="pipe-node">
+        <div class="pipe-node-icon">🌐</div>
+        <div class="pipe-node-label">Finnhub API</div>
+        <div class="pipe-node-desc">Noticias por ticker</div>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-node">
+        <div class="pipe-node-icon">💾</div>
+        <div class="pipe-node-label">noticias.json</div>
+        <div class="pipe-node-desc">Cache local + precios yfinance</div>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-node highlight">
+        <div class="pipe-node-icon">🧠</div>
+        <div class="pipe-node-label">FinBERT</div>
+        <div class="pipe-node-desc">Clasificación NLP ponderada</div>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-node">
+        <div class="pipe-node-icon">🗄️</div>
+        <div class="pipe-node-label">Parquet</div>
+        <div class="pipe-node-desc">Cache analítico por ticker</div>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-node">
+        <div class="pipe-node-icon">📊</div>
+        <div class="pipe-node-label">Gráficas</div>
+        <div class="pipe-node-desc">PNG por empresa + ratios Rich</div>
+      </div>
+    </div>
+
+    <!-- Tickers cubiertos -->
+    <div class="tickers-strip">
+      <span class="ticker-tag">NVDA</span>
+      <span class="ticker-tag">MSFT</span>
+      <span class="ticker-tag">AAPL</span>
+      <span class="ticker-tag">GOOGL</span>
+      <span class="ticker-tag">AMZN</span>
+      <span class="ticker-tag">META</span>
+      <span class="ticker-tag">AVGO</span>
+      <span class="ticker-tag">TSLA</span>
+      <span class="ticker-tag">TSM</span>
+      <span class="ticker-tag">ORCL</span>
+      <span class="ticker-tag">TCEHY</span>
+      <span class="ticker-tag">NFLX</span>
+      <span class="ticker-tag">PLTR</span>
+      <span class="ticker-tag">BABA</span>
+      <span class="ticker-tag">ASML</span>
+      <span class="ticker-tag">SAP</span>
+      <span class="ticker-tag">CSCO</span>
+      <span class="ticker-tag">IBM</span>
+      <span class="ticker-tag">AMD</span>
+    </div>
+  </div>
+
+  <!-- CIERRE -->
+  <div class="closing">
+    <div class="closing-kicker">Propósito del proyecto</div>
+    <h2>Texto, números<br />y <em>mercados</em>.</h2>
+    <p>
+      El lenguaje es datos. Las noticias financieras contienen señales que los modelos
+      econométricos tradicionales no capturan. Este sistema cierra esa brecha: desde
+      una API pública hasta un análisis cuantitativo reproducible.
+    </p>
+    <div class="closing-pills">
+      <span class="pill">Reproducible</span>
+      <span class="pill">End-to-End</span>
+      <span class="pill">Open Source</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">Material de Econometría — Uso académico</div>
+    <div class="footer-dot"></div>
+    <div class="footer-left" id="fecha-footer"></div>
+  </div>
+
+</div>
+<script>
+  const d = new Date();
+  document.getElementById('fecha-hero').textContent =
+    d.toLocaleDateString('es-MX', { year:'numeric', month:'long', day:'numeric' }).toUpperCase();
+  document.getElementById('fecha-footer').textContent =
+    d.getFullYear() + ' · Econometría Aplicada';
+</script>
+</body>
+</html>
